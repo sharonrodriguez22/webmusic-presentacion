@@ -704,15 +704,15 @@ body {
     </div>
   </div>
 
-  <!-- SLIDE 5: JULIETA — JIRA + CRONOGRAMA -->
+  <!-- SLIDE 5: JULIETA — ÉPICA + MOTOR DE DATOS -->
   <div class="slide" data-slide="4">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Data Analyst & Data Engineer — Planificación</div>
-      <div class="slide-title" style="font-size:clamp(1.2rem,2.8vw,1.6rem);margin-bottom:6px;">Épica de Datos y Cronograma</div>
+      <div class="slide-eyebrow">Data Analyst & Data Engineer — Motor de Datos</div>
+      <div class="slide-title" style="font-size:clamp(1.2rem,2.8vw,1.6rem);margin-bottom:6px;">Épica de Datos y Flujo del Motor</div>
       <div class="fill-grow">
-        <div class="slide-subtitle" style="font-size:.95rem;margin-bottom:10px;">Las User Stories de infraestructura de datos y reportes analíticos, coordinadas en un cronograma de 3 meses.</div>
+        <div class="slide-subtitle" style="font-size:.95rem;margin-bottom:10px;">Las User Stories de infraestructura de datos, y cómo funciona el motor automatizado de captura a dashboard.</div>
 
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:10px;">
           <!-- Jira column -->
           <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;">
             <div style="font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--teal);margin-bottom:8px;">📋 Épica: Datos y Reportes</div>
@@ -730,24 +730,70 @@ body {
             </div>
           </div>
 
-          <!-- Cronograma column -->
+          <!-- Flujo del motor de datos -->
           <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;">
-            <div style="font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--teal);margin-bottom:8px;">📅 Cronograma (MS Project)</div>
-            <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;">
-              <div style="background:var(--teal);color:#fff;font-size:.6rem;font-weight:700;padding:2px 6px;border-radius:4px;white-space:nowrap;margin-top:2px;">MES 1</div>
-              <div><div style="font-size:.82rem;font-weight:600;color:var(--text);">Análisis y diseño</div><div style="font-size:.72rem;color:var(--text-muted);">Diseño de la base de datos</div></div>
+            <div style="font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--teal);margin-bottom:10px;">⚙️ Flujo del Motor de Datos</div>
+
+            <!-- Paso 1: Compra -->
+            <div style="display:flex;align-items:stretch;gap:0;margin-bottom:0;">
+              <div style="display:flex;flex-direction:column;align-items:center;width:28px;flex-shrink:0;">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;font-size:.6rem;font-weight:700;display:flex;align-items:center;justify-content:center;">1</div>
+                <div style="width:2px;flex:1;background:var(--teal);opacity:.3;"></div>
+              </div>
+              <div style="padding:2px 0 10px 8px;">
+                <div style="font-size:.8rem;font-weight:600;color:var(--text);">🛒 Cliente compra en el e-commerce</div>
+                <div style="font-size:.68rem;color:var(--text-muted);">El sistema registra la venta automáticamente</div>
+              </div>
             </div>
-            <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;">
-              <div style="background:var(--teal);color:#fff;font-size:.6rem;font-weight:700;padding:2px 6px;border-radius:4px;white-space:nowrap;margin-top:2px;">MES 2</div>
-              <div><div style="font-size:.82rem;font-weight:600;color:var(--text);">Desarrollo</div><div style="font-size:.72rem;color:var(--text-muted);">Integración con BD → 1.ª versión e-commerce</div></div>
+
+            <!-- Paso 2: Alerta -->
+            <div style="display:flex;align-items:stretch;gap:0;margin-bottom:0;">
+              <div style="display:flex;flex-direction:column;align-items:center;width:28px;flex-shrink:0;">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--orange);color:#fff;font-size:.6rem;font-weight:700;display:flex;align-items:center;justify-content:center;">2</div>
+                <div style="width:2px;flex:1;background:var(--teal);opacity:.3;"></div>
+              </div>
+              <div style="padding:2px 0 10px 8px;">
+                <div style="font-size:.8rem;font-weight:600;color:var(--text);">🔔 Alerta de Data Quality</div>
+                <div style="font-size:.68rem;color:var(--text-muted);">Si el registro tiene errores → alerta inmediata antes de avanzar</div>
+              </div>
             </div>
-            <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;">
-              <div style="background:var(--teal);color:#fff;font-size:.6rem;font-weight:700;padding:2px 6px;border-radius:4px;white-space:nowrap;margin-top:2px;">MES 3</div>
-              <div><div style="font-size:.82rem;font-weight:600;color:var(--text);">Integración y pruebas</div><div style="font-size:.72rem;color:var(--text-muted);">Pruebas de API — flujo de datos sin fisuras</div></div>
+
+            <!-- Paso 3: ETL -->
+            <div style="display:flex;align-items:stretch;gap:0;margin-bottom:0;">
+              <div style="display:flex;flex-direction:column;align-items:center;width:28px;flex-shrink:0;">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--blue);color:#fff;font-size:.6rem;font-weight:700;display:flex;align-items:center;justify-content:center;">3</div>
+                <div style="width:2px;flex:1;background:var(--teal);opacity:.3;"></div>
+              </div>
+              <div style="padding:2px 0 10px 8px;">
+                <div style="font-size:.8rem;font-weight:600;color:var(--text);">🔄 ETL al Data Warehouse</div>
+                <div style="font-size:.68rem;color:var(--text-muted);">Extracción, transformación y carga de datos limpios y validados</div>
+              </div>
             </div>
-            <div style="background:var(--accent-soft);border-radius:6px;padding:6px 10px;font-size:.72rem;color:var(--accent);font-weight:600;">
-              ⚠️ Dependencia clave: Diseño de BD → Desarrollo Backend
+
+            <!-- Paso 4: Dashboard -->
+            <div style="display:flex;align-items:stretch;gap:0;">
+              <div style="display:flex;flex-direction:column;align-items:center;width:28px;flex-shrink:0;">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;font-size:.6rem;font-weight:700;display:flex;align-items:center;justify-content:center;">4</div>
+              </div>
+              <div style="padding:2px 0 0 8px;flex:1;">
+                <div style="font-size:.8rem;font-weight:600;color:var(--text);">📊 Dashboard gerencial en tiempo real</div>
+                <div style="display:flex;gap:6px;margin-top:6px;">
+                  <div style="flex:1;background:var(--green-bg);border-radius:6px;padding:6px 8px;text-align:center;">
+                    <div style="font-size:1rem;font-weight:700;color:var(--green);">$2.4M</div>
+                    <div style="font-size:.55rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Ventas mes</div>
+                  </div>
+                  <div style="flex:1;background:var(--blue-bg);border-radius:6px;padding:6px 8px;text-align:center;">
+                    <div style="font-size:1rem;font-weight:700;color:var(--blue);">1,247</div>
+                    <div style="font-size:.55rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Clientes</div>
+                  </div>
+                  <div style="flex:1;background:var(--teal-bg);border-radius:6px;padding:6px 8px;text-align:center;">
+                    <div style="font-size:1rem;font-weight:700;color:var(--teal);">98.2%</div>
+                    <div style="font-size:.55rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Data Quality</div>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WebMusic — Exposición TP1</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
 <style>
@@ -517,10 +517,146 @@ body {
   margin-top: 16px;
 }
 
+
+/* ===== BIZAGI COMPARE ===== */
+.bizagi-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 8px; margin-bottom: 8px;
+}
+.bizagi-col {
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.bizagi-header {
+  padding: 5px 10px;
+  font-size: .65rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: #fff; text-align: center;
+}
+.bizagi-steps { padding: 6px 10px 8px; }
+.bizagi-step {
+  display: flex; align-items: center; gap: 6px;
+  font-size: .75rem; color: var(--text-mid); line-height: 1.35;
+}
+.bizagi-num {
+  width: 22px; height: 22px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .55rem; font-weight: 700; color: #fff; flex-shrink: 0;
+}
+.bizagi-arrow {
+  margin-left: 9px; width: 2px; height: 6px;
+  opacity: .3; margin-top: 1px; margin-bottom: 1px;
+}
+
+/* ===== DASHBOARD PREVIEW ===== */
+.dash-tiles {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 6px; margin-bottom: 6px;
+}
+.dash-tile {
+  border-radius: 8px; padding: 8px 10px;
+}
+.dash-tile-val {
+  font-family: var(--display);
+  font-size: 1.15rem; color: #fff; line-height: 1.1;
+}
+.dash-tile-lbl {
+  font-size: .5rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .8px;
+  color: rgba(255,255,255,.7); margin-top: 2px;
+}
+.dash-charts {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.dash-chart {
+  background: var(--card);
+  border: 1px solid var(--divider);
+  border-radius: 8px; padding: 6px 8px;
+}
+.dash-chart-title {
+  font-size: .65rem; font-weight: 600;
+  color: var(--text-mid); text-align: center; margin-bottom: 2px;
+}
+
+/* ===== MOTOR DATOS FLOW ===== */
+.motor-flow {
+  background: #151a2e; border-radius: 10px;
+  padding: 12px 14px; margin-bottom: 8px;
+}
+.motor-flow .slide-eyebrow { color: var(--teal); }
+.motor-title {
+  font-family: var(--display);
+  font-size: clamp(1rem,2.2vw,1.3rem);
+  color: #e8e4dc; margin-bottom: 10px;
+}
+.flow-chain {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 0;
+}
+.flow-node {
+  padding: 6px 16px; border-radius: 6px;
+  font-size: .72rem; font-weight: 600;
+  text-align: center; color: #fff;
+  width: 100%; max-width: 340px;
+}
+.flow-conn { width: 2px; height: 8px; background: var(--teal); opacity: .5; }
+.flow-diamond-wrap {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%; max-width: 500px;
+  justify-content: center;
+}
+.flow-diamond {
+  width: 110px; height: 55px; position: relative;
+  background: linear-gradient(135deg,#1a7a72,#0d9488);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.flow-diamond span {
+  font-size: .6rem; font-weight: 600; color: #fff; text-align: center;
+  padding: 0 8px;
+}
+.flow-branch-no {
+  display: flex; align-items: center; gap: 6px;
+}
+.flow-branch-arrow {
+  font-size: .6rem; font-weight: 700; color: #e8923a;
+}
+.flow-alert {
+  background: #c2553a; border-radius: 6px;
+  padding: 6px 12px; font-size: .68rem;
+  font-weight: 600; color: #fff; white-space: nowrap;
+}
+.flow-branch-note {
+  font-size: .58rem; font-style: italic;
+  color: rgba(232,228,220,.5); margin-top: 2px;
+}
+.flow-label-si {
+  font-size: .58rem; font-weight: 600; color: #5cb66a;
+  margin: 0 0 2px 0;
+}
+
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .slide { padding: 24px 32px 30px; }
+  .slide-inner { min-height: auto; }
+  .slide-title { font-size: clamp(1.4rem, 3.5vw, 2.2rem); }
+  .stat-number { font-size: 2.2rem; }
+  .sprint-features { grid-template-columns: repeat(3, 1fr); }
+  .qa-grid > div:nth-child(n) { padding: 8px; }
+}
+
 @media (max-width: 768px) {
-  .slide { padding: 20px 20px 28px; }
-  .stat-row { grid-template-columns: 1fr; }
+  .slide { padding: 16px 16px 24px; }
+  .slide-inner { min-height: auto; }
+  .slide-title { font-size: clamp(1.2rem, 4vw, 1.8rem); }
+  .slide-subtitle { font-size: .88rem; }
+  .stat-row { grid-template-columns: 1fr; gap: 6px; }
+  .stat-card { padding: 16px 14px; }
+  .stat-number { font-size: 1.8rem; }
   .jira-board { grid-template-columns: repeat(2, 1fr); }
   .process-container { grid-template-columns: 1fr; }
   .process-arrow { flex-direction: row; padding-top: 0; }
@@ -531,15 +667,70 @@ body {
   .qa-grid { grid-template-columns: 1fr; }
   .sprint-features { grid-template-columns: repeat(2, 1fr); }
   .cover-meta { flex-direction: column; gap: 6px; }
+  .role-avatar { width: 44px; height: 44px; font-size: .85rem; }
+  .role-header-text .role-person { font-size: 1.3rem; }
+  .backlog-table { font-size: .72rem; }
+  .backlog-table th { font-size: .5rem; padding: 3px 6px; }
+  .backlog-table td { padding: 5px 6px; }
+
+  /* Bizagi */
+  .bizagi-grid { grid-template-columns: 1fr; }
+  .bizagi-step { font-size: .78rem; }
+  .bizagi-num { width: 24px; height: 24px; font-size: .6rem; }
+
+  /* Dashboard */
+  .dash-tiles { grid-template-columns: 1fr; gap: 4px; }
+  .dash-tile { display: flex; align-items: center; gap: 8px; padding: 6px 10px; }
+  .dash-tile-val { font-size: 1rem; }
+  .dash-tile-lbl { margin-top: 0; }
+  .dash-charts { grid-template-columns: 1fr; }
+
+  /* Motor flow */
+  .motor-flow { padding: 10px; }
+  .flow-diamond-wrap { flex-direction: column; }
+  .flow-node { font-size: .68rem; padding: 5px 10px; }
+
+  /* QA 5-col → 2-col */
+  .slide[data-slide] .qa-card h3 { font-size: .78rem; }
+  .qa-check { font-size: .78rem; }
+
+  /* Nav */
+  .nav-bar { bottom: 6px; right: 10px; }
 }
+
 @media (max-width: 480px) {
+  .slide { padding: 12px 12px 20px; }
+  .slide-title { font-size: clamp(1rem, 5vw, 1.4rem); }
+  .slide-subtitle { font-size: .8rem; }
   .jira-board { grid-template-columns: 1fr; }
   .tech-grid { grid-template-columns: 1fr; }
   .sprint-features { grid-template-columns: 1fr 1fr; }
+  .sprint-feat { padding: 12px 8px; }
+  .sprint-feat .feat-icon { font-size: 1.6rem; }
+  .cover .slide-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+  .stat-row { grid-template-columns: repeat(3, 1fr); }
+  .stat-card { padding: 10px 6px; }
+  .stat-number { font-size: 1.4rem; }
+  .stat-label { font-size: .62rem; }
+  .role-avatar { width: 36px; height: 36px; font-size: .75rem; }
+  .role-header-text .role-person { font-size: 1.1rem; }
+
+  /* Bizagi stays stacked */
+  .bizagi-step { font-size: .72rem; }
+
+  /* QA 5-col grid → 2 col */
+  .slide[data-slide] > .slide-inner > .fill-grow > div[style*="repeat(5"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* Allow slide content to scroll when viewport is short */
+@media (max-height: 600px) {
+  .slide { overflow-y: auto; }
+  .slide-inner { min-height: auto; }
 }
 </style>
-</head>
-<body>
+</head><body>
 
 <!-- ===== SLIDE DECK ===== -->
 <div class="deck" id="deck">
@@ -649,105 +840,175 @@ body {
     </div>
   </div>
 
-  <!-- SLIDE 4: JULIETA — PROCESOS AS-IS / TO-BE -->
+  <!-- SLIDE 4: JULIETA — DATOS -->
   <div class="slide" data-slide="3">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Rol: Data Analyst & Data Engineer</div>
-      <div class="role-header">
+      <div class="slide-eyebrow">Rol: Data Analyst &amp; Data Engineer</div>
+      <div class="role-header" style="margin-bottom:4px;">
         <div class="role-avatar" style="background:linear-gradient(135deg,var(--teal),#0f766e);">JP</div>
         <div class="role-header-text">
           <div class="role-person">Julieta Pérez</div>
-          <div class="role-label" style="color:var(--teal);">Data Analyst & Data Engineer</div>
+          <div class="role-label" style="color:var(--teal);">Data Analyst &amp; Data Engineer</div>
         </div>
       </div>
-      <div class="slide-subtitle" style="font-size:1.05rem;">Modeló los procesos en Bizagi (AS-IS → TO-BE) y diseñó la infraestructura de datos: APIs, ETL y Data Warehouse.</div>
 
       <div class="fill-grow">
-        <div class="process-container">
-          <div class="process-box">
-            <h3>AS-IS <span style="font-size:.7rem;color:var(--text-muted);font-family:var(--body);font-weight:400;">(Bizagi)</span></h3>
-            <div class="process-step"><div class="dot" style="background:var(--red)"></div><span>Empleado registra venta a mano en Excel</span></div>
-            <div class="process-step"><div class="dot" style="background:var(--red)"></div><span>Planilla enviada por correo a administración</span></div>
-            <div class="process-step"><div class="dot" style="background:var(--red)"></div><span>Consolidación manual → datos duplicados e incompletos</span></div>
-            <div class="process-step"><div class="dot" style="background:var(--red)"></div><span>Días de demora para que gerencia reciba reportes</span></div>
+        <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:6px;">Modeló los procesos en Bizagi y diseñó la infraestructura de datos: del Excel manual al dashboard en tiempo real.</div>
+
+        <!-- AS-IS / TO-BE -->
+        <div class="bizagi-grid">
+          <div class="bizagi-col">
+            <div class="bizagi-header" style="background:#e8673a;">Proceso Actual (AS-IS)</div>
+            <div class="bizagi-steps">
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:#e8673a;">1</div>
+                <span>Cliente compra en el local físico</span>
+              </div>
+              <div class="bizagi-arrow" style="background:#e8673a;"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:#e8673a;">2</div>
+                <span>Empleado carga la venta a mano en Excel</span>
+              </div>
+              <div class="bizagi-arrow" style="background:#e8673a;"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:#e8673a;">3</div>
+                <span>La planilla se envía por correo a administración</span>
+              </div>
+              <div class="bizagi-arrow" style="background:#e8673a;"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:#e8673a;">4</div>
+                <span>Se consolidan archivos con datos duplicados/incompletos</span>
+              </div>
+              <div class="bizagi-arrow" style="background:#e8673a;"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:#e8673a;">5</div>
+                <span>Alguien corrige los errores manualmente</span>
+              </div>
+              <div class="bizagi-arrow" style="background:#e8673a;"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:#e8673a;">6</div>
+                <span>Un analista arma el reporte para gerencia</span>
+              </div>
+            </div>
           </div>
-          <div class="process-arrow">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="16" x2="26" y2="16"/><polyline points="20,10 26,16 20,22"/></svg>
-          </div>
-          <div class="process-box">
-            <h3>TO-BE</h3>
-            <div class="process-step"><div class="dot" style="background:var(--green)"></div><span>E-commerce registra la compra automáticamente</span></div>
-            <div class="process-step"><div class="dot" style="background:var(--green)"></div><span>APIs capturan datos + validación automática (Data Quality)</span></div>
-            <div class="process-step"><div class="dot" style="background:var(--green)"></div><span>Proceso ETL carga datos limpios al Data Warehouse</span></div>
-            <div class="process-step"><div class="dot" style="background:var(--green)"></div><span>Dashboard con KPIs en tiempo real para gerencia</span></div>
+          <div class="bizagi-col">
+            <div class="bizagi-header" style="background:var(--teal);">Proceso Automatizado (TO-BE)</div>
+            <div class="bizagi-steps">
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:var(--teal);">1</div>
+                <span>Cliente compra en el e-commerce</span>
+              </div>
+              <div class="bizagi-arrow" style="background:var(--teal);"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:var(--teal);">2</div>
+                <span>El sistema registra la venta automáticamente</span>
+              </div>
+              <div class="bizagi-arrow" style="background:var(--teal);"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:var(--teal);">3</div>
+                <span>Una API envía los datos al backend</span>
+              </div>
+              <div class="bizagi-arrow" style="background:var(--teal);"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:var(--teal);">4</div>
+                <span>Se valida la calidad de los datos al instante</span>
+              </div>
+              <div class="bizagi-arrow" style="background:var(--teal);"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:var(--teal);">5</div>
+                <span>Un proceso ETL centraliza todo en el Data Warehouse</span>
+              </div>
+              <div class="bizagi-arrow" style="background:var(--teal);"></div>
+              <div class="bizagi-step">
+                <div class="bizagi-num" style="background:var(--teal);">6</div>
+                <span>El Dashboard se actualiza en tiempo real</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px;text-align:center;">
-            <div style="font-size:1.1rem;margin-bottom:2px;">🔌</div>
-            <div style="font-size:.78rem;font-weight:600;color:var(--text);">APIs de captura</div>
-            <div style="font-size:.7rem;color:var(--text-muted);">Automatización de datos</div>
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px;text-align:center;">
-            <div style="font-size:1.1rem;margin-bottom:2px;">🔄</div>
-            <div style="font-size:.78rem;font-weight:600;color:var(--text);">ETL + Data Quality</div>
-            <div style="font-size:.7rem;color:var(--text-muted);">Validación y carga al DW</div>
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px;text-align:center;">
-            <div style="font-size:1.1rem;margin-bottom:2px;">📊</div>
-            <div style="font-size:.78rem;font-weight:600;color:var(--text);">Dashboard gerencial</div>
-            <div style="font-size:.7rem;color:var(--text-muted);">KPIs en tiempo real</div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 
-  <!-- SLIDE 5: JULIETA — JIRA + CRONOGRAMA -->
+  <!-- SLIDE 4: JULIETA — DASHBOARD DE GERENCIA -->
   <div class="slide" data-slide="4">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Data Analyst & Data Engineer — Planificación</div>
-      <div class="slide-title" style="font-size:clamp(1.2rem,2.8vw,1.6rem);margin-bottom:6px;">Épica de Datos y Cronograma</div>
+      <div class="slide-eyebrow">Data Analyst &amp; Data Engineer — Dashboard</div>
+      <div class="role-header" style="margin-bottom:4px;">
+        <div class="role-avatar" style="background:linear-gradient(135deg,var(--teal),#0f766e);">JP</div>
+        <div class="role-header-text">
+          <div class="role-person">Julieta Pérez</div>
+          <div class="role-label" style="color:var(--teal);">Data Analyst &amp; Data Engineer</div>
+        </div>
+      </div>
+
       <div class="fill-grow">
-        <div class="slide-subtitle" style="font-size:.95rem;margin-bottom:10px;">Las User Stories de infraestructura de datos y reportes analíticos, coordinadas en un cronograma de 3 meses.</div>
+        <div class="slide-subtitle" style="font-size:.95rem;margin-bottom:10px;">El resultado del proceso TO-BE: un dashboard gerencial con KPIs en tiempo real, alimentado por el motor de datos automatizado.</div>
 
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-          <!-- Jira column -->
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;">
-            <div style="font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--teal);margin-bottom:8px;">📋 Épica: Datos y Reportes</div>
-            <div style="background:var(--surface);border-radius:6px;padding:8px 10px;margin-bottom:6px;border-left:3px solid var(--teal);">
-              <div style="font-size:.85rem;font-weight:600;color:var(--text);">US 16 — Reporte de ventas</div>
-              <div style="font-size:.68rem;color:var(--text-muted);">Visualizar ventas por período y categoría</div>
-            </div>
-            <div style="background:var(--surface);border-radius:6px;padding:8px 10px;margin-bottom:6px;border-left:3px solid var(--teal);">
-              <div style="font-size:.85rem;font-weight:600;color:var(--text);">US 17 — Reporte de clientes</div>
-              <div style="font-size:.68rem;color:var(--text-muted);">Análisis de comportamiento de compra</div>
-            </div>
-            <div style="background:var(--surface);border-radius:6px;padding:8px 10px;border-left:3px solid var(--teal);">
-              <div style="font-size:.85rem;font-weight:600;color:var(--text);">US 18 — Dashboard gerencial</div>
-              <div style="font-size:.68rem;color:var(--text-muted);">KPIs con actualización automática</div>
-            </div>
+        <div style="font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--teal);margin-bottom:8px;">📊 Dashboard de Gerencia</div>
+        <div class="dash-tiles">
+          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);">
+            <div class="dash-tile-val">$1.240.000</div>
+            <div class="dash-tile-lbl">Ventas del mes</div>
           </div>
-
-          <!-- Cronograma column -->
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;">
-            <div style="font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--teal);margin-bottom:8px;">📅 Cronograma (MS Project)</div>
-            <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;">
-              <div style="background:var(--teal);color:#fff;font-size:.6rem;font-weight:700;padding:2px 6px;border-radius:4px;white-space:nowrap;margin-top:2px;">MES 1</div>
-              <div><div style="font-size:.82rem;font-weight:600;color:var(--text);">Análisis y diseño</div><div style="font-size:.72rem;color:var(--text-muted);">Diseño de la base de datos</div></div>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;">
-              <div style="background:var(--teal);color:#fff;font-size:.6rem;font-weight:700;padding:2px 6px;border-radius:4px;white-space:nowrap;margin-top:2px;">MES 2</div>
-              <div><div style="font-size:.82rem;font-weight:600;color:var(--text);">Desarrollo</div><div style="font-size:.72rem;color:var(--text-muted);">Integración con BD → 1.ª versión e-commerce</div></div>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;">
-              <div style="background:var(--teal);color:#fff;font-size:.6rem;font-weight:700;padding:2px 6px;border-radius:4px;white-space:nowrap;margin-top:2px;">MES 3</div>
-              <div><div style="font-size:.82rem;font-weight:600;color:var(--text);">Integración y pruebas</div><div style="font-size:.72rem;color:var(--text-muted);">Pruebas de API — flujo de datos sin fisuras</div></div>
-            </div>
-            <div style="background:var(--accent-soft);border-radius:6px;padding:6px 10px;font-size:.72rem;color:var(--accent);font-weight:600;">
-              ⚠️ Dependencia clave: Diseño de BD → Desarrollo Backend
-            </div>
+          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);">
+            <div class="dash-tile-val">186</div>
+            <div class="dash-tile-lbl">Clientes nuevos</div>
+          </div>
+          <div class="dash-tile" style="background:linear-gradient(135deg,#0d7a72,#0d9488);">
+            <div class="dash-tile-val">$18.300</div>
+            <div class="dash-tile-lbl">Ticket promedio</div>
+          </div>
+        </div>
+        <div class="dash-charts">
+          <div class="dash-chart">
+            <div class="dash-chart-title">Ventas por categoría</div>
+            <svg viewBox="0 0 220 115" style="width:100%;height:auto;display:block;">
+                <!-- grid lines -->
+                <line x1="10" y1="90" x2="210" y2="90" stroke="var(--divider)" stroke-width=".5"/>
+                <line x1="10" y1="47" x2="210" y2="47" stroke="var(--divider)" stroke-width=".3" stroke-dasharray="2"/>
+                <!-- bars -->
+                <rect x="22" y="11" width="32" height="79" rx="3" fill="var(--blue)" opacity=".85"/>
+                <rect x="72" y="31" width="32" height="59" rx="3" fill="var(--blue)" opacity=".85"/>
+                <rect x="122" y="56" width="32" height="34" rx="3" fill="var(--blue)" opacity=".85"/>
+                <rect x="172" y="28" width="32" height="62" rx="3" fill="var(--blue)" opacity=".85"/>
+                <!-- value labels -->
+                <text x="38" y="8" text-anchor="middle" font-size="6" font-weight="600" fill="var(--text-mid)">420.000</text>
+                <text x="88" y="28" text-anchor="middle" font-size="6" font-weight="600" fill="var(--text-mid)">310.000</text>
+                <text x="138" y="53" text-anchor="middle" font-size="6" font-weight="600" fill="var(--text-mid)">180.000</text>
+                <text x="188" y="25" text-anchor="middle" font-size="6" font-weight="600" fill="var(--text-mid)">330.000</text>
+                <!-- x labels -->
+                <text x="38" y="102" text-anchor="middle" font-size="5.5" fill="var(--text-muted)">Guitarras</text>
+                <text x="88" y="102" text-anchor="middle" font-size="5.5" fill="var(--text-muted)">Teclados</text>
+                <text x="138" y="102" text-anchor="middle" font-size="5.5" fill="var(--text-muted)">Percusión</text>
+                <text x="188" y="102" text-anchor="middle" font-size="5.5" fill="var(--text-muted)">Accesorios</text>
+              </svg>
+          </div>
+          <div class="dash-chart">
+            <div class="dash-chart-title">Evolución mensual de ventas</div>
+            <svg viewBox="0 0 220 115" style="width:100%;height:auto;display:block;">
+                <!-- grid lines -->
+                <line x1="10" y1="90" x2="210" y2="90" stroke="var(--divider)" stroke-width=".5"/>
+                <line x1="10" y1="60" x2="210" y2="60" stroke="var(--divider)" stroke-width=".3" stroke-dasharray="2"/>
+                <line x1="10" y1="30" x2="210" y2="30" stroke="var(--divider)" stroke-width=".3" stroke-dasharray="2"/>
+                <!-- area fill -->
+                <polygon points="45,90 45,72 110,50 185,30 185,90" fill="var(--teal)" opacity=".1"/>
+                <!-- line -->
+                <polyline points="45,72 110,50 185,30" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- dots -->
+                <circle cx="45" cy="72" r="3.5" fill="var(--teal)"/>
+                <circle cx="110" cy="50" r="3.5" fill="var(--teal)"/>
+                <circle cx="185" cy="30" r="3.5" fill="var(--teal)"/>
+                <!-- value labels -->
+                <text x="45" y="66" text-anchor="middle" font-size="6" font-weight="600" fill="var(--text-mid)">980.000</text>
+                <text x="110" y="44" text-anchor="middle" font-size="6" font-weight="600" fill="var(--text-mid)">1.120.000</text>
+                <text x="185" y="24" text-anchor="middle" font-size="6" font-weight="600" fill="var(--text-mid)">1.240.000</text>
+                <!-- x labels -->
+                <text x="45" y="102" text-anchor="middle" font-size="5.5" fill="var(--text-muted)">Enero</text>
+                <text x="110" y="102" text-anchor="middle" font-size="5.5" fill="var(--text-muted)">Febrero</text>
+                <text x="185" y="102" text-anchor="middle" font-size="5.5" fill="var(--text-muted)">Marzo</text>
+              </svg>
           </div>
         </div>
       </div>
@@ -1164,7 +1425,7 @@ body {
 <!-- NAV -->
 <div class="nav-bar">
   <button class="nav-btn" id="prevBtn" title="Anterior">‹</button>
-  <span id="slideCounter">1 / 12</span>
+  <span id="slideCounter">1 / 14</span>
   <button class="nav-btn" id="nextBtn" title="Siguiente">›</button>
 </div>
 
@@ -1207,5 +1468,5 @@ document.addEventListener("DOMContentLoaded", () => {
   goTo(0);
 });
 </script>
-</body>
-</html>
+
+</body></html>
