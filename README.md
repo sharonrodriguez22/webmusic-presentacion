@@ -4,6 +4,8 @@ Presentación interactiva del TP1 de **Práctica Profesionalizante I** — IFTS 
 
 WebMusic Solutions es un proyecto de transformación digital para una tienda de instrumentos musicales: del mostrador físico con gestión manual en Excel a un e-commerce completo con backend automatizado, Data Warehouse y dashboard gerencial en tiempo real.
 
+La presentación incluye 22 diapositivas: MVP del e-commerce, análisis estratégico (FODA, BCG), dimensionamiento de mercado (TAM/SAM/SOM), estrategia de adopción, análisis financiero (presupuesto, break-even), y el detalle por rol del equipo Scrum.
+
 ## Equipo
 
 | Integrante | Rol |

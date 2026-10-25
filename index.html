@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WebMusic — Exposición TP1</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="styles.css">
-</head><body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebMusic Solutions — TP1 PPI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
 <!-- ===== SLIDE DECK ===== -->
 <div class="deck" id="deck">
@@ -59,8 +62,188 @@
     </div>
   </div>
 
-  <!-- SLIDE 3: NICOLÁS — PRODUCT OWNER -->
+
+  <!-- SLIDE: MATRIZ FODA -->
   <div class="slide" data-slide="2">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Análisis Estratégico</div>
+      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Matriz FODA</div>
+      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">Análisis del contexto estratégico de WebMusic en la adopción de herramientas de IA para automatización.</div>
+      <div class="fill-grow">
+        <div class="foda-grid">
+          <div class="foda-cell" style="border-top:3px solid var(--green);">
+            <h3 style="color:var(--green);">Fortalezas</h3>
+            <div class="foda-item"><div class="dot" style="background:var(--green);"></div><span>MVP e-commerce funcional con catálogo, filtros y búsqueda</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--green);"></div><span>Equipo con roles Scrum definidos y metodología híbrida</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--green);"></div><span>Proceso TO-BE automatizado con pipeline de datos</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--green);"></div><span>Arquitectura modular (HTML/CSS/JS separados, API REST)</span></div>
+          </div>
+          <div class="foda-cell" style="border-top:3px solid var(--blue);">
+            <h3 style="color:var(--blue);">Oportunidades</h3>
+            <div class="foda-item"><div class="dot" style="background:var(--blue);"></div><span>Mercado de instrumentos online en LATAM con baja competencia especializada</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--blue);"></div><span>APIs de IA (Document Intelligence) para catalogación automática</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--blue);"></div><span>Tendencia de automatización documental reduce costos operativos</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--blue);"></div><span>E-commerce crece +22% anual en Argentina (CACE 2025)</span></div>
+          </div>
+          <div class="foda-cell" style="border-top:3px solid var(--orange);">
+            <h3 style="color:var(--orange);">Debilidades</h3>
+            <div class="foda-item"><div class="dot" style="background:var(--orange);"></div><span>Marca sin reconocimiento — competir contra marketplaces establecidos</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--orange);"></div><span>Equipo académico sin presupuesto real de producción</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--orange);"></div><span>Dependencia de APIs de terceros con costos variables</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--orange);"></div><span>Base de datos de productos inicial limitada</span></div>
+          </div>
+          <div class="foda-cell" style="border-top:3px solid var(--red);">
+            <h3 style="color:var(--red);">Amenazas</h3>
+            <div class="foda-item"><div class="dot" style="background:var(--red);"></div><span>MercadoLibre y marketplaces con ecosistema consolidado</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--red);"></div><span>Cambios regulatorios en e-commerce y protección de datos</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--red);"></div><span>Volatilidad de costos de servicios cloud y APIs de IA</span></div>
+            <div class="foda-item"><div class="dot" style="background:var(--red);"></div><span>Resistencia al cambio de usuarios del proceso manual</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: MATRIZ BCG -->
+  <div class="slide" data-slide="3">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Análisis Estratégico</div>
+      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Matriz BCG</div>
+      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">Clasificación de productos y funcionalidades según participación de mercado y tasa de crecimiento.</div>
+      <div class="fill-grow">
+        <div style="display:grid;grid-template-columns:auto 1fr 1fr;grid-template-rows:auto 1fr 1fr;gap:0;margin-top:8px;">
+          <!-- Y-axis label -->
+          <div style="grid-row:2/4;display:flex;align-items:center;justify-content:center;padding-right:8px;">
+            <div style="writing-mode:vertical-rl;transform:rotate(180deg);font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted);">Tasa de crecimiento</div>
+          </div>
+          <!-- X-axis labels -->
+          <div></div>
+          <div style="text-align:center;padding-bottom:4px;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);">Alta participación</div>
+          <div style="text-align:center;padding-bottom:4px;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);">Baja participación</div>
+          <!-- Star -->
+          <div class="bcg-cell" style="border-top:3px solid var(--accent);border-right:1px dashed var(--divider);border-bottom:1px dashed var(--divider);border-radius:10px 0 0 0;">
+            <div class="bcg-icon">⭐</div>
+            <h3 style="color:var(--accent);">Estrella</h3>
+            <div style="font-size:.9rem;font-weight:600;color:var(--text);margin-bottom:2px;">Catálogo e-commerce</div>
+            <p>Alto crecimiento y alta participación. Core del MVP. Genera tracción y visibilidad.</p>
+          </div>
+          <!-- Question mark -->
+          <div class="bcg-cell" style="border-top:3px solid var(--purple);border-bottom:1px dashed var(--divider);border-radius:0 10px 0 0;">
+            <div class="bcg-icon">❓</div>
+            <h3 style="color:var(--purple);">Interrogación</h3>
+            <div style="font-size:.9rem;font-weight:600;color:var(--text);margin-bottom:2px;">Motor IA documental</div>
+            <p>Alto potencial pero adopción incipiente. Requiere inversión en APIs de Document Intelligence.</p>
+          </div>
+          <!-- Cash cow -->
+          <div class="bcg-cell" style="border-right:1px dashed var(--divider);border-radius:0 0 0 10px;">
+            <div class="bcg-icon">🐄</div>
+            <h3 style="color:var(--green);">Vaca lechera</h3>
+            <div style="font-size:.9rem;font-weight:600;color:var(--text);margin-bottom:2px;">Filtros y búsqueda</div>
+            <p>Funcionalidad madura y estable. Genera valor constante sin inversión adicional significativa.</p>
+          </div>
+          <!-- Dog -->
+          <div class="bcg-cell" style="border-radius:0 0 10px 0;">
+            <div class="bcg-icon">🐕</div>
+            <h3 style="color:var(--text-muted);">Perro</h3>
+            <div style="font-size:.9rem;font-weight:600;color:var(--text);margin-bottom:2px;">Proceso manual (AS-IS)</div>
+            <p>Sin crecimiento ni participación. En proceso de eliminación con la migración al TO-BE.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: TAM/SAM/SOM -->
+  <div class="slide" data-slide="4">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Impacto en el Mercado</div>
+      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Estimación del Mercado Objetivo</div>
+      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">TAM / SAM / SOM — dimensionamiento del mercado de instrumentos musicales online.</div>
+      <div class="fill-grow">
+        <div class="tam-container">
+          <!-- Concentric circles -->
+          <div class="tam-circles">
+            <div class="tam-circle" style="width:280px;height:280px;background:var(--blue-bg);border:2px solid var(--blue);top:0;left:0;">
+              <span style="position:absolute;top:12px;font-size:.65rem;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:1px;">TAM</span>
+            </div>
+            <div class="tam-circle" style="width:190px;height:190px;background:var(--teal-bg);border:2px solid var(--teal);top:45px;left:45px;">
+              <span style="position:absolute;top:10px;font-size:.65rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:1px;">SAM</span>
+            </div>
+            <div class="tam-circle" style="width:100px;height:100px;background:var(--accent-soft);border:2px solid var(--accent);top:90px;left:90px;">
+              <span style="font-size:.65rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;">SOM</span>
+            </div>
+          </div>
+          <!-- Details -->
+          <div class="tam-details">
+            <div class="tam-detail-card" style="border-left:3px solid var(--blue);">
+              <h4 style="color:var(--blue);">TAM — Total Addressable Market</h4>
+              <div class="tam-val">USD 4.200 M</div>
+              <p>Mercado global de instrumentos musicales online (2026). Incluye todos los segmentos y canales digitales.</p>
+            </div>
+            <div class="tam-detail-card" style="border-left:3px solid var(--teal);">
+              <h4 style="color:var(--teal);">SAM — Serviceable Addressable Market</h4>
+              <div class="tam-val">USD 320 M</div>
+              <p>E-commerce de instrumentos en LATAM. Mercado al que WebMusic puede dirigirse geográfica y logísticamente.</p>
+            </div>
+            <div class="tam-detail-card" style="border-left:3px solid var(--accent);">
+              <h4 style="color:var(--accent);">SOM — Serviceable Obtainable Market</h4>
+              <div class="tam-val">USD 480 K</div>
+              <p>Captura realista año 1 en CABA/GBA (0,15% del SAM). Meta: 400 transacciones/mes promedio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: GESTIÓN DEL CAMBIO -->
+  <div class="slide" data-slide="5">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Impacto en el Mercado</div>
+      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Estrategia de Adopción</div>
+      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">Gestión del cambio para la transición del proceso manual al e-commerce automatizado con IA.</div>
+      <div class="fill-grow">
+        <div class="adoption-flow">
+          <div class="adoption-phase" style="border-top:3px solid var(--blue);">
+            <div class="phase-num" style="background:var(--blue);">1</div>
+            <h3>Concientización</h3>
+            <p>Presentar los beneficios del e-commerce y la automatización al equipo de la tienda. Identificar resistencias.</p>
+            <div style="margin-top:6px;font-size:.68rem;color:var(--accent);font-weight:600;">Mes 1–2</div>
+          </div>
+          <div class="adoption-phase" style="border-top:3px solid var(--teal);">
+            <div class="phase-num" style="background:var(--teal);">2</div>
+            <h3>Capacitación</h3>
+            <p>Formación en el uso del panel de administración y carga de productos. Documentación paso a paso.</p>
+            <div style="margin-top:6px;font-size:.68rem;color:var(--accent);font-weight:600;">Mes 2–3</div>
+          </div>
+          <div class="adoption-phase" style="border-top:3px solid var(--purple);">
+            <div class="phase-num" style="background:var(--purple);">3</div>
+            <h3>Rollout gradual</h3>
+            <p>Lanzamiento piloto con 20% del catálogo. Operación paralela con el proceso manual existente.</p>
+            <div style="margin-top:6px;font-size:.68rem;color:var(--accent);font-weight:600;">Mes 3–4</div>
+          </div>
+          <div class="adoption-phase" style="border-top:3px solid var(--green);">
+            <div class="phase-num" style="background:var(--green);">4</div>
+            <h3>Optimización</h3>
+            <p>Migración completa. Activación del motor IA para automatización documental. KPIs de adopción.</p>
+            <div style="margin-top:6px;font-size:.68rem;color:var(--accent);font-weight:600;">Mes 5–6</div>
+          </div>
+        </div>
+        <div style="margin-top:10px;background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 14px;">
+          <div style="font-size:.82rem;font-weight:600;color:var(--text);margin-bottom:4px;">KPIs de adopción objetivo</div>
+          <div style="display:flex;gap:20px;flex-wrap:wrap;font-size:.78rem;color:var(--text-mid);">
+            <span><strong style="color:var(--accent);">80%</strong> del catálogo digitalizado en 4 meses</span>
+            <span><strong style="color:var(--accent);">100%</strong> operadores capacitados en 3 meses</span>
+            <span><strong style="color:var(--accent);">-60%</strong> reducción de errores manuales</span>
+            <span><strong style="color:var(--accent);">-75%</strong> tiempo de generación de reportes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: NICOLÁS — PRODUCT OWNER -->
+  <div class="slide" data-slide="6">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: Product Owner</div>
       <div class="role-header">
@@ -117,7 +300,7 @@
   </div>
 
   <!-- SLIDE 4: JULIETA — DATOS -->
-  <div class="slide" data-slide="3">
+  <div class="slide" data-slide="7">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: Data Analyst &amp; Data Engineer</div>
       <div class="role-header" style="margin-bottom:4px;">
@@ -208,7 +391,7 @@
   </div>
 
   <!-- SLIDE 5: JULIETA — DIAGRAMA BIZAGI TO-BE -->
-  <div class="slide" data-slide="4">
+  <div class="slide" data-slide="8">
     <div class="slide-inner">
       <div class="slide-eyebrow">Data Analyst &amp; Data Engineer — Bizagi</div>
       <div class="role-header" style="margin-bottom:4px;">
@@ -229,7 +412,7 @@
   </div>
 
   <!-- SLIDE 4: JULIETA — DASHBOARD DE GERENCIA -->
-  <div class="slide" data-slide="5">
+  <div class="slide" data-slide="9">
     <div class="slide-inner">
       <div class="slide-eyebrow">Data Analyst &amp; Data Engineer — Dashboard</div>
       <div class="role-header" style="margin-bottom:4px;">
@@ -314,7 +497,7 @@
 
 
   <!-- SLIDE 5: KEVIN — PROJECT MANAGER -->
-  <div class="slide" data-slide="6">
+  <div class="slide" data-slide="10">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: Project Manager</div>
       <div class="role-header">
@@ -353,7 +536,7 @@
   </div>
 
   <!-- SLIDE 6: KEVIN — MS PROJECT + TRAZABILIDAD -->
-  <div class="slide" data-slide="7">
+  <div class="slide" data-slide="11">
     <div class="slide-inner">
       <div class="slide-eyebrow">Project Manager — Gobernanza</div>
       <div class="slide-title" style="font-size:clamp(1.2rem,2.8vw,1.6rem);margin-bottom:6px;">MS Project y Trazabilidad</div>
@@ -417,7 +600,7 @@
 
 
   <!-- SLIDE 8: KEVIN — DIAGRAMA DE GANTT -->
-  <div class="slide" data-slide="8">
+  <div class="slide" data-slide="12">
     <div class="slide-inner">
       <div class="slide-eyebrow">Project Manager — MS Project</div>
       <div class="role-header" style="margin-bottom:4px;">
@@ -437,8 +620,107 @@
     </div>
   </div>
 
+  <!-- SLIDE: ANÁLISIS FINANCIERO -->
+  <div class="slide" data-slide="13">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Viabilidad de Negocio</div>
+      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Presupuesto y Monetización</div>
+      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">Estructura de costos operativos y esquema de ingresos para el primer año de operación.</div>
+      <div class="fill-grow">
+        <div class="finance-grid">
+          <div class="finance-card" style="border-top:3px solid var(--red);">
+            <h3 style="color:var(--red);">💰 Presupuesto mensual</h3>
+            <div class="finance-item"><span>Hosting cloud (AWS/Vercel)</span><span class="finance-val">USD 150</span></div>
+            <div class="finance-item"><span>APIs IA — Document Intelligence</span><span class="finance-val">USD 200</span></div>
+            <div class="finance-item"><span>Dominio + SSL + CDN</span><span class="finance-val">USD 25</span></div>
+            <div class="finance-item"><span>Pasarela de pagos (fee fijo)</span><span class="finance-val">USD 50</span></div>
+            <div class="finance-item"><span>Marketing digital</span><span class="finance-val">USD 300</span></div>
+            <div class="finance-item"><span>Mantenimiento y soporte</span><span class="finance-val">USD 125</span></div>
+            <div class="finance-total"><span>Costo fijo total</span><span>USD 850/mes</span></div>
+          </div>
+          <div class="finance-card" style="border-top:3px solid var(--green);">
+            <h3 style="color:var(--green);">📈 Esquema de monetización</h3>
+            <div class="finance-item"><span>Comisión por venta</span><span class="finance-val" style="color:var(--green);">8%</span></div>
+            <div class="finance-item"><span>Suscripción premium vendedor</span><span class="finance-val" style="color:var(--green);">USD 15/mes</span></div>
+            <div class="finance-item"><span>Publicación destacada</span><span class="finance-val" style="color:var(--green);">USD 5/prod</span></div>
+            <div class="finance-item"><span>Reportes avanzados (IA)</span><span class="finance-val" style="color:var(--green);">USD 25/mes</span></div>
+            <div style="margin-top:10px;font-size:.78rem;color:var(--text-mid);line-height:1.5;">
+              <div style="margin-bottom:3px;"><strong>Ingreso promedio por transacción:</strong></div>
+              Venta promedio USD 150 × 8% comisión = <strong style="color:var(--accent);">USD 12</strong> por transacción
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: PUNTO DE EQUILIBRIO -->
+  <div class="slide" data-slide="14">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Viabilidad de Negocio</div>
+      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Punto de Equilibrio (Break-even)</div>
+      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">Cálculo formal: volumen de transacciones necesario para cubrir los costos operativos mensuales.</div>
+      <div class="fill-grow">
+        <div class="breakeven-row">
+          <div class="breakeven-chart">
+            <div style="font-size:.78rem;font-weight:600;color:var(--text);margin-bottom:8px;text-align:center;">Ingresos vs. Costos (proyección mensual)</div>
+            <svg viewBox="0 0 400 220" style="width:100%;height:auto;">
+              <line x1="50" y1="20" x2="50" y2="190" stroke="var(--divider)" stroke-width="1"/>
+              <line x1="50" y1="190" x2="380" y2="190" stroke="var(--divider)" stroke-width="1"/>
+              <text x="45" y="25" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$1700</text>
+              <text x="45" y="62" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$1275</text>
+              <text x="45" y="100" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$850</text>
+              <text x="45" y="145" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$425</text>
+              <text x="45" y="193" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$0</text>
+              <text x="50" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">0</text>
+              <text x="116" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">25</text>
+              <text x="182" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">50</text>
+              <text x="248" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">75</text>
+              <text x="314" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">100</text>
+              <text x="380" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">125</text>
+              <text x="215" y="218" text-anchor="middle" fill="var(--text-muted)" font-size="8" font-family="var(--body)">Transacciones / mes</text>
+              <line x1="50" y1="100" x2="380" y2="100" stroke="var(--divider)" stroke-width="0.5" stroke-dasharray="4"/>
+              <line x1="50" y1="62" x2="380" y2="62" stroke="var(--divider)" stroke-width="0.5" stroke-dasharray="4"/>
+              <line x1="50" y1="145" x2="380" y2="145" stroke="var(--divider)" stroke-width="0.5" stroke-dasharray="4"/>
+              <line x1="50" y1="100" x2="380" y2="100" stroke="var(--red)" stroke-width="2"/>
+              <text x="385" y="103" fill="var(--red)" font-size="8" font-family="var(--body)">Costos</text>
+              <line x1="50" y1="190" x2="380" y2="10" stroke="var(--green)" stroke-width="2"/>
+              <text x="385" y="13" fill="var(--green)" font-size="8" font-family="var(--body)">Ingresos</text>
+              <circle cx="236" cy="100" r="5" fill="var(--accent)" stroke="var(--card)" stroke-width="2"/>
+              <text x="236" y="90" text-anchor="middle" fill="var(--accent)" font-size="9" font-weight="700" font-family="var(--body)">Break-even</text>
+              <text x="236" y="80" text-anchor="middle" fill="var(--accent)" font-size="8" font-family="var(--body)">71 txns</text>
+              <polygon points="236,100 380,100 380,10" fill="var(--green)" opacity="0.08"/>
+            </svg>
+          </div>
+          <div class="breakeven-kpis">
+            <div class="breakeven-kpi" style="border-top:3px solid var(--accent);">
+              <div class="kpi-val">71</div>
+              <div class="kpi-label">Transacciones / mes</div>
+              <div style="font-size:.72rem;color:var(--text-mid);margin-top:4px;">Punto de equilibrio: $850 ÷ $12/txn</div>
+            </div>
+            <div class="breakeven-kpi" style="border-top:3px solid var(--green);">
+              <div class="kpi-val">USD 850</div>
+              <div class="kpi-label">Costos fijos mensuales</div>
+              <div style="font-size:.72rem;color:var(--text-mid);margin-top:4px;">Cloud + APIs IA + Marketing + Soporte</div>
+            </div>
+            <div class="breakeven-kpi" style="border-top:3px solid var(--blue);">
+              <div class="kpi-val">USD 12</div>
+              <div class="kpi-label">Ingreso por transacción</div>
+              <div style="font-size:.72rem;color:var(--text-mid);margin-top:4px;">8% comisión sobre venta promedio de $150</div>
+            </div>
+            <div class="breakeven-kpi" style="border-top:3px solid var(--purple);">
+              <div class="kpi-val">Mes 5</div>
+              <div class="kpi-label">Meta de break-even</div>
+              <div style="font-size:.72rem;color:var(--text-mid);margin-top:4px;">Alineado con el rollout gradual del catálogo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- SLIDE 7: BRUNO — SCRUM MASTER (Backlog completo) -->
-  <div class="slide" data-slide="9" style="padding:20px 48px 24px;">
+  <div class="slide" data-slide="15" style="padding:20px 48px 24px;">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: Scrum Master</div>
       <div class="role-header" style="margin-bottom:6px;">
@@ -452,31 +734,31 @@
 
       <table class="backlog-table backlog-compact">
         <thead>
-          <tr><th>HU</th><th>Título</th><th>Prioridad</th><th>Sprint</th></tr>
+          <tr><th>HU</th><th>Título</th><th>SP</th><th>Prioridad</th><th>Sprint</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>HU 01</strong></td><td>Registro de usuario</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>—</td></tr>
-          <tr><td><strong>HU 02</strong></td><td>Inicio de sesión</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>—</td></tr>
-          <tr><td><strong>HU 03</strong></td><td>Recuperar contraseña</td><td><span class="priority-badge" style="background:var(--blue-bg);color:var(--blue);">Could</span></td><td>—</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 04</strong></td><td>Visualización de productos</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 05</strong></td><td>Filtro por categoría</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 06</strong></td><td>Búsqueda de productos</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 07</strong></td><td>Detalle de producto</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 08</strong></td><td>Gestión de stock</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
-          <tr><td><strong>HU 09</strong></td><td>Carrito de compras</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td></tr>
-          <tr><td><strong>HU 10</strong></td><td>Checkout y pagos</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td></tr>
+          <tr><td><strong>HU 01</strong></td><td>Registro de usuario</td><td>3</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>—</td></tr>
+          <tr><td><strong>HU 02</strong></td><td>Inicio de sesión</td><td>3</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>—</td></tr>
+          <tr><td><strong>HU 03</strong></td><td>Recuperar contraseña</td><td>2</td><td><span class="priority-badge" style="background:var(--blue-bg);color:var(--blue);">Could</span></td><td>—</td></tr>
+          <tr style="background:var(--accent-soft);"><td><strong>HU 04</strong></td><td>Visualización de productos</td><td>5</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
+          <tr style="background:var(--accent-soft);"><td><strong>HU 05</strong></td><td>Filtro por categoría</td><td>3</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
+          <tr style="background:var(--accent-soft);"><td><strong>HU 06</strong></td><td>Búsqueda de productos</td><td>5</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
+          <tr style="background:var(--accent-soft);"><td><strong>HU 07</strong></td><td>Detalle de producto</td><td>3</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
+          <tr style="background:var(--accent-soft);"><td><strong>HU 08</strong></td><td>Gestión de stock</td><td>5</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td></tr>
+          <tr><td><strong>HU 09</strong></td><td>Carrito de compras</td><td>8</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td></tr>
+          <tr><td><strong>HU 10</strong></td><td>Checkout y pagos</td><td>13</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td></tr>
         </tbody>
       </table>
 
       <div style="margin-top:6px;display:flex;align-items:center;justify-content:space-between;">
-        <div style="font-size:.62rem;color:var(--text-muted);">Se priorizó con MoSCoW. Filas resaltadas = Sprint 1 (Must Have).</div>
+        <div style="font-size:.62rem;color:var(--text-muted);">Priorización MoSCoW · SP = Story Points (complejidad relativa, no horas). Sprint 1 velocity: 21 SP.</div>
         <a href="https://sharonrodrigz251.atlassian.net/jira/software/projects/SCRUM/boards/1?filter=&amp;groupBy=none" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--blue);">📋 Ver tablero en Jira</a>
       </div>
     </div>
   </div>
 
   <!-- SLIDE 8: BRUNO — JIRA SPRINT 1 -->
-  <div class="slide" data-slide="10" style="padding:20px 48px 24px;">
+  <div class="slide" data-slide="16" style="padding:20px 48px 24px;">
     <div class="slide-inner">
       <div class="slide-eyebrow">Scrum Master — Sprint 1</div>
       <div class="slide-title" style="font-size:clamp(1.2rem,2.8vw,1.6rem);margin-bottom:6px;">Tablero Jira — Sprint 1</div>
@@ -519,7 +801,7 @@
   </div>
 
   <!-- SLIDE 9: SHARON — DESARROLLADORA -->
-  <div class="slide" data-slide="11">
+  <div class="slide" data-slide="17">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: Desarrolladora</div>
       <div class="role-header">
@@ -574,7 +856,7 @@
   </div>
 
   <!-- SLIDE 10: SHARON — QUÉ HICE Y CÓMO -->
-  <div class="slide" data-slide="12">
+  <div class="slide" data-slide="18">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: Desarrolladora</div>
       <div class="role-header">
@@ -619,7 +901,7 @@
   </div>
 
   <!-- SLIDE 11: MORENA — QA -->
-  <div class="slide" data-slide="13">
+  <div class="slide" data-slide="19">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: QA Tester</div>
       <div class="role-header">
@@ -679,7 +961,7 @@
   </div>
 
   <!-- SLIDE 12: SPRINT 1 RESULTADO -->
-  <div class="slide" data-slide="14">
+  <div class="slide" data-slide="20">
     <div class="slide-inner">
       <div class="slide-eyebrow">Sprint 1 — Resultado</div>
       <div class="slide-title">E-commerce funcional</div>
@@ -720,7 +1002,7 @@
   </div>
 
   <!-- SLIDE 13: CIERRE -->
-  <div class="slide closing" data-slide="15">
+  <div class="slide closing" data-slide="21">
     <div class="slide-inner">
       <div class="cover-logo" style="width:72px;height:72px;font-size:2rem;border-radius:18px;margin-bottom:28px;">♪</div>
       <div class="slide-title" style="font-size:clamp(2.4rem,5vw,3.4rem);">Gracias</div>
@@ -745,10 +1027,10 @@
 <!-- NAV -->
 <div class="nav-bar">
   <button class="nav-btn" id="prevBtn" title="Anterior">‹</button>
-  <span id="slideCounter">1 / 16</span>
+  <span id="slideCounter">1 / 22</span>
   <button class="nav-btn" id="nextBtn" title="Siguiente">›</button>
 </div>
 
 <script src="script.js"></script>
-
-</body></html>
+</body>
+</html>
