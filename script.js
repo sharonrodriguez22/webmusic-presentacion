@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".slide");
   const total = slides.length;
