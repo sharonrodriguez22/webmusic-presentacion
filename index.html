@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebMusic — Exposición TP1</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+  <title>WebMusic Solutions — Presentación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<title>WebMusic — Exposición TP1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+
+
+
 <!-- ===== SLIDE DECK ===== -->
 <div class="deck" id="deck">
 
@@ -33,54 +38,72 @@
     </div>
   </div>
 
-  <!-- SLIDE: EQUIPO Y ROLES -->
+  <!-- SLIDE: EQUIPO, MISIÓN Y CAPACITACIÓN -->
   <div class="slide" data-slide="1">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Nuestro Equipo</div>
-      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:8px;">Roles y responsabilidades</div>
-      <div class="fill-grow">
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--blue);">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-              <div class="role-avatar" style="background:linear-gradient(135deg,var(--blue),#1d4ed8);width:36px;height:36px;font-size:.7rem;">NP</div>
-              <div><div style="font-size:.85rem;font-weight:600;color:var(--text);">Nicolás Peñuela</div><div style="font-size:.68rem;color:var(--blue);font-weight:600;">Product Owner</div></div>
-            </div>
-            <div style="font-size:.75rem;color:var(--text-mid);line-height:1.5;">Definió la visión del producto, priorizó el backlog con MoSCoW y validó cada entrega con criterios de aceptación.</div>
+      <div class="slide-eyebrow">Recursos Humanos</div>
+      <div class="slide-title" style="font-size:clamp(1.2rem,2.6vw,1.7rem);margin-bottom:6px;">Equipo, Misión y Capacitación</div>
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:10px;">
+        <!-- ROLE CARDS - compact -->
+        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 8px;border-top:3px solid var(--blue);text-align:center;">
+            <div class="role-avatar" style="background:linear-gradient(135deg,var(--blue),#1d4ed8);width:32px;height:32px;font-size:.6rem;margin:0 auto 4px;">NP</div>
+            <div style="font-size:.7rem;font-weight:600;color:var(--text);line-height:1.2;">Nicolás Peñuela</div>
+            <div style="font-size:.58rem;color:var(--blue);font-weight:600;margin-top:2px;">Product Owner</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--purple);">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-              <div class="role-avatar" style="background:linear-gradient(135deg,var(--purple),#6d28d9);width:36px;height:36px;font-size:.7rem;">KC</div>
-              <div><div style="font-size:.85rem;font-weight:600;color:var(--text);">Kevin Cáceres</div><div style="font-size:.68rem;color:var(--purple);font-weight:600;">Project Manager</div></div>
-            </div>
-            <div style="font-size:.75rem;color:var(--text-mid);line-height:1.5;">Planificó el proyecto con enfoque híbrido: cronograma Gantt en MS Project y ejecución ágil con Scrum.</div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 8px;border-top:3px solid var(--purple);text-align:center;">
+            <div class="role-avatar" style="background:linear-gradient(135deg,var(--purple),#6d28d9);width:32px;height:32px;font-size:.6rem;margin:0 auto 4px;">KC</div>
+            <div style="font-size:.7rem;font-weight:600;color:var(--text);line-height:1.2;">Kevin Cáceres</div>
+            <div style="font-size:.58rem;color:var(--purple);font-weight:600;margin-top:2px;">Project Manager</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--teal);">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-              <div class="role-avatar" style="background:linear-gradient(135deg,var(--teal),#0f766e);width:36px;height:36px;font-size:.7rem;">JP</div>
-              <div><div style="font-size:.85rem;font-weight:600;color:var(--text);">Julieta Pérez</div><div style="font-size:.68rem;color:var(--teal);font-weight:600;">Data Analyst & Data Engineer</div></div>
-            </div>
-            <div style="font-size:.75rem;color:var(--text-mid);line-height:1.5;">Modeló procesos AS-IS/TO-BE en Bizagi, diseñó el ETL hacia el Data Warehouse y armó el dashboard gerencial.</div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 8px;border-top:3px solid var(--teal);text-align:center;">
+            <div class="role-avatar" style="background:linear-gradient(135deg,var(--teal),#0f766e);width:32px;height:32px;font-size:.6rem;margin:0 auto 4px;">JP</div>
+            <div style="font-size:.7rem;font-weight:600;color:var(--text);line-height:1.2;">Julieta Pérez</div>
+            <div style="font-size:.58rem;color:var(--teal);font-weight:600;margin-top:2px;">Data Analyst</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--orange);">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-              <div class="role-avatar" style="background:linear-gradient(135deg,var(--orange),#a3580a);width:36px;height:36px;font-size:.7rem;">BS</div>
-              <div><div style="font-size:.85rem;font-weight:600;color:var(--text);">Bruno Sosa</div><div style="font-size:.68rem;color:var(--orange);font-weight:600;">Scrum Master</div></div>
-            </div>
-            <div style="font-size:.75rem;color:var(--text-mid);line-height:1.5;">Facilitó las ceremonias Scrum, organizó los sprints y mantuvo el backlog actualizado con Story Points.</div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 8px;border-top:3px solid var(--orange);text-align:center;">
+            <div class="role-avatar" style="background:linear-gradient(135deg,var(--orange),#a3580a);width:32px;height:32px;font-size:.6rem;margin:0 auto 4px;">BS</div>
+            <div style="font-size:.7rem;font-weight:600;color:var(--text);line-height:1.2;">Bruno Sosa</div>
+            <div style="font-size:.58rem;color:var(--orange);font-weight:600;margin-top:2px;">Scrum Master</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--green);">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-              <div class="role-avatar" style="background:linear-gradient(135deg,var(--green),#1a6328);width:36px;height:36px;font-size:.7rem;">SR</div>
-              <div><div style="font-size:.85rem;font-weight:600;color:var(--text);">Sharon Rodríguez</div><div style="font-size:.68rem;color:var(--green);font-weight:600;">Developer</div></div>
-            </div>
-            <div style="font-size:.75rem;color:var(--text-mid);line-height:1.5;">Desarrolló el e-commerce completo con HTML, CSS y JS separados. Responsive, dark mode y deploy en GitHub Pages.</div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 8px;border-top:3px solid var(--green);text-align:center;">
+            <div class="role-avatar" style="background:linear-gradient(135deg,var(--green),#1a6328);width:32px;height:32px;font-size:.6rem;margin:0 auto 4px;">SR</div>
+            <div style="font-size:.7rem;font-weight:600;color:var(--text);line-height:1.2;">Sharon Rodríguez</div>
+            <div style="font-size:.58rem;color:var(--green);font-weight:600;margin-top:2px;">Developer</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--red);">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-              <div class="role-avatar" style="background:linear-gradient(135deg,var(--red),#b91c1c);width:36px;height:36px;font-size:.7rem;">MC</div>
-              <div><div style="font-size:.85rem;font-weight:600;color:var(--text);">Morena Cardozo</div><div style="font-size:.68rem;color:var(--red);font-weight:600;">QA Tester</div></div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 8px;border-top:3px solid var(--red);text-align:center;">
+            <div class="role-avatar" style="background:linear-gradient(135deg,var(--red),#b91c1c);width:32px;height:32px;font-size:.6rem;margin:0 auto 4px;">MC</div>
+            <div style="font-size:.7rem;font-weight:600;color:var(--text);line-height:1.2;">Morena Cardozo</div>
+            <div style="font-size:.58rem;color:var(--red);font-weight:600;margin-top:2px;">QA Tester</div>
+          </div>
+        </div>
+        <!-- MISIÓN, VISIÓN, VALORES + CAPTACIÓN + CAPACITACIÓN -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <!-- Left column: Misión, Visión, Valores -->
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 14px;border-left:3px solid var(--accent);">
+              <div style="font-size:.7rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px;">Misión</div>
+              <div style="font-size:.76rem;color:var(--text);line-height:1.5;">Digitalizar la gestión comercial de tiendas de instrumentos musicales, reemplazando procesos manuales por un e-commerce con datos en tiempo real.</div>
             </div>
-            <div style="font-size:.75rem;color:var(--text-mid);line-height:1.5;">Diseñó casos de prueba funcionales, ejecutó testing manual y documentó resultados en la matriz de trazabilidad.</div>
+            <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 14px;border-left:3px solid var(--blue);">
+              <div style="font-size:.7rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px;">Visión</div>
+              <div style="font-size:.76rem;color:var(--text);line-height:1.5;">Ser la plataforma de referencia para e-commerce de instrumentos musicales en LATAM, integrando IA para análisis de datos y automatización.</div>
+            </div>
+            <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 14px;border-left:3px solid var(--purple);">
+              <div style="font-size:.7rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px;">Valores</div>
+              <div style="font-size:.76rem;color:var(--text);line-height:1.5;">Innovación · Colaboración · Calidad · Orientación al usuario · Transparencia en los datos</div>
+            </div>
+          </div>
+          <!-- Right column: Captación RRHH + Capacitación -->
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 14px;border-left:3px solid var(--teal);">
+              <div style="font-size:.7rem;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px;">Captación de RRHH</div>
+              <div style="font-size:.76rem;color:var(--text);line-height:1.5;">Equipo conformado por 6 integrantes con perfiles complementarios: gestión de producto, datos, desarrollo, QA y coordinación ágil. Selección basada en competencias técnicas y experiencia previa en proyectos digitales.</div>
+            </div>
+            <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 14px;border-left:3px solid var(--green);">
+              <div style="font-size:.7rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px;">Capacitación del equipo</div>
+              <div style="font-size:.76rem;color:var(--text);line-height:1.5;">Onboarding con documentación compartida y talleres internos. Ceremonias Scrum como instancia de aprendizaje continuo: dailys, reviews y retrospectivas para nivelar conocimientos y resolver bloqueos.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -88,40 +111,31 @@
   </div>
 
 
-  <!-- SLIDE 2: EL PROBLEMA -->
+  <!-- SLIDE: PROBLEMA + FODA -->
   <div class="slide" data-slide="2">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Contexto</div>
-      <div class="slide-title">El problema</div>
-      <div class="fill-grow">
-        <div class="slide-subtitle" style="font-size:1.1rem;max-width:800px;">Una tienda de instrumentos musicales que vende muy bien en su local físico, pero con gestión completamente manual y sin presencia digital.</div>
-        <div class="stat-row" style="margin:20px 0;">
-          <div class="stat-card">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Gestión manual</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">0</div>
-            <div class="stat-label">Canal online</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">Excel</div>
-            <div class="stat-label">Registro de ventas</div>
+      <div class="slide-eyebrow">Contexto · Análisis Estratégico</div>
+      <div class="slide-title" style="font-size:clamp(1.2rem,2.6vw,1.7rem);margin-bottom:4px;">El Problema y Matriz FODA</div>
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:10px;">
+        <!-- PROBLEM CONDENSED -->
+        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:16px;">
+          <div style="flex:1;font-size:.82rem;color:var(--text);line-height:1.5;">Una tienda de instrumentos musicales con ventas sólidas en local físico, pero gestión 100% manual en Excel, sin canal online y con información desactualizada para la gerencia.</div>
+          <div style="display:flex;gap:10px;flex-shrink:0;">
+            <div style="background:var(--surface);border-radius:8px;padding:8px 12px;text-align:center;">
+              <div style="font-size:1.1rem;font-weight:800;color:var(--accent);">100%</div>
+              <div style="font-size:.58rem;color:var(--text-muted);">Manual</div>
+            </div>
+            <div style="background:var(--surface);border-radius:8px;padding:8px 12px;text-align:center;">
+              <div style="font-size:1.1rem;font-weight:800;color:var(--accent);">0</div>
+              <div style="font-size:.58rem;color:var(--text-muted);">Online</div>
+            </div>
+            <div style="background:var(--surface);border-radius:8px;padding:8px 12px;text-align:center;">
+              <div style="font-size:1.1rem;font-weight:800;color:var(--accent);">Excel</div>
+              <div style="font-size:.58rem;color:var(--text-muted);">Ventas</div>
+            </div>
           </div>
         </div>
-        <div class="slide-body" style="font-size:1.05rem;line-height:1.7;max-width:800px;">El empleado registra cada venta a mano en una planilla, la envía por correo a administración, que consolida archivos con datos duplicados e incompletos. Días de demora para tomar decisiones. La gerencia recibe información desactualizada.</div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- SLIDE: MATRIZ FODA -->
-  <div class="slide" data-slide="3">
-    <div class="slide-inner">
-      <div class="slide-eyebrow">Análisis Estratégico</div>
-      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Matriz FODA</div>
-      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">Contexto estratégico de WebMusic Solutions en la adopción de IA para automatización documental.</div>
-      <div class="fill-grow">
+        <!-- FODA GRID -->
         <div class="foda-grid">
           <div class="foda-cell" style="border-top:3px solid var(--green);">
             <h3 style="color:var(--green);">Fortalezas</h3>
@@ -158,7 +172,7 @@
   </div>
 
   <!-- SLIDE: MATRIZ BCG -->
-  <div class="slide" data-slide="4">
+  <div class="slide" data-slide="3">
     <div class="slide-inner">
       <div class="slide-eyebrow">Análisis Estratégico</div>
       <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Matriz BCG</div>
@@ -207,7 +221,7 @@
   </div>
 
   <!-- SLIDE: TAM/SAM/SOM -->
-  <div class="slide" data-slide="5">
+  <div class="slide" data-slide="4">
     <div class="slide-inner">
       <div class="slide-eyebrow">Impacto en el Mercado</div>
       <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Estimación del Mercado Objetivo</div>
@@ -249,201 +263,186 @@
     </div>
   </div>
 
-  <!-- SLIDE: GESTIÓN DEL CAMBIO -->
+  <!-- SLIDE: ADOPCIÓN + DASHBOARD GERENCIAL -->
+  <div class="slide" data-slide="5">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Adopción · Dashboard Gerencial</div>
+      <div class="slide-title" style="font-size:clamp(1.2rem,2.6vw,1.6rem);margin-bottom:4px;">Estrategia de Adopción y Dashboard</div>
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:8px;">
+        <!-- ADOPTION PHASES (sin concientización) -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+          <div class="adoption-phase" style="border-top:3px solid var(--teal);padding:10px;">
+            <div class="phase-num" style="background:var(--teal);">1</div>
+            <h3 style="font-size:.82rem;">Capacitación</h3>
+            <p style="font-size:.7rem;">Talleres prácticos sobre el panel admin y registro automático de ventas. Guías paso a paso.</p>
+            <div style="margin-top:4px;font-size:.62rem;color:var(--accent);font-weight:600;">Mes 1–2</div>
+          </div>
+          <div class="adoption-phase" style="border-top:3px solid var(--purple);padding:10px;">
+            <div class="phase-num" style="background:var(--purple);">2</div>
+            <h3 style="font-size:.82rem;">Rollout gradual</h3>
+            <p style="font-size:.7rem;">Marcha blanca: e-commerce en paralelo con proceso manual. Migración del 20% del catálogo.</p>
+            <div style="margin-top:4px;font-size:.62rem;color:var(--accent);font-weight:600;">Mes 2–3</div>
+          </div>
+          <div class="adoption-phase" style="border-top:3px solid var(--green);padding:10px;">
+            <div class="phase-num" style="background:var(--green);">3</div>
+            <h3 style="font-size:.82rem;">Migración completa</h3>
+            <p style="font-size:.7rem;">Se discontinúa Excel. Todas las transacciones alimentan el dashboard gerencial en tiempo real.</p>
+            <div style="margin-top:4px;font-size:.62rem;color:var(--accent);font-weight:600;">Mes 4–6</div>
+          </div>
+        </div>
+        <!-- DASHBOARD KPIs -->
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;">
+          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:10px 8px;">
+            <div class="dash-tile-val" style="font-size:1.2rem;">$1.240.000</div>
+            <div class="dash-tile-lbl" style="font-size:.6rem;">Ventas del mes</div>
+          </div>
+          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:10px 8px;">
+            <div class="dash-tile-val" style="font-size:1.2rem;">186</div>
+            <div class="dash-tile-lbl" style="font-size:.6rem;">Clientes registrados</div>
+          </div>
+          <div class="dash-tile" style="background:linear-gradient(135deg,#0d7a72,#0d9488);padding:10px 8px;">
+            <div class="dash-tile-val" style="font-size:1.2rem;">$18.300</div>
+            <div class="dash-tile-lbl" style="font-size:.6rem;">Ticket promedio</div>
+          </div>
+          <div class="dash-tile" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);padding:10px 8px;">
+            <div class="dash-tile-val" style="font-size:1.2rem;">94%</div>
+            <div class="dash-tile-lbl" style="font-size:.6rem;">Tasa de conversión</div>
+          </div>
+        </div>
+        <!-- CHARTS + TABLES compact -->
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
+          <div style="background:var(--card);border-radius:8px;padding:10px;">
+            <div style="font-size:.68rem;font-weight:600;color:var(--text-mid);margin-bottom:6px;">Ventas por categoría</div>
+            <svg viewBox="0 0 300 110" style="width:100%;display:block;">
+              <rect x="10" y="5" width="180" height="12" rx="3" fill="#60a5fa" opacity=".9"/><text x="195" y="15" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Guitarras $420k</text>
+              <rect x="10" y="22" width="140" height="12" rx="3" fill="#a78bfa" opacity=".9"/><text x="155" y="32" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Teclados $310k</text>
+              <rect x="10" y="39" width="110" height="12" rx="3" fill="#2dd4bf" opacity=".9"/><text x="125" y="49" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Audio $240k</text>
+              <rect x="10" y="56" width="80" height="12" rx="3" fill="#e8923a" opacity=".9"/><text x="95" y="66" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Baterías $150k</text>
+              <rect x="10" y="73" width="55" height="12" rx="3" fill="#e8556a" opacity=".9"/><text x="70" y="83" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Bajos $72k</text>
+              <rect x="10" y="90" width="35" height="12" rx="3" fill="#5cb66a" opacity=".9"/><text x="50" y="100" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Accesorios $48k</text>
+            </svg>
+          </div>
+          <div style="background:var(--card);border-radius:8px;padding:10px;">
+            <div style="font-size:.68rem;font-weight:600;color:var(--text-mid);margin-bottom:6px;">Top 5 productos</div>
+            <table style="width:100%;font-size:.65rem;color:var(--text-mid);">
+              <tr><td>1.</td><td>Guitarra Yamaha C40</td><td style="text-align:right;font-weight:600;">$85k</td></tr>
+              <tr><td>2.</td><td>Teclado Casio CT-S200</td><td style="text-align:right;font-weight:600;">$120k</td></tr>
+              <tr><td>3.</td><td>Micrófono Shure SM58</td><td style="text-align:right;font-weight:600;">$95k</td></tr>
+              <tr><td>4.</td><td>Bajo Squier Affinity</td><td style="text-align:right;font-weight:600;">$180k</td></tr>
+              <tr><td>5.</td><td>Batería Pearl Export</td><td style="text-align:right;font-weight:600;">$350k</td></tr>
+            </table>
+          </div>
+          <div style="background:var(--card);border-radius:8px;padding:10px;">
+            <div style="font-size:.68rem;font-weight:600;color:var(--text-mid);margin-bottom:6px;">Pedidos recientes</div>
+            <table style="width:100%;font-size:.65rem;color:var(--text-mid);">
+              <tr><td>#001</td><td>2 items</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">$205k</td></tr>
+              <tr><td>#002</td><td>1 item</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">$85k</td></tr>
+              <tr><td>#003</td><td>3 items</td><td style="color:var(--orange);font-weight:600;">Pend</td><td style="text-align:right;">$310k</td></tr>
+              <tr><td>#004</td><td>1 item</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">$120k</td></tr>
+              <tr><td>#005</td><td>2 items</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">$275k</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: FINANZAS + BREAK-EVEN + GANTT -->
   <div class="slide" data-slide="6">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Impacto en el Mercado</div>
-      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Estrategia de Adopción</div>
-      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">Plan de transición para que los operadores administrativos migren del registro manual en Excel al sistema automatizado.</div>
-      <div class="fill-grow">
-        <div class="adoption-flow">
-          <div class="adoption-phase" style="border-top:3px solid var(--blue);">
-            <div class="phase-num" style="background:var(--blue);">1</div>
-            <h3>Concientización</h3>
-            <p>Relevar cómo trabajan hoy los operadores, mostrar las ventajas concretas del nuevo flujo y detectar posibles puntos de resistencia al cambio.</p>
-            <div style="margin-top:6px;font-size:.68rem;color:var(--accent);font-weight:600;">Mes 1–2</div>
-          </div>
-          <div class="adoption-phase" style="border-top:3px solid var(--teal);">
-            <div class="phase-num" style="background:var(--teal);">2</div>
-            <h3>Capacitación</h3>
-            <p>Talleres prácticos sobre el panel de administración y el registro automático de ventas. Se entrega documentación con guías paso a paso.</p>
-            <div style="margin-top:6px;font-size:.68rem;color:var(--accent);font-weight:600;">Mes 2–3</div>
-          </div>
-          <div class="adoption-phase" style="border-top:3px solid var(--purple);">
-            <div class="phase-num" style="background:var(--purple);">3</div>
-            <h3>Rollout gradual</h3>
-            <p>Período de marcha blanca: el e-commerce opera en paralelo con el proceso manual para validar el flujo antes de escalar. Se migra el 20 % del catálogo.</p>
-            <div style="margin-top:6px;font-size:.68rem;color:var(--accent);font-weight:600;">Mes 3–4</div>
-          </div>
-          <div class="adoption-phase" style="border-top:3px solid var(--green);">
-            <div class="phase-num" style="background:var(--green);">4</div>
-            <h3>Migración completa</h3>
-            <p>Se discontinúa el registro manual. Todas las transacciones pasan por el e-commerce y alimentan el dashboard gerencial con indicadores en tiempo real.</p>
-            <div style="margin-top:6px;font-size:.68rem;color:var(--accent);font-weight:600;">Mes 5–6</div>
-          </div>
-        </div>
-        <div style="margin-top:10px;background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px 14px;">
-          <div style="font-size:.82rem;font-weight:600;color:var(--text);margin-bottom:4px;">KPIs de adopción objetivo</div>
-          <div style="display:flex;gap:20px;flex-wrap:wrap;font-size:.78rem;color:var(--text-mid);">
-            <span><strong style="color:var(--accent);">100 %</strong> de operadores capacitados en 3 meses</span>
-            <span><strong style="color:var(--accent);">80 %</strong> del catálogo cargado en plataforma en 4 meses</span>
-            <span><strong style="color:var(--accent);">−60 %</strong> en errores de carga respecto al proceso manual</span>
-            <span><strong style="color:var(--accent);">−75 %</strong> en tiempo de elaboración de reportes gerenciales</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: JULIETA — DATOS (consolidada) -->
-  <div class="slide" data-slide="7">
-    <div class="slide-inner">
-
-      <div class="fill-grow">
-        <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:8px;">Modeló los procesos en Bizagi y diseñó la infraestructura de datos: del Excel manual al dashboard en tiempo real.</div>
-
-        <!-- AS-IS / TO-BE compacto -->
-        <div class="bizagi-grid">
-          <div class="bizagi-col">
-            <div class="bizagi-header" style="background:#e8673a;">Proceso Actual (AS-IS)</div>
-            <div class="bizagi-steps">
-              <div class="bizagi-step"><div class="bizagi-num" style="background:#e8673a;">1</div><span>Cliente compra en el local físico</span></div>
-              <div class="bizagi-arrow" style="background:#e8673a;"></div>
-              <div class="bizagi-step"><div class="bizagi-num" style="background:#e8673a;">2</div><span>Empleado carga la venta a mano en Excel</span></div>
-              <div class="bizagi-arrow" style="background:#e8673a;"></div>
-              <div class="bizagi-step"><div class="bizagi-num" style="background:#e8673a;">3</div><span>Se consolidan archivos con datos duplicados/incompletos</span></div>
-              <div class="bizagi-arrow" style="background:#e8673a;"></div>
-              <div class="bizagi-step"><div class="bizagi-num" style="background:#e8673a;">4</div><span>Un analista arma el reporte manualmente para gerencia</span></div>
+      <div class="slide-eyebrow">Viabilidad de Negocio · Planificación</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:4px;">Presupuesto, Break-even y Gantt</div>
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:6px;">
+        <!-- ROW 1: BUDGET + MONETIZATION + BREAK-EVEN KPIs -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+          <!-- Budget compact -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:8px;border-top:3px solid var(--red);">
+            <div style="font-size:.72rem;font-weight:700;color:var(--red);margin-bottom:4px;">Presupuesto mensual</div>
+            <div style="font-size:.62rem;color:var(--text-mid);line-height:1.6;">
+              <div style="display:flex;justify-content:space-between;"><span>Hosting cloud</span><span style="font-weight:600;">USD 150</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>APIs IA</span><span style="font-weight:600;">USD 200</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>Dominio + SSL + CDN</span><span style="font-weight:600;">USD 25</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>Pasarela de pagos</span><span style="font-weight:600;">USD 50</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>Marketing digital</span><span style="font-weight:600;">USD 300</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>Mantenimiento</span><span style="font-weight:600;">USD 125</span></div>
+              <div style="display:flex;justify-content:space-between;border-top:1px solid var(--divider);margin-top:3px;padding-top:3px;font-weight:700;color:var(--text);"><span>Total</span><span>USD 850/mes</span></div>
             </div>
           </div>
-          <div class="bizagi-col">
-            <div class="bizagi-header" style="background:var(--teal);">Proceso Automatizado (TO-BE)</div>
-            <div class="bizagi-steps">
-              <div class="bizagi-step"><div class="bizagi-num" style="background:var(--teal);">1</div><span>Cliente compra en el e-commerce</span></div>
-              <div class="bizagi-arrow" style="background:var(--teal);"></div>
-              <div class="bizagi-step"><div class="bizagi-num" style="background:var(--teal);">2</div><span>API registra la venta y valida datos al instante</span></div>
-              <div class="bizagi-arrow" style="background:var(--teal);"></div>
-              <div class="bizagi-step"><div class="bizagi-num" style="background:var(--teal);">3</div><span>ETL centraliza todo en el Data Warehouse</span></div>
-              <div class="bizagi-arrow" style="background:var(--teal);"></div>
-              <div class="bizagi-step"><div class="bizagi-num" style="background:var(--teal);">4</div><span>Dashboard se actualiza en tiempo real</span></div>
+          <!-- Monetization compact -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:8px;border-top:3px solid var(--green);">
+            <div style="font-size:.72rem;font-weight:700;color:var(--green);margin-bottom:4px;">Monetización</div>
+            <div style="font-size:.62rem;color:var(--text-mid);line-height:1.6;">
+              <div style="display:flex;justify-content:space-between;"><span>Comisión por venta</span><span style="font-weight:600;color:var(--green);">8%</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>Suscripción premium</span><span style="font-weight:600;color:var(--green);">USD 15/mes</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>Publicación destacada</span><span style="font-weight:600;color:var(--green);">USD 5/prod</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>Reportes avanzados IA</span><span style="font-weight:600;color:var(--green);">USD 25/mes</span></div>
+              <div style="border-top:1px solid var(--divider);margin-top:3px;padding-top:3px;font-size:.62rem;color:var(--text);">
+                <strong>Ingreso/txn:</strong> $150 × 8% = <strong style="color:var(--accent);">USD 12</strong>
+              </div>
+            </div>
+          </div>
+          <!-- Break-even KPIs compact -->
+          <div style="display:grid;grid-template-rows:1fr 1fr;gap:6px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+              <div class="breakeven-kpi" style="border-top:3px solid var(--accent);padding:6px;">
+                <div class="kpi-val" style="font-size:1.1rem;">71</div>
+                <div class="kpi-label" style="font-size:.56rem;">Txns / mes (BE)</div>
+              </div>
+              <div class="breakeven-kpi" style="border-top:3px solid var(--green);padding:6px;">
+                <div class="kpi-val" style="font-size:1.1rem;">USD 850</div>
+                <div class="kpi-label" style="font-size:.56rem;">Costos fijos</div>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+              <div class="breakeven-kpi" style="border-top:3px solid var(--blue);padding:6px;">
+                <div class="kpi-val" style="font-size:1.1rem;">USD 12</div>
+                <div class="kpi-label" style="font-size:.56rem;">Ingreso / txn</div>
+              </div>
+              <div class="breakeven-kpi" style="border-top:3px solid var(--purple);padding:6px;">
+                <div class="kpi-val" style="font-size:1.1rem;">Mes 5</div>
+                <div class="kpi-label" style="font-size:.56rem;">Meta break-even</div>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- KPIs del dashboard -->
-        <div class="dash-tiles" style="margin-top:8px;">
-          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);">
-            <div class="dash-tile-val">$1.240.000</div>
-            <div class="dash-tile-lbl">Ventas del mes</div>
-          </div>
-          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);">
-            <div class="dash-tile-val">186</div>
-            <div class="dash-tile-lbl">Clientes nuevos</div>
-          </div>
-          <div class="dash-tile" style="background:linear-gradient(135deg,#0d7a72,#0d9488);">
-            <div class="dash-tile-val">$18.300</div>
-            <div class="dash-tile-lbl">Ticket promedio</div>
-          </div>
-        </div>
-
-        <!-- Links a entregables completos -->
-        <div style="margin-top:8px;display:flex;gap:10px;flex-wrap:wrap;">
-          <a href="https://sharonrodriguez22.github.io/webmusic-presentacion/bizagi-tobe.jpeg" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--teal);">📐 Ver diagrama Bizagi TO-BE</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: DASHBOARD GERENCIAL -->
-  <div class="slide" data-slide="8">
-    <div class="slide-inner">
-      <div class="slide-eyebrow" style="color:var(--teal);">Dashboard Gerencial — WebMusic Solutions</div>
-      <div class="slide-subtitle" style="font-size:.85rem;margin-bottom:10px;">Panel de control en tiempo real. Datos simulados representativos del modelo de negocio (localStorage).</div>
-
-      <!-- KPI tiles row -->
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px;">
-        <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:14px 10px;">
-          <div class="dash-tile-val" style="font-size:1.5rem;">$1.240.000</div>
-          <div class="dash-tile-lbl">Ventas del mes</div>
-        </div>
-        <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:14px 10px;">
-          <div class="dash-tile-val" style="font-size:1.5rem;">186</div>
-          <div class="dash-tile-lbl">Clientes registrados</div>
-        </div>
-        <div class="dash-tile" style="background:linear-gradient(135deg,#0d7a72,#0d9488);padding:14px 10px;">
-          <div class="dash-tile-val" style="font-size:1.5rem;">$18.300</div>
-          <div class="dash-tile-lbl">Ticket promedio</div>
-        </div>
-        <div class="dash-tile" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);padding:14px 10px;">
-          <div class="dash-tile-val" style="font-size:1.5rem;">94%</div>
-          <div class="dash-tile-lbl">Tasa de conversión</div>
-        </div>
-      </div>
-
-      <!-- Charts row -->
-      <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:10px;margin-bottom:10px;">
-        <!-- Bar chart: ventas por categoría -->
-        <div style="background:var(--card);border-radius:10px;padding:12px;">
-          <div style="font-family:var(--body);font-size:.75rem;font-weight:600;color:var(--text-mid);margin-bottom:8px;">Ventas por categoría</div>
-          <svg viewBox="0 0 300 130" style="width:100%;display:block;">
-            <rect x="10" y="10" width="180" height="14" rx="3" fill="#60a5fa" opacity=".9"/><text x="195" y="22" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Guitarras — $420k</text>
-            <rect x="10" y="30" width="140" height="14" rx="3" fill="#a78bfa" opacity=".9"/><text x="155" y="42" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Teclados — $310k</text>
-            <rect x="10" y="50" width="110" height="14" rx="3" fill="#2dd4bf" opacity=".9"/><text x="125" y="62" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Audio — $240k</text>
-            <rect x="10" y="70" width="80" height="14" rx="3" fill="#e8923a" opacity=".9"/><text x="95" y="82" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Baterías — $150k</text>
-            <rect x="10" y="90" width="55" height="14" rx="3" fill="#e8556a" opacity=".9"/><text x="70" y="102" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Bajos — $72k</text>
-            <rect x="10" y="110" width="35" height="14" rx="3" fill="#5cb66a" opacity=".9"/><text x="50" y="122" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Accesorios — $48k</text>
-          </svg>
-        </div>
-        <!-- Donut chart: medios de pago -->
-        <div style="background:var(--card);border-radius:10px;padding:12px;">
-          <div style="font-family:var(--body);font-size:.75rem;font-weight:600;color:var(--text-mid);margin-bottom:8px;">Medios de pago</div>
-          <div style="display:flex;align-items:center;gap:14px;">
-            <svg viewBox="0 0 100 100" width="90" height="90">
-              <circle cx="50" cy="50" r="40" fill="none" stroke="var(--surface)" stroke-width="12"/>
-              <circle cx="50" cy="50" r="40" fill="none" stroke="#60a5fa" stroke-width="12" stroke-dasharray="125.6 125.6" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
-              <circle cx="50" cy="50" r="40" fill="none" stroke="#a78bfa" stroke-width="12" stroke-dasharray="75.4 175.8" stroke-dashoffset="-125.6" transform="rotate(-90 50 50)"/>
-              <circle cx="50" cy="50" r="40" fill="none" stroke="#2dd4bf" stroke-width="12" stroke-dasharray="50.2 200.9" stroke-dashoffset="-201" transform="rotate(-90 50 50)"/>
-              <text x="50" y="53" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="700" font-family="Inter,sans-serif">100%</text>
+        <!-- ROW 2: BREAK-EVEN CHART + GANTT IMAGE -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div class="breakeven-chart" style="padding:6px;">
+            <div style="font-size:.68rem;font-weight:600;color:var(--text);margin-bottom:4px;text-align:center;">Ingresos vs. Costos</div>
+            <svg viewBox="0 0 400 180" style="width:100%;height:auto;">
+              <line x1="50" y1="15" x2="50" y2="155" stroke="var(--divider)" stroke-width="1"/>
+              <line x1="50" y1="155" x2="380" y2="155" stroke="var(--divider)" stroke-width="1"/>
+              <text x="45" y="20" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$1700</text>
+              <text x="45" y="55" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$1275</text>
+              <text x="45" y="85" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$850</text>
+              <text x="45" y="120" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$425</text>
+              <text x="45" y="158" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$0</text>
+              <text x="50" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">0</text>
+              <text x="116" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">25</text>
+              <text x="182" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">50</text>
+              <text x="248" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">75</text>
+              <text x="314" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">100</text>
+              <text x="380" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">125</text>
+              <line x1="50" y1="85" x2="380" y2="85" stroke="var(--red)" stroke-width="2"/>
+              <text x="385" y="88" fill="var(--red)" font-size="7" font-family="var(--body)">Costos</text>
+              <line x1="50" y1="155" x2="380" y2="10" stroke="var(--green)" stroke-width="2"/>
+              <text x="385" y="13" fill="var(--green)" font-size="7" font-family="var(--body)">Ingresos</text>
+              <circle cx="225" cy="85" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="2"/>
+              <text x="225" y="77" text-anchor="middle" fill="var(--accent)" font-size="7" font-weight="700" font-family="var(--body)">Break-even · 71 txns</text>
+              <polygon points="225,85 380,85 380,10" fill="var(--green)" opacity="0.08"/>
             </svg>
-            <div style="font-size:.72rem;line-height:1.8;color:var(--text-mid);">
-              <div><span style="color:#60a5fa;">●</span> Tarjeta crédito 50%</div>
-              <div><span style="color:#a78bfa;">●</span> Transferencia 30%</div>
-              <div><span style="color:#2dd4bf;">●</span> Efectivo 20%</div>
-            </div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:6px;text-align:center;">
+            <div style="font-size:.68rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Diagrama de Gantt — 3 meses</div>
+            <img src="gantt.jpeg" alt="Diagrama de Gantt del proyecto WebMusic" style="max-width:100%;max-height:180px;border-radius:6px;object-fit:contain;">
           </div>
         </div>
       </div>
-
-      <!-- Bottom row: top products + link -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-        <div style="background:var(--card);border-radius:10px;padding:10px;">
-          <div style="font-family:var(--body);font-size:.75rem;font-weight:600;color:var(--text-mid);margin-bottom:6px;">Top 5 productos</div>
-          <table style="width:100%;font-size:.72rem;color:var(--text-mid);">
-            <tr><td>1.</td><td>Guitarra Yamaha C40</td><td style="text-align:right;font-weight:600;">$85.000</td></tr>
-            <tr><td>2.</td><td>Teclado Casio CT-S200</td><td style="text-align:right;font-weight:600;">$120.000</td></tr>
-            <tr><td>3.</td><td>Micrófono Shure SM58</td><td style="text-align:right;font-weight:600;">$95.000</td></tr>
-            <tr><td>4.</td><td>Bajo Squier Affinity</td><td style="text-align:right;font-weight:600;">$180.000</td></tr>
-            <tr><td>5.</td><td>Batería Pearl Export</td><td style="text-align:right;font-weight:600;">$350.000</td></tr>
-          </table>
-        </div>
-        <div style="background:var(--card);border-radius:10px;padding:10px;">
-          <div style="font-family:var(--body);font-size:.75rem;font-weight:600;color:var(--text-mid);margin-bottom:6px;">Pedidos recientes</div>
-          <table style="width:100%;font-size:.72rem;color:var(--text-mid);">
-            <tr><td>#001</td><td>2 items</td><td style="color:var(--green);font-weight:600;">Completado</td><td style="text-align:right;">$205.000</td></tr>
-            <tr><td>#002</td><td>1 item</td><td style="color:var(--green);font-weight:600;">Completado</td><td style="text-align:right;">$85.000</td></tr>
-            <tr><td>#003</td><td>3 items</td><td style="color:var(--orange);font-weight:600;">Pendiente</td><td style="text-align:right;">$310.000</td></tr>
-            <tr><td>#004</td><td>1 item</td><td style="color:var(--green);font-weight:600;">Completado</td><td style="text-align:right;">$120.000</td></tr>
-            <tr><td>#005</td><td>2 items</td><td style="color:var(--green);font-weight:600;">Completado</td><td style="text-align:right;">$275.000</td></tr>
-          </table>
-        </div>
-      </div>
-
-
     </div>
   </div>
 
   <!-- SLIDE: KEVIN — PROJECT MANAGER (consolidada) -->
-  <div class="slide" data-slide="9">
+  <div class="slide" data-slide="7">
     <div class="slide-inner">
       <div class="slide-subtitle" style="font-size:.95rem;margin-bottom:6px;">Gestionó la planificación combinando enfoque tradicional con metodología ágil. Las épicas se tradujeron en un Gantt a 3 meses.</div>
 
@@ -495,145 +494,8 @@
     </div>
   </div>
 
-  <!-- SLIDE: ANÁLISIS FINANCIERO -->
-  <div class="slide" data-slide="10">
-    <div class="slide-inner">
-      <div class="slide-eyebrow">Viabilidad de Negocio</div>
-      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Presupuesto y Monetización</div>
-      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">Estructura de costos operativos y esquema de ingresos para el primer año de operación.</div>
-      <div class="fill-grow">
-        <div class="finance-grid">
-          <div class="finance-card" style="border-top:3px solid var(--red);">
-            <h3 style="color:var(--red);">💰 Presupuesto mensual</h3>
-            <div class="finance-item"><span>Hosting cloud (AWS/Vercel)</span><span class="finance-val">USD 150</span></div>
-            <div class="finance-item"><span>APIs IA — Document Intelligence</span><span class="finance-val">USD 200</span></div>
-            <div class="finance-item"><span>Dominio + SSL + CDN</span><span class="finance-val">USD 25</span></div>
-            <div class="finance-item"><span>Pasarela de pagos (fee fijo)</span><span class="finance-val">USD 50</span></div>
-            <div class="finance-item"><span>Marketing digital</span><span class="finance-val">USD 300</span></div>
-            <div class="finance-item"><span>Mantenimiento y soporte</span><span class="finance-val">USD 125</span></div>
-            <div class="finance-total"><span>Costo fijo total</span><span>USD 850/mes</span></div>
-          </div>
-          <div class="finance-card" style="border-top:3px solid var(--green);">
-            <h3 style="color:var(--green);">📈 Esquema de monetización</h3>
-            <div class="finance-item"><span>Comisión por venta</span><span class="finance-val" style="color:var(--green);">8%</span></div>
-            <div class="finance-item"><span>Suscripción premium vendedor</span><span class="finance-val" style="color:var(--green);">USD 15/mes</span></div>
-            <div class="finance-item"><span>Publicación destacada</span><span class="finance-val" style="color:var(--green);">USD 5/prod</span></div>
-            <div class="finance-item"><span>Reportes avanzados (IA)</span><span class="finance-val" style="color:var(--green);">USD 25/mes</span></div>
-            <div style="margin-top:10px;font-size:.78rem;color:var(--text-mid);line-height:1.5;">
-              <div style="margin-bottom:3px;"><strong>Ingreso promedio por transacción:</strong></div>
-              Venta promedio USD 150 × 8% comisión = <strong style="color:var(--accent);">USD 12</strong> por transacción
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: PUNTO DE EQUILIBRIO -->
-  <div class="slide" data-slide="11">
-    <div class="slide-inner">
-      <div class="slide-eyebrow">Viabilidad de Negocio</div>
-      <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Punto de Equilibrio (Break-even)</div>
-      <div class="slide-subtitle" style="font-size:.88rem;margin-bottom:4px;">Cálculo formal: volumen de transacciones necesario para cubrir los costos operativos mensuales.</div>
-      <div class="fill-grow">
-        <div class="breakeven-row">
-          <div class="breakeven-chart">
-            <div style="font-size:.78rem;font-weight:600;color:var(--text);margin-bottom:8px;text-align:center;">Ingresos vs. Costos (proyección mensual)</div>
-            <svg viewBox="0 0 400 220" style="width:100%;height:auto;">
-              <line x1="50" y1="20" x2="50" y2="190" stroke="var(--divider)" stroke-width="1"/>
-              <line x1="50" y1="190" x2="380" y2="190" stroke="var(--divider)" stroke-width="1"/>
-              <text x="45" y="25" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$1700</text>
-              <text x="45" y="62" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$1275</text>
-              <text x="45" y="100" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$850</text>
-              <text x="45" y="145" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$425</text>
-              <text x="45" y="193" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$0</text>
-              <text x="50" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">0</text>
-              <text x="116" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">25</text>
-              <text x="182" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">50</text>
-              <text x="248" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">75</text>
-              <text x="314" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">100</text>
-              <text x="380" y="207" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">125</text>
-              <text x="215" y="218" text-anchor="middle" fill="var(--text-muted)" font-size="8" font-family="var(--body)">Transacciones / mes</text>
-              <line x1="50" y1="100" x2="380" y2="100" stroke="var(--divider)" stroke-width="0.5" stroke-dasharray="4"/>
-              <line x1="50" y1="62" x2="380" y2="62" stroke="var(--divider)" stroke-width="0.5" stroke-dasharray="4"/>
-              <line x1="50" y1="145" x2="380" y2="145" stroke="var(--divider)" stroke-width="0.5" stroke-dasharray="4"/>
-              <line x1="50" y1="100" x2="380" y2="100" stroke="var(--red)" stroke-width="2"/>
-              <text x="385" y="103" fill="var(--red)" font-size="8" font-family="var(--body)">Costos</text>
-              <line x1="50" y1="190" x2="380" y2="10" stroke="var(--green)" stroke-width="2"/>
-              <text x="385" y="13" fill="var(--green)" font-size="8" font-family="var(--body)">Ingresos</text>
-              <circle cx="236" cy="100" r="5" fill="var(--accent)" stroke="var(--card)" stroke-width="2"/>
-              <text x="236" y="90" text-anchor="middle" fill="var(--accent)" font-size="9" font-weight="700" font-family="var(--body)">Break-even</text>
-              <text x="236" y="80" text-anchor="middle" fill="var(--accent)" font-size="8" font-family="var(--body)">71 txns</text>
-              <polygon points="236,100 380,100 380,10" fill="var(--green)" opacity="0.08"/>
-            </svg>
-          </div>
-          <div class="breakeven-kpis">
-            <div class="breakeven-kpi" style="border-top:3px solid var(--accent);">
-              <div class="kpi-val">71</div>
-              <div class="kpi-label">Transacciones / mes</div>
-              <div style="font-size:.72rem;color:var(--text-mid);margin-top:4px;">Punto de equilibrio: $850 ÷ $12/txn</div>
-            </div>
-            <div class="breakeven-kpi" style="border-top:3px solid var(--green);">
-              <div class="kpi-val">USD 850</div>
-              <div class="kpi-label">Costos fijos mensuales</div>
-              <div style="font-size:.72rem;color:var(--text-mid);margin-top:4px;">Cloud + APIs IA + Marketing + Soporte</div>
-            </div>
-            <div class="breakeven-kpi" style="border-top:3px solid var(--blue);">
-              <div class="kpi-val">USD 12</div>
-              <div class="kpi-label">Ingreso por transacción</div>
-              <div style="font-size:.72rem;color:var(--text-mid);margin-top:4px;">8% comisión sobre venta promedio de $150</div>
-            </div>
-            <div class="breakeven-kpi" style="border-top:3px solid var(--purple);">
-              <div class="kpi-val">Mes 5</div>
-              <div class="kpi-label">Meta de break-even</div>
-              <div style="font-size:.72rem;color:var(--text-mid);margin-top:4px;">Alineado con el rollout gradual del catálogo</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: BRUNO — SCRUM MASTER (consolidada) -->
-  <div class="slide" data-slide="12" style="padding:20px 48px 24px;">
-    <div class="slide-inner">
-      <div class="slide-subtitle" style="font-size:.85rem;margin-bottom:4px;">Facilitó ceremonias Scrum. 18 User Stories completadas — 88 Story Points entregados en 3 sprints.</div>
-
-      <table class="backlog-table backlog-compact">
-        <thead>
-          <tr><th>HU</th><th>Título</th><th>SP</th><th>Prioridad</th><th>Sprint</th><th>Estado</th></tr>
-        </thead>
-        <tbody>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 04</strong></td><td>Visualización de productos</td><td>5</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 05</strong></td><td>Filtro por categoría</td><td>3</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 06</strong></td><td>Búsqueda de productos</td><td>5</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 07</strong></td><td>Detalle de producto</td><td>3</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 08</strong></td><td>Gestión de stock</td><td>5</td><td><span class="priority-badge" style="background:var(--red-bg);color:var(--red);">Must</span></td><td>Sprint 1</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 01</strong></td><td>Registro de usuario</td><td>3</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 02</strong></td><td>Inicio de sesión</td><td>3</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 03</strong></td><td>Recuperar contraseña</td><td>2</td><td><span class="priority-badge" style="background:var(--blue-bg);color:var(--blue);">Could</span></td><td>Sprint 2</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 09</strong></td><td>Carrito de compras</td><td>8</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 10</strong></td><td>Modificar carrito</td><td>5</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 11</strong></td><td>Checkout</td><td>8</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 12</strong></td><td>Medios de pago</td><td>5</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 13</strong></td><td>Confirmación de pedido</td><td>2</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 2</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 14</strong></td><td>Historial de pedidos</td><td>5</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 3</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 15</strong></td><td>Admin: gestión pedidos</td><td>8</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 3</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 16</strong></td><td>Admin: reporte ventas</td><td>5</td><td><span class="priority-badge" style="background:var(--blue-bg);color:var(--blue);">Could</span></td><td>Sprint 3</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 17</strong></td><td>Admin: reporte clientes</td><td>5</td><td><span class="priority-badge" style="background:var(--blue-bg);color:var(--blue);">Could</span></td><td>Sprint 3</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-          <tr style="background:var(--accent-soft);"><td><strong>HU 18</strong></td><td>Admin: dashboard</td><td>8</td><td><span class="priority-badge" style="background:var(--orange-bg);color:var(--orange);">Should</span></td><td>Sprint 3</td><td style="color:var(--green);font-weight:600;">Done ✓</td></tr>
-        </tbody>
-      </table>
-
-      <div style="margin-top:4px;display:flex;align-items:center;justify-content:space-between;">
-        <div style="font-size:.62rem;color:var(--text-muted);">MoSCoW · SP = Story Points (complejidad relativa, no horas). Velocity total: 88 SP en 3 sprints.</div>
-        <a href="https://sharonrodrigz251.atlassian.net/jira/software/projects/SCRUM/boards/1?filter=&amp;groupBy=none" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--blue);">📋 Ver tablero en Jira</a>
-      </div>
-    </div>
-  </div>
-
   <!-- SLIDE: SHARON — DESARROLLADORA (consolidada) -->
-  <div class="slide" data-slide="13">
+  <div class="slide" data-slide="8">
     <div class="slide-inner">
       <div class="slide-subtitle" style="font-size:.95rem;margin-bottom:6px;">Implementó las 18 HU del e-commerce con HTML, CSS y JS separados. Responsive, dark mode, panel admin, deploy en GitHub Pages.</div>
 
@@ -687,61 +549,8 @@
     </div>
   </div>
 
-  <!-- SLIDE 11: MORENA — QA -->
-  <div class="slide" data-slide="14">
-    <div class="slide-inner">
-      <div class="slide-subtitle" style="font-size:1.05rem;">Diseñó 10 casos de prueba (CP-01 a CP-10) validando cada User Story con escenarios positivos y negativos.</div>
-
-      <div class="fill-grow">
-        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:12px;">
-          <div class="qa-card" style="padding:10px;">
-            <h3 style="font-size:.85rem;">🛍️ HU 04</h3>
-            <div style="font-size:.72rem;color:var(--text-muted);margin-bottom:6px;">Catálogo</div>
-            <div class="qa-check"><span class="check">✓</span> CP-01: Muestra imagen, nombre, precio</div>
-            <div class="qa-check"><span class="check">✓</span> CP-02: Vacío → mensaje</div>
-          </div>
-          <div class="qa-card" style="padding:10px;">
-            <h3 style="font-size:.85rem;">🏷️ HU 05</h3>
-            <div style="font-size:.72rem;color:var(--text-muted);margin-bottom:6px;">Categorías</div>
-            <div class="qa-check"><span class="check">✓</span> CP-03: Filtra por categoría</div>
-            <div class="qa-check"><span class="check">✓</span> CP-04: Sin productos → mensaje</div>
-          </div>
-          <div class="qa-card" style="padding:10px;">
-            <h3 style="font-size:.85rem;">🔍 HU 06</h3>
-            <div style="font-size:.72rem;color:var(--text-muted);margin-bottom:6px;">Búsqueda</div>
-            <div class="qa-check"><span class="check">✓</span> CP-05: Busca y muestra resultados</div>
-            <div class="qa-check"><span class="check">✓</span> CP-06: Inexistente → "sin resultados"</div>
-          </div>
-          <div class="qa-card" style="padding:10px;">
-            <h3 style="font-size:.85rem;">📄 HU 07</h3>
-            <div style="font-size:.72rem;color:var(--text-muted);margin-bottom:6px;">Detalle</div>
-            <div class="qa-check"><span class="check">✓</span> CP-07: Detalle con stock</div>
-            <div class="qa-check"><span class="check">✓</span> CP-08: Detalle sin stock</div>
-          </div>
-          <div class="qa-card" style="padding:10px;">
-            <h3 style="font-size:.85rem;">📦 HU 08</h3>
-            <div style="font-size:.72rem;color:var(--text-muted);margin-bottom:6px;">Stock</div>
-            <div class="qa-check"><span class="check">✓</span> CP-09: Actualización exitosa</div>
-            <div class="qa-check"><span class="check">✓</span> CP-10: Valor inválido → error</div>
-          </div>
-        </div>
-
-        <div style="margin-top:24px;display:flex;gap:24px;font-size:1.1rem;color:var(--text-mid);justify-content:center;">
-          <span><strong style="color:var(--green);font-size:1.4rem;">10</strong> casos de prueba</span>
-          <span><strong style="color:var(--green);font-size:1.4rem;">10</strong> aprobados</span>
-          <span><strong style="color:var(--green);font-size:1.4rem;">0</strong> defectos</span>
-        </div>
-
-        <div style="margin-top:16px;text-align:center;">
-          <a href="https://docs.google.com/spreadsheets/d/1ZLSoLmeoLizCxhl3bWAxFaxfz0JEMBtuCHq5LNJNmwQ/edit?usp=sharing" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--red);">📄 Ver documento de casos de prueba</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
   <!-- SLIDE: CIERRE (consolidada) -->
-  <div class="slide closing" data-slide="15">
+  <div class="slide closing" data-slide="9">
     <div class="slide-inner">
       <div class="cover-logo" style="width:72px;height:72px;font-size:2rem;border-radius:18px;margin-bottom:20px;">♪</div>
       <div class="slide-title" style="font-size:clamp(2rem,4.5vw,3rem);">Sprint Final</div>
@@ -789,11 +598,12 @@
 <!-- NAV -->
 <div class="nav-bar">
   <button class="nav-btn" id="prevBtn" title="Anterior">‹</button>
-  <span id="slideCounter">1 / 16</span>
+  <span id="slideCounter">1 / 10</span>
   <button class="nav-btn" id="nextBtn" title="Siguiente">›</button>
 </div>
 
+
+
 </body></html>
-  <script src="script.js"></script>
-</body>
+<script src="script.js"></script>
 </html>
