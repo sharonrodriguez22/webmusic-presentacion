@@ -351,15 +351,104 @@
 
         <!-- Links a entregables completos -->
         <div style="margin-top:8px;display:flex;gap:10px;flex-wrap:wrap;">
-          <a href="https://sharonrodriguez22.github.io/webmusic-presentacion/bizagi-tobe.jpg" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--teal);">📐 Ver diagrama Bizagi TO-BE</a>
-          <a href="https://sharonrodriguez22.github.io/webmusic-presentacion/gantt.jpg" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--teal);">📊 Ver dashboard completo</a>
+          <a href="https://sharonrodriguez22.github.io/webmusic-presentacion/bizagi-tobe.jpeg" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--teal);">📐 Ver diagrama Bizagi TO-BE</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- SLIDE: KEVIN — PROJECT MANAGER (consolidada) -->
+  <!-- SLIDE: DASHBOARD GERENCIAL -->
   <div class="slide" data-slide="8">
+    <div class="slide-inner">
+      <div class="slide-eyebrow" style="color:var(--teal);">Dashboard Gerencial — WebMusic Solutions</div>
+      <div class="slide-subtitle" style="font-size:.85rem;margin-bottom:10px;">Panel de control en tiempo real. Datos simulados representativos del modelo de negocio (localStorage).</div>
+
+      <!-- KPI tiles row -->
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px;">
+        <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:14px 10px;">
+          <div class="dash-tile-val" style="font-size:1.5rem;">$1.240.000</div>
+          <div class="dash-tile-lbl">Ventas del mes</div>
+        </div>
+        <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:14px 10px;">
+          <div class="dash-tile-val" style="font-size:1.5rem;">186</div>
+          <div class="dash-tile-lbl">Clientes registrados</div>
+        </div>
+        <div class="dash-tile" style="background:linear-gradient(135deg,#0d7a72,#0d9488);padding:14px 10px;">
+          <div class="dash-tile-val" style="font-size:1.5rem;">$18.300</div>
+          <div class="dash-tile-lbl">Ticket promedio</div>
+        </div>
+        <div class="dash-tile" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);padding:14px 10px;">
+          <div class="dash-tile-val" style="font-size:1.5rem;">94%</div>
+          <div class="dash-tile-lbl">Tasa de conversión</div>
+        </div>
+      </div>
+
+      <!-- Charts row -->
+      <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:10px;margin-bottom:10px;">
+        <!-- Bar chart: ventas por categoría -->
+        <div style="background:var(--card);border-radius:10px;padding:12px;">
+          <div style="font-family:var(--body);font-size:.75rem;font-weight:600;color:var(--text-mid);margin-bottom:8px;">Ventas por categoría</div>
+          <svg viewBox="0 0 300 130" style="width:100%;display:block;">
+            <rect x="10" y="10" width="180" height="14" rx="3" fill="#60a5fa" opacity=".9"/><text x="195" y="22" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Guitarras — $420k</text>
+            <rect x="10" y="30" width="140" height="14" rx="3" fill="#a78bfa" opacity=".9"/><text x="155" y="42" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Teclados — $310k</text>
+            <rect x="10" y="50" width="110" height="14" rx="3" fill="#2dd4bf" opacity=".9"/><text x="125" y="62" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Audio — $240k</text>
+            <rect x="10" y="70" width="80" height="14" rx="3" fill="#e8923a" opacity=".9"/><text x="95" y="82" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Baterías — $150k</text>
+            <rect x="10" y="90" width="55" height="14" rx="3" fill="#e8556a" opacity=".9"/><text x="70" y="102" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Bajos — $72k</text>
+            <rect x="10" y="110" width="35" height="14" rx="3" fill="#5cb66a" opacity=".9"/><text x="50" y="122" fill="var(--text-mid)" font-size="9" font-family="Inter,sans-serif">Accesorios — $48k</text>
+          </svg>
+        </div>
+        <!-- Donut chart: medios de pago -->
+        <div style="background:var(--card);border-radius:10px;padding:12px;">
+          <div style="font-family:var(--body);font-size:.75rem;font-weight:600;color:var(--text-mid);margin-bottom:8px;">Medios de pago</div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <svg viewBox="0 0 100 100" width="90" height="90">
+              <circle cx="50" cy="50" r="40" fill="none" stroke="var(--surface)" stroke-width="12"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#60a5fa" stroke-width="12" stroke-dasharray="125.6 125.6" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#a78bfa" stroke-width="12" stroke-dasharray="75.4 175.8" stroke-dashoffset="-125.6" transform="rotate(-90 50 50)"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#2dd4bf" stroke-width="12" stroke-dasharray="50.2 200.9" stroke-dashoffset="-201" transform="rotate(-90 50 50)"/>
+              <text x="50" y="53" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="700" font-family="Inter,sans-serif">100%</text>
+            </svg>
+            <div style="font-size:.72rem;line-height:1.8;color:var(--text-mid);">
+              <div><span style="color:#60a5fa;">●</span> Tarjeta crédito 50%</div>
+              <div><span style="color:#a78bfa;">●</span> Transferencia 30%</div>
+              <div><span style="color:#2dd4bf;">●</span> Efectivo 20%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom row: top products + link -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div style="background:var(--card);border-radius:10px;padding:10px;">
+          <div style="font-family:var(--body);font-size:.75rem;font-weight:600;color:var(--text-mid);margin-bottom:6px;">Top 5 productos</div>
+          <table style="width:100%;font-size:.72rem;color:var(--text-mid);">
+            <tr><td>1.</td><td>Guitarra Yamaha C40</td><td style="text-align:right;font-weight:600;">$85.000</td></tr>
+            <tr><td>2.</td><td>Teclado Casio CT-S200</td><td style="text-align:right;font-weight:600;">$120.000</td></tr>
+            <tr><td>3.</td><td>Micrófono Shure SM58</td><td style="text-align:right;font-weight:600;">$95.000</td></tr>
+            <tr><td>4.</td><td>Bajo Squier Affinity</td><td style="text-align:right;font-weight:600;">$180.000</td></tr>
+            <tr><td>5.</td><td>Batería Pearl Export</td><td style="text-align:right;font-weight:600;">$350.000</td></tr>
+          </table>
+        </div>
+        <div style="background:var(--card);border-radius:10px;padding:10px;">
+          <div style="font-family:var(--body);font-size:.75rem;font-weight:600;color:var(--text-mid);margin-bottom:6px;">Pedidos recientes</div>
+          <table style="width:100%;font-size:.72rem;color:var(--text-mid);">
+            <tr><td>#001</td><td>2 items</td><td style="color:var(--green);font-weight:600;">Completado</td><td style="text-align:right;">$205.000</td></tr>
+            <tr><td>#002</td><td>1 item</td><td style="color:var(--green);font-weight:600;">Completado</td><td style="text-align:right;">$85.000</td></tr>
+            <tr><td>#003</td><td>3 items</td><td style="color:var(--orange);font-weight:600;">Pendiente</td><td style="text-align:right;">$310.000</td></tr>
+            <tr><td>#004</td><td>1 item</td><td style="color:var(--green);font-weight:600;">Completado</td><td style="text-align:right;">$120.000</td></tr>
+            <tr><td>#005</td><td>2 items</td><td style="color:var(--green);font-weight:600;">Completado</td><td style="text-align:right;">$275.000</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div style="margin-top:8px;text-align:center;">
+        <a href="https://sharonrodriguez22.github.io/webmusic-ecommerce/#admin" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--teal);">📊 Ver dashboard en vivo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: KEVIN — PROJECT MANAGER (consolidada) -->
+  <div class="slide" data-slide="9">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: Project Manager</div>
       <div class="role-header" style="margin-bottom:4px;">
@@ -413,14 +502,14 @@
         </div>
 
         <div style="margin-top:8px;">
-          <a href="https://sharonrodriguez22.github.io/webmusic-presentacion/gantt.jpg" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--purple);">📅 Ver diagrama de Gantt completo</a>
+          <a href="https://sharonrodriguez22.github.io/webmusic-presentacion/gantt.jpeg" target="_blank" rel="noopener" class="slide-link-btn" style="background:var(--purple);">📅 Ver diagrama de Gantt completo</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- SLIDE: ANÁLISIS FINANCIERO -->
-  <div class="slide" data-slide="9">
+  <div class="slide" data-slide="10">
     <div class="slide-inner">
       <div class="slide-eyebrow">Viabilidad de Negocio</div>
       <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Presupuesto y Monetización</div>
@@ -454,7 +543,7 @@
   </div>
 
   <!-- SLIDE: PUNTO DE EQUILIBRIO -->
-  <div class="slide" data-slide="10">
+  <div class="slide" data-slide="11">
     <div class="slide-inner">
       <div class="slide-eyebrow">Viabilidad de Negocio</div>
       <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:4px;">Punto de Equilibrio (Break-even)</div>
@@ -519,7 +608,7 @@
   </div>
 
   <!-- SLIDE: BRUNO — SCRUM MASTER (consolidada) -->
-  <div class="slide" data-slide="11" style="padding:20px 48px 24px;">
+  <div class="slide" data-slide="12" style="padding:20px 48px 24px;">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: Scrum Master</div>
       <div class="role-header" style="margin-bottom:4px;">
@@ -565,7 +654,7 @@
   </div>
 
   <!-- SLIDE: SHARON — DESARROLLADORA (consolidada) -->
-  <div class="slide" data-slide="12">
+  <div class="slide" data-slide="13">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: Desarrolladora</div>
       <div class="role-header" style="margin-bottom:4px;">
@@ -628,7 +717,7 @@
   </div>
 
   <!-- SLIDE 11: MORENA — QA -->
-  <div class="slide" data-slide="13">
+  <div class="slide" data-slide="14">
     <div class="slide-inner">
       <div class="slide-eyebrow">Rol: QA Tester</div>
       <div class="role-header">
@@ -688,7 +777,7 @@
   </div>
 
   <!-- SLIDE: EQUIPO Y ROLES -->
-  <div class="slide" data-slide="14">
+  <div class="slide" data-slide="15">
     <div class="slide-inner">
       <div class="slide-eyebrow">Nuestro Equipo</div>
       <div class="slide-title" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:8px;">Roles y responsabilidades</div>
@@ -742,7 +831,7 @@
   </div>
 
   <!-- SLIDE: CIERRE (consolidada) -->
-  <div class="slide closing" data-slide="15">
+  <div class="slide closing" data-slide="16">
     <div class="slide-inner">
       <div class="cover-logo" style="width:72px;height:72px;font-size:2rem;border-radius:18px;margin-bottom:20px;">♪</div>
       <div class="slide-title" style="font-size:clamp(2rem,4.5vw,3rem);">Sprint Final</div>
