@@ -1193,11 +1193,11 @@ body {
     </div>
   </div>
 
-  <!-- SLIDE: FINANZAS + BREAK-EVEN + GANTT -->
+  <!-- SLIDE: FINANZAS + BREAK-EVEN -->
   <div class="slide" data-slide="6">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Viabilidad de Negocio · Planificación</div>
-      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:4px;">Presupuesto, Break-even y Gantt</div>
+      <div class="slide-eyebrow">Viabilidad de Negocio</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:4px;">Presupuesto y Break-even</div>
       <div class="fill-grow" style="display:flex;flex-direction:column;gap:6px;">
         <!-- ROW 1: BUDGET + MONETIZATION + BREAK-EVEN KPIs -->
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
@@ -1251,36 +1251,39 @@ body {
             </div>
           </div>
         </div>
-        <!-- ROW 2: BREAK-EVEN CHART + GANTT IMAGE -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-          <div class="breakeven-chart" style="padding:6px;">
-            <div style="font-size:.68rem;font-weight:600;color:var(--text);margin-bottom:4px;text-align:center;">Ingresos vs. Costos</div>
-            <svg viewBox="0 0 400 180" style="width:100%;height:auto;">
-              <line x1="50" y1="15" x2="50" y2="155" stroke="var(--divider)" stroke-width="1"/>
-              <line x1="50" y1="155" x2="380" y2="155" stroke="var(--divider)" stroke-width="1"/>
-              <text x="45" y="20" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$1700</text>
-              <text x="45" y="55" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$1275</text>
-              <text x="45" y="85" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$850</text>
-              <text x="45" y="120" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$425</text>
-              <text x="45" y="158" text-anchor="end" fill="var(--text-muted)" font-size="7" font-family="var(--body)">$0</text>
-              <text x="50" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">0</text>
-              <text x="116" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">25</text>
-              <text x="182" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">50</text>
-              <text x="248" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">75</text>
-              <text x="314" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">100</text>
-              <text x="380" y="170" text-anchor="middle" fill="var(--text-muted)" font-size="7">125</text>
-              <line x1="50" y1="85" x2="380" y2="85" stroke="var(--red)" stroke-width="2"/>
-              <text x="385" y="88" fill="var(--red)" font-size="7" font-family="var(--body)">Costos</text>
-              <line x1="50" y1="155" x2="380" y2="10" stroke="var(--green)" stroke-width="2"/>
-              <text x="385" y="13" fill="var(--green)" font-size="7" font-family="var(--body)">Ingresos</text>
-              <circle cx="225" cy="85" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="2"/>
-              <text x="225" y="77" text-anchor="middle" fill="var(--accent)" font-size="7" font-weight="700" font-family="var(--body)">Break-even · 71 txns</text>
-              <polygon points="225,85 380,85 380,10" fill="var(--green)" opacity="0.08"/>
+        <!-- ROW 2: BREAK-EVEN CHART (expanded, Gantt removed — belongs to Kevin slide) -->
+        <div style="display:grid;grid-template-columns:1fr;gap:8px;">
+          <div class="breakeven-chart" style="padding:10px;">
+            <div style="font-size:.76rem;font-weight:600;color:var(--text);margin-bottom:6px;text-align:center;">Punto de Equilibrio — Ingresos vs. Costos</div>
+            <svg viewBox="0 0 700 200" style="width:100%;height:auto;">
+              <line x1="60" y1="15" x2="60" y2="165" stroke="var(--divider)" stroke-width="1"/>
+              <line x1="60" y1="165" x2="670" y2="165" stroke="var(--divider)" stroke-width="1"/>
+              <text x="55" y="20" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$1700</text>
+              <text x="55" y="57" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$1275</text>
+              <text x="55" y="92" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$850</text>
+              <text x="55" y="128" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$425</text>
+              <text x="55" y="168" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="var(--body)">$0</text>
+              <line x1="60" y1="57" x2="670" y2="57" stroke="var(--divider)" stroke-width="0.5" stroke-dasharray="4"/>
+              <line x1="60" y1="92" x2="670" y2="92" stroke="var(--divider)" stroke-width="0.5" stroke-dasharray="4"/>
+              <line x1="60" y1="128" x2="670" y2="128" stroke="var(--divider)" stroke-width="0.5" stroke-dasharray="4"/>
+              <text x="60" y="180" text-anchor="middle" fill="var(--text-muted)" font-size="9">0</text>
+              <text x="182" y="180" text-anchor="middle" fill="var(--text-muted)" font-size="9">25</text>
+              <text x="304" y="180" text-anchor="middle" fill="var(--text-muted)" font-size="9">50</text>
+              <text x="426" y="180" text-anchor="middle" fill="var(--text-muted)" font-size="9">75</text>
+              <text x="548" y="180" text-anchor="middle" fill="var(--text-muted)" font-size="9">100</text>
+              <text x="670" y="180" text-anchor="middle" fill="var(--text-muted)" font-size="9">125</text>
+              <text x="365" y="195" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--body)">Transacciones / mes</text>
+              <line x1="60" y1="92" x2="670" y2="92" stroke="var(--red)" stroke-width="2.5"/>
+              <text x="675" y="95" fill="var(--red)" font-size="9" font-weight="600" font-family="var(--body)">Costos fijos</text>
+              <line x1="60" y1="165" x2="670" y2="10" stroke="var(--green)" stroke-width="2.5"/>
+              <text x="675" y="13" fill="var(--green)" font-size="9" font-weight="600" font-family="var(--body)">Ingresos</text>
+              <polygon points="388,92 670,92 670,10" fill="var(--green)" opacity="0.08"/>
+              <circle cx="388" cy="92" r="5" fill="var(--accent)" stroke="var(--card)" stroke-width="2"/>
+              <text x="388" y="82" text-anchor="middle" fill="var(--accent)" font-size="10" font-weight="700" font-family="var(--body)">Break-even · 71 txns/mes</text>
+              <rect x="490" y="52" width="160" height="34" rx="6" fill="var(--card)" stroke="var(--accent)" stroke-width="1" opacity="0.9"/>
+              <text x="570" y="66" text-anchor="middle" fill="var(--text)" font-size="8" font-family="var(--body)">Margen por txn: USD 12</text>
+              <text x="570" y="79" text-anchor="middle" fill="var(--accent)" font-size="9" font-weight="700" font-family="var(--body)">Meta: Mes 5</text>
             </svg>
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:6px;text-align:center;">
-            <div style="font-size:.68rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Diagrama de Gantt — 3 meses</div>
-            <img src="gantt.jpeg" alt="Diagrama de Gantt del proyecto WebMusic" style="max-width:100%;max-height:180px;border-radius:6px;object-fit:contain;">
           </div>
         </div>
       </div>
@@ -1347,45 +1350,46 @@ body {
   <div class="slide" data-slide="8">
     <div class="slide-inner">
       <div class="slide-eyebrow">Encuesta · Conclusiones</div>
-      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:4px;">Resultados de la Encuesta (23 respuestas)</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Resultados de la Encuesta (23 respuestas)</div>
 
-      <div class="fill-grow" style="display:flex;flex-direction:column;gap:8px;">
-        <!-- ROW 1: Productos + Edad + Conclusiones -->
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:8px;text-align:center;">
-            <div style="font-size:.65rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">¿Qué compran más?</div>
-            <img src="grafico-productos.jpeg" alt="Gráfico de productos más comprados" style="width:100%;border-radius:6px;background:#fff;">
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:10px;">
+        <!-- ROW 1: Productos + Edad + hallazgos -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:stretch;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;">
+            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">¿Qué compran más?</div>
+            <img src="grafico-productos.jpeg" alt="Gráfico de productos más comprados" style="width:100%;border-radius:6px;background:#fff;flex:1;object-fit:contain;">
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:8px;text-align:center;">
-            <div style="font-size:.65rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">Participación por edad</div>
-            <img src="grafico-participacion-edad.jpeg" alt="Gráfico de participación por edad" style="width:100%;border-radius:6px;background:#fff;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;">
+            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Participación por edad</div>
+            <img src="grafico-participacion-edad.jpeg" alt="Gráfico de participación por edad" style="width:100%;border-radius:6px;background:#fff;flex:1;object-fit:contain;">
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px;display:flex;flex-direction:column;justify-content:center;">
-            <div style="font-size:.72rem;font-weight:600;color:var(--accent);margin-bottom:6px;">Conclusiones</div>
-            <div style="font-size:.72rem;color:var(--text-mid);line-height:1.55;">
-              <div style="margin-bottom:5px;">La población encuestada es <b style="color:var(--text);">joven</b>: el <b style="color:var(--accent);">68%</b> tiene entre 25 y 34 años.</div>
-              <div>Los productos más comprados son <b style="color:var(--text);">cuerdas</b> y <b style="color:var(--text);">accesorios</b>, seguidos de instrumentos.</div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;justify-content:center;gap:14px;">
+            <div style="font-size:.88rem;color:var(--text);line-height:1.6;">
+              La población encuestada es <b style="color:var(--accent);">joven</b>: el <b style="color:var(--accent);font-size:1.1rem;">68%</b> tiene entre 25 y 34 años.
+            </div>
+            <div style="width:100%;height:1px;background:var(--divider);"></div>
+            <div style="font-size:.88rem;color:var(--text);line-height:1.6;">
+              Los productos más comprados son <b style="color:var(--accent);">cuerdas</b> y <b style="color:var(--accent);">accesorios</b>, seguidos de instrumentos.
             </div>
           </div>
         </div>
 
         <!-- ROW 2: Prioridades + Conclusión final -->
-        <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:8px;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:8px;text-align:center;">
-            <div style="font-size:.65rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">Prioridades del comprador (promedio sobre 5)</div>
-            <img src="grafico-prioridades.jpeg" alt="Gráfico de prioridades del comprador" style="width:100%;border-radius:6px;background:#fff;">
+        <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:10px;align-items:stretch;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;">
+            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Prioridades del comprador (promedio sobre 5)</div>
+            <img src="grafico-prioridades.jpeg" alt="Gráfico de prioridades del comprador" style="width:100%;border-radius:6px;background:#fff;flex:1;object-fit:contain;">
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;border-left:3px solid var(--accent);display:flex;flex-direction:column;justify-content:center;">
-            <div style="font-size:.72rem;font-weight:600;color:var(--accent);margin-bottom:6px;">Conclusión final</div>
-            <div style="font-size:.72rem;color:var(--text);line-height:1.5;margin-bottom:8px;">El obstáculo más importante de la venta online en este rubro es la <b style="color:var(--accent);">incertidumbre</b>. La tienda debería:</div>
-            <div style="font-size:.68rem;color:var(--text-mid);line-height:1.6;display:flex;flex-direction:column;gap:2px;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:18px 20px;border-left:3px solid var(--accent);display:flex;flex-direction:column;justify-content:center;">
+            <div style="font-size:.92rem;color:var(--text);line-height:1.55;margin-bottom:12px;">El obstáculo más importante de la venta online en este rubro es la <b style="color:var(--accent);font-size:1.05rem;">incertidumbre</b>. La tienda debería:</div>
+            <div style="font-size:.85rem;color:var(--text-mid);line-height:1.7;display:flex;flex-direction:column;gap:4px;">
               <span>📦 Seguimiento del pedido</span>
               <span>📋 Fichas técnicas completas con fotos reales</span>
               <span>🛡️ Comunicar claramente garantía y devoluciones</span>
               <span>🎵 Complementar con audio o video de demostración</span>
               <span>💬 Ofrecer chat de WhatsApp para consultas</span>
             </div>
-            <div style="margin-top:8px;padding-top:6px;border-top:1px solid var(--divider);font-size:.68rem;color:var(--text);line-height:1.5;">
+            <div style="margin-top:14px;padding-top:10px;border-top:1px solid var(--divider);font-size:.85rem;color:var(--text);line-height:1.55;">
               Para el lanzamiento: apoyarse en <b style="color:var(--accent);">cuerdas y accesorios</b> y trabajar la construcción de confianza con los <b style="color:var(--accent);">principiantes</b>.
             </div>
           </div>
@@ -1398,37 +1402,74 @@ body {
   <div class="slide" data-slide="9">
     <div class="slide-inner">
       <div class="slide-eyebrow">Developer — Sharon Rodríguez</div>
-      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:4px;">Desarrollo del E-commerce</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Desarrollo del E-commerce</div>
 
-      <div class="fill-grow" style="display:flex;flex-direction:column;gap:6px;">
-        <!-- Tech stack compact -->
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:5px;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:8px;text-align:center;">
-            <div style="font-size:1.2rem;margin-bottom:2px;">🟧</div>
-            <div style="font-size:.72rem;font-weight:600;color:var(--text);">HTML5</div>
-            <div style="font-size:.58rem;color:var(--text-muted);">Semántico</div>
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:8px;">
+        <!-- Tech stack -->
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px;text-align:center;">
+            <div style="font-size:1.3rem;margin-bottom:3px;">🟧</div>
+            <div style="font-size:.78rem;font-weight:600;color:var(--text);">HTML5</div>
+            <div style="font-size:.62rem;color:var(--text-muted);">Semántico</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:8px;text-align:center;">
-            <div style="font-size:1.2rem;margin-bottom:2px;">🎨</div>
-            <div style="font-size:.72rem;font-weight:600;color:var(--text);">CSS3</div>
-            <div style="font-size:.58rem;color:var(--text-muted);">Grid · Flexbox · Dark mode</div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px;text-align:center;">
+            <div style="font-size:1.3rem;margin-bottom:3px;">🎨</div>
+            <div style="font-size:.78rem;font-weight:600;color:var(--text);">CSS3</div>
+            <div style="font-size:.62rem;color:var(--text-muted);">Grid · Flexbox · Dark mode</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:8px;text-align:center;">
-            <div style="font-size:1.2rem;margin-bottom:2px;">⚡</div>
-            <div style="font-size:.72rem;font-weight:600;color:var(--text);">JavaScript ES6+</div>
-            <div style="font-size:.58rem;color:var(--text-muted);">Vanilla · localStorage</div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px;text-align:center;">
+            <div style="font-size:1.3rem;margin-bottom:3px;">⚡</div>
+            <div style="font-size:.78rem;font-weight:600;color:var(--text);">JavaScript ES6+</div>
+            <div style="font-size:.62rem;color:var(--text-muted);">Vanilla · localStorage</div>
           </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:8px;text-align:center;">
-            <div style="font-size:1.2rem;margin-bottom:2px;">🚀</div>
-            <div style="font-size:.72rem;font-weight:600;color:var(--text);">GitHub Pages</div>
-            <div style="font-size:.58rem;color:var(--text-muted);">Deploy continuo</div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:8px;padding:10px;text-align:center;">
+            <div style="font-size:1.3rem;margin-bottom:3px;">🚀</div>
+            <div style="font-size:.78rem;font-weight:600;color:var(--text);">GitHub Pages</div>
+            <div style="font-size:.62rem;color:var(--text-muted);">Deploy continuo</div>
+          </div>
+        </div>
+
+        <!-- 18 HU iniciales -->
+        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-left:3px solid var(--blue);">
+          <div style="font-size:.78rem;font-weight:600;color:var(--blue);margin-bottom:8px;">🏗️ Base inicial — 18 User Stories · 24 productos · 7 categorías</div>
+          <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:4px;">
+            <div style="background:var(--surface);border-radius:6px;padding:6px 4px;text-align:center;">
+              <div style="font-size:.9rem;">👤</div>
+              <div style="font-size:.52rem;color:var(--blue);font-weight:600;">US01–03</div>
+              <div style="font-size:.58rem;color:var(--text);">Registro, Login, Contraseña</div>
+            </div>
+            <div style="background:var(--surface);border-radius:6px;padding:6px 4px;text-align:center;">
+              <div style="font-size:.9rem;">🛍️</div>
+              <div style="font-size:.52rem;color:var(--blue);font-weight:600;">US04–07</div>
+              <div style="font-size:.58rem;color:var(--text);">Catálogo, Filtros, Búsqueda, Detalle</div>
+            </div>
+            <div style="background:var(--surface);border-radius:6px;padding:6px 4px;text-align:center;">
+              <div style="font-size:.9rem;">🛒</div>
+              <div style="font-size:.52rem;color:var(--blue);font-weight:600;">US08–10</div>
+              <div style="font-size:.58rem;color:var(--text);">Stock, Carrito, Modificar</div>
+            </div>
+            <div style="background:var(--surface);border-radius:6px;padding:6px 4px;text-align:center;">
+              <div style="font-size:.9rem;">💳</div>
+              <div style="font-size:.52rem;color:var(--blue);font-weight:600;">US11–13</div>
+              <div style="font-size:.58rem;color:var(--text);">Checkout, Pagos, Confirmación</div>
+            </div>
+            <div style="background:var(--surface);border-radius:6px;padding:6px 4px;text-align:center;">
+              <div style="font-size:.9rem;">📋</div>
+              <div style="font-size:.52rem;color:var(--blue);font-weight:600;">US14</div>
+              <div style="font-size:.58rem;color:var(--text);">Historial de pedidos</div>
+            </div>
+            <div style="background:var(--surface);border-radius:6px;padding:6px 4px;text-align:center;">
+              <div style="font-size:.9rem;">⚙️</div>
+              <div style="font-size:.52rem;color:var(--blue);font-weight:600;">US15–18</div>
+              <div style="font-size:.58rem;color:var(--text);">Admin, Ventas, Clientes, Dashboard</div>
+            </div>
           </div>
         </div>
 
         <!-- Qué cambió post-encuesta -->
-        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px;border-left:3px solid var(--accent);">
-          <div style="font-size:.76rem;font-weight:600;color:var(--accent);margin-bottom:5px;">📊 Cambios post-encuesta (23 respuestas analizadas)</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px 12px;font-size:.65rem;color:var(--text-mid);line-height:1.5;">
+        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-left:3px solid var(--accent);">
+          <div style="font-size:.78rem;font-weight:600;color:var(--accent);margin-bottom:8px;">📊 Cambios post-encuesta (23 respuestas → 11 mejoras implementadas)</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px 14px;font-size:.72rem;color:var(--text-mid);line-height:1.55;">
             <span>🛡️ <b style="color:var(--text);">Garantía y devoluciones</b> — página dedicada (4.26/5)</span>
             <span>📋 <b style="color:var(--text);">Fichas técnicas</b> — specs en modal de producto (43%)</span>
             <span>📦 <b style="color:var(--text);">Tracking de pedidos</b> — estados visibles en historial (43%)</span>
@@ -1439,13 +1480,14 @@ body {
             <span>🏪 <b style="color:var(--text);">Retiro en local</b> — opción en checkout (17%)</span>
             <span>🎵 <b style="color:var(--text);">Muestras de audio</b> — simulador de sonido (3.43/5)</span>
             <span>📩 <b style="color:var(--text);">Newsletter</b> — formulario en footer (61% acepta)</span>
-            <span style="grid-column:span 2;">💬 <b style="color:var(--text);">WhatsApp</b> — botón flotante de contacto directo</span>
+            <span>💬 <b style="color:var(--text);">WhatsApp</b> — botón flotante de contacto directo</span>
+            <span></span>
           </div>
         </div>
 
-        <div style="display:flex;align-items:center;gap:12px;margin-top:2px;">
-          <a href="https://sharonrodriguez22.github.io/webmusic-ecommerce/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:var(--accent);color:#fff;border-radius:10px;font-size:.85rem;font-weight:600;text-decoration:none;box-shadow:0 4px 16px var(--accent-glow);">🚀 Abrir demo en vivo</a>
-          <span style="font-size:.72rem;color:var(--text-muted);">sharonrodriguez22.github.io/webmusic-ecommerce</span>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:4px;">
+          <a href="https://sharonrodriguez22.github.io/webmusic-ecommerce/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 24px;background:var(--accent);color:#fff;border-radius:10px;font-size:.9rem;font-weight:600;text-decoration:none;box-shadow:0 4px 16px var(--accent-glow);">🚀 Abrir demo en vivo</a>
+          <span style="font-size:.78rem;color:var(--text-muted);">sharonrodriguez22.github.io/webmusic-ecommerce</span>
         </div>
       </div>
     </div>
