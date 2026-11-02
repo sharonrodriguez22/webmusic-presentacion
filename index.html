@@ -901,9 +901,9 @@ body {
   }
 }
 
-/* Slide 7 (Encuesta): 2-col → 1-col on mobile */
+/* Slide 6 (Encuesta): 2-col → 1-col on mobile */
 @media (max-width: 768px) {
-  .slide[data-slide="7"] .fill-grow > div[style*="1fr 1fr"] {
+  .slide[data-slide="6"] .fill-grow > div[style*="1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 }
@@ -957,9 +957,9 @@ body {
   }
 }
 
-/* Slide 6 (Finanzas): 3-col inline grid */
+/* Slide 7 (Finanzas): 3-col inline grid */
 @media (max-width: 768px) {
-  .slide[data-slide="6"] .fill-grow > div[style*="1fr 1fr 1fr"] {
+  .slide[data-slide="7"] .fill-grow > div[style*="1fr 1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 }
@@ -1293,8 +1293,33 @@ body {
     </div>
   </div>
 
-  <!-- SLIDE: FINANZAS + BREAK-EVEN -->
+  <!-- SLIDE: ENCUESTA — PROCESO Y DATOS -->
   <div class="slide" data-slide="6">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Investigación de Mercado</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Encuesta — Proceso de Recolección y Análisis</div>
+      <div class="fill-grow" style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:900px;width:100%;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--accent);">
+            <div style="font-size:.72rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;">Formulario + Datos</div>
+            <div style="font-size:.76rem;color:var(--text);line-height:1.6;margin-bottom:4px;">Encuesta diseñada en <b>Google Forms</b> con preguntas de opción múltiple y escala Likert.</div>
+            <div style="font-size:.68rem;color:var(--text-mid);line-height:1.55;">23 respuestas recopiladas. Datos exportados a Google Sheets y procesados con Python (pandas) en Google Colab.</div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--blue);">
+            <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;">Análisis y Visualización</div>
+            <div style="font-size:.76rem;color:var(--text);line-height:1.6;margin-bottom:4px;">Gráficos generados con <b>matplotlib</b> y consolidados en Power BI para el análisis exploratorio.</div>
+            <div style="font-size:.68rem;color:var(--text-mid);line-height:1.55;">Variables analizadas: perfil demográfico, hábitos de compra, prioridades del consumidor y funcionalidades deseadas.</div>
+          </div>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px;text-align:center;max-width:900px;width:100%;">
+          <img src="captura-encuesta.jpeg" alt="Proceso de encuesta: formulario, código, datos y visualización" style="width:100%;max-height:420px;border-radius:6px;object-fit:contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: FINANZAS + BREAK-EVEN -->
+  <div class="slide" data-slide="7">
     <div class="slide-inner">
       <div class="slide-eyebrow">Viabilidad de Negocio</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:4px;">Presupuesto y Break-even</div>
@@ -1385,31 +1410,6 @@ body {
               <text x="570" y="79" text-anchor="middle" fill="var(--accent)" font-size="9" font-weight="700" font-family="var(--body)">Meta: Mes 5</text>
             </svg>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: ENCUESTA — PROCESO Y DATOS -->
-  <div class="slide" data-slide="7">
-    <div class="slide-inner">
-      <div class="slide-eyebrow">Investigación de Mercado</div>
-      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Encuesta — Proceso de Recolección y Análisis</div>
-      <div class="fill-grow" style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:900px;width:100%;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--accent);">
-            <div style="font-size:.72rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;">Formulario + Datos</div>
-            <div style="font-size:.76rem;color:var(--text);line-height:1.6;margin-bottom:4px;">Encuesta diseñada en <b>Google Forms</b> con preguntas de opción múltiple y escala Likert.</div>
-            <div style="font-size:.68rem;color:var(--text-mid);line-height:1.55;">23 respuestas recopiladas. Datos exportados a Google Sheets y procesados con Python (pandas) en Google Colab.</div>
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;border-top:3px solid var(--blue);">
-            <div style="font-size:.72rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;">Análisis y Visualización</div>
-            <div style="font-size:.76rem;color:var(--text);line-height:1.6;margin-bottom:4px;">Gráficos generados con <b>matplotlib</b> y consolidados en Power BI para el análisis exploratorio.</div>
-            <div style="font-size:.68rem;color:var(--text-mid);line-height:1.55;">Variables analizadas: perfil demográfico, hábitos de compra, prioridades del consumidor y funcionalidades deseadas.</div>
-          </div>
-        </div>
-        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px;text-align:center;max-width:900px;width:100%;">
-          <img src="captura-encuesta.jpeg" alt="Proceso de encuesta: formulario, código, datos y visualización" style="width:100%;max-height:420px;border-radius:6px;object-fit:contain;">
         </div>
       </div>
     </div>
