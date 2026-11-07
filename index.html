@@ -923,23 +923,23 @@ body {
   }
 }
 
-/* Slide 13 (Dev): 4-col tech → 2-col; 6-col HU → 3-col then 2-col; 2-col changes → 1-col */
+/* Slide 14 (Dev): 4-col tech → 2-col; 6-col HU → 3-col then 2-col; 2-col changes → 1-col */
 @media (max-width: 1024px) {
-  .slide[data-slide="13"] .fill-grow > div[style*="repeat(4"] {
+  .slide[data-slide="14"] .fill-grow > div[style*="repeat(4"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .slide[data-slide="13"] div[style*="repeat(6"] {
+  .slide[data-slide="14"] div[style*="repeat(6"] {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 @media (max-width: 768px) {
-  .slide[data-slide="13"] .fill-grow > div[style*="repeat(4"] {
+  .slide[data-slide="14"] .fill-grow > div[style*="repeat(4"] {
     grid-template-columns: 1fr 1fr !important;
   }
-  .slide[data-slide="13"] div[style*="repeat(6"] {
+  .slide[data-slide="14"] div[style*="repeat(6"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .slide[data-slide="13"] div[style*="1fr 1fr"]:not([style*="repeat"]):not([style*="1fr 1fr 1fr"]) {
+  .slide[data-slide="14"] div[style*="1fr 1fr"]:not([style*="repeat"]):not([style*="1fr 1fr 1fr"]) {
     grid-template-columns: 1fr !important;
   }
 }
@@ -1656,8 +1656,144 @@ body {
     </div>
   </div>
 
-  <!-- SLIDE: CONCLUSIONES DE LA ENCUESTA -->
+  <!-- SLIDE: SCRUM MASTER — JIRA SPRINT 2 (TP2) -->
   <div class="slide" data-slide="12">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Scrum Master</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Tablero Jira — Sprint 2</div>
+
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:8px;">
+        <!-- Board columns -->
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px;text-align:center;">
+            <div style="font-size:.72rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">To Do</div>
+            <div style="font-size:1.6rem;font-weight:700;color:var(--text-muted);">0</div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px;text-align:center;">
+            <div style="font-size:.72rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">In Progress</div>
+            <div style="font-size:1.6rem;font-weight:700;color:var(--text-muted);">0</div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px;text-align:center;">
+            <div style="font-size:.72rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">Testing</div>
+            <div style="font-size:1.6rem;font-weight:700;color:var(--text-muted);">0</div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px;text-align:center;border-top:3px solid var(--green);">
+            <div style="font-size:.72rem;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">Done ✓</div>
+            <div style="font-size:1.6rem;font-weight:700;color:var(--green);">13</div>
+          </div>
+        </div>
+
+        <!-- Sprint 2 cards: HU 01-03 (Auth) + HU 09-18 -->
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;">
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">👤</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 01</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Registro</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-5 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">🔐</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 02</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Login</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-6 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">🔑</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 03</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Contraseña</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-7 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">🛒</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 09</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Carrito</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-13 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">✏️</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 10</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Mod. carrito</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-14 ✓</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;">
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">💳</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 11</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Checkout</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-15 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">🏦</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 12</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Pagos</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-16 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">✅</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 13</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Confirmación</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-17 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">📋</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 14</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Pedidos</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-18 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">⚙️</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 15</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Admin</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-19 ✓</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:5px;">
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">💰</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 16</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Ventas</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-20 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">👥</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 17</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Clientes</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-21 ✓</div>
+          </div>
+          <div style="background:var(--green-bg);border:1px solid rgba(92,182,106,.25);border-radius:8px;padding:8px;text-align:center;">
+            <div style="font-size:1rem;margin-bottom:2px;">📊</div>
+            <div style="font-size:.64rem;font-weight:600;color:var(--green);">HU 18</div>
+            <div style="font-size:.68rem;color:var(--text);font-weight:500;">Dashboard</div>
+            <div style="font-size:.55rem;color:var(--text-muted);margin-top:1px;">SCRUM-22 ✓</div>
+          </div>
+        </div>
+
+        <!-- Resumen -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;">
+            <div style="font-size:.78rem;font-weight:600;color:var(--accent);margin-bottom:4px;">📦 Alcance del Sprint 2</div>
+            <div style="font-size:.72rem;color:var(--text-mid);line-height:1.7;display:flex;flex-direction:column;gap:2px;">
+              <span>• Autenticación completa (registro, login, recuperar)</span>
+              <span>• Flujo de compra (carrito → checkout → pago → confirmación)</span>
+              <span>• Panel de administración (pedidos, ventas, clientes, dashboard)</span>
+            </div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;">
+            <div style="font-size:.78rem;font-weight:600;color:var(--green);margin-bottom:4px;">✅ Resultado</div>
+            <div style="font-size:.72rem;color:var(--text-mid);line-height:1.7;display:flex;flex-direction:column;gap:2px;">
+              <span>• 13 HU completadas en este sprint</span>
+              <span>• E-commerce 100% funcional</span>
+              <span>• 18/18 User Stories en Done</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: CONCLUSIONES DE LA ENCUESTA -->
+  <div class="slide" data-slide="13">
     <div class="slide-inner">
       <div class="slide-eyebrow">Encuesta · Conclusiones</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Resultados de la Encuesta (23 respuestas)</div>
@@ -1709,7 +1845,7 @@ body {
   </div>
 
   <!-- SLIDE: SHARON — DESARROLLADORA (consolidada) -->
-  <div class="slide" data-slide="13">
+  <div class="slide" data-slide="14">
     <div class="slide-inner">
       <div class="slide-eyebrow">Developer</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Desarrollo del E-commerce</div>
@@ -1803,7 +1939,7 @@ body {
   </div>
 
   <!-- SLIDE: QA TESTER (TP1) -->
-  <div class="slide" data-slide="14">
+  <div class="slide" data-slide="15">
     <div class="slide-inner">
       <div class="slide-eyebrow">QA Tester</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Testing — 10 Casos de Prueba</div>
@@ -1872,7 +2008,7 @@ body {
   </div>
 
   <!-- SLIDE: CIERRE (consolidada) -->
-  <div class="slide closing" data-slide="15">
+  <div class="slide closing" data-slide="16">
     <div class="slide-inner">
       <div class="cover-logo" style="width:56px;height:56px;font-size:1.6rem;border-radius:14px;margin-bottom:12px;">♪</div>
       <div class="slide-title" style="font-size:clamp(1.6rem,3.5vw,2.4rem);">Sprint Final</div>
