@@ -1541,7 +1541,7 @@ body {
     <div class="slide-inner">
       <div class="slide-eyebrow">Fase 3 · Viabilidad de Negocio</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:2px;">Presupuesto y Break-even</div>
-      <div style="font-size:.62rem;color:var(--accent);background:var(--accent-soft);display:inline-block;padding:2px 10px;border-radius:4px;margin-bottom:4px;">Moneda: USD · Ticket promedio: USD 150 · BE = USD 850 / USD 12 = 71 txns/mes · Consistente con SOM (267 txns/mes) y Dashboard</div>
+      <div style="font-size:.62rem;color:var(--accent);background:var(--accent-soft);display:inline-block;padding:2px 10px;border-radius:4px;margin-bottom:4px;">Moneda: USD · Ticket promedio: USD 150 · BE = USD 850 / USD 12.50 = 68 txns/mes · Consistente con SOM (267 txns/mes) y Dashboard</div>
       <div class="fill-grow" style="display:flex;flex-direction:column;gap:6px;">
         <!-- ROW 1: BUDGET + MONETIZATION + BREAK-EVEN KPIs -->
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
@@ -1567,7 +1567,7 @@ body {
               <div style="display:flex;justify-content:space-between;"><span>Publicación destacada</span><span style="font-weight:600;color:var(--green);">USD 5/prod</span></div>
               <div style="display:flex;justify-content:space-between;"><span>Reportes avanzados IA</span><span style="font-weight:600;color:var(--green);">USD 25/mes</span></div>
               <div style="border-top:1px solid var(--divider);margin-top:3px;padding-top:3px;font-size:.62rem;color:var(--text);">
-                <strong>Ingreso/txn:</strong> $150 × 8% = <strong style="color:var(--accent);">USD 12</strong>
+                <strong>Margen neto/txn:</strong> comisión + aux. = <strong style="color:var(--accent);">USD 12.50</strong>
               </div>
             </div>
           </div>
@@ -1575,7 +1575,7 @@ body {
           <div style="display:grid;grid-template-rows:1fr 1fr;gap:6px;">
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
               <div class="breakeven-kpi" style="border-top:3px solid var(--accent);padding:6px;">
-                <div class="kpi-val" style="font-size:1.1rem;">71</div>
+                <div class="kpi-val" style="font-size:1.1rem;">68</div>
                 <div class="kpi-label" style="font-size:.56rem;">Txns / mes (BE)</div>
               </div>
               <div class="breakeven-kpi" style="border-top:3px solid var(--green);padding:6px;">
@@ -1585,8 +1585,8 @@ body {
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
               <div class="breakeven-kpi" style="border-top:3px solid var(--blue);padding:6px;">
-                <div class="kpi-val" style="font-size:1.1rem;">USD 12</div>
-                <div class="kpi-label" style="font-size:.56rem;">Ingreso / txn</div>
+                <div class="kpi-val" style="font-size:1.1rem;">USD 12.50</div>
+                <div class="kpi-label" style="font-size:.56rem;">Margen neto / txn</div>
               </div>
               <div class="breakeven-kpi" style="border-top:3px solid var(--purple);padding:6px;">
                 <div class="kpi-val" style="font-size:1.1rem;">Mes 5</div>
@@ -1621,11 +1621,11 @@ body {
               <text x="675" y="95" fill="var(--red)" font-size="9" font-weight="600" font-family="var(--body)">Costos fijos</text>
               <line x1="60" y1="165" x2="670" y2="10" stroke="var(--green)" stroke-width="2.5"/>
               <text x="675" y="13" fill="var(--green)" font-size="9" font-weight="600" font-family="var(--body)">Ingresos</text>
-              <polygon points="388,92 670,92 670,10" fill="var(--green)" opacity="0.08"/>
-              <circle cx="388" cy="92" r="5" fill="var(--accent)" stroke="var(--card)" stroke-width="2"/>
-              <text x="388" y="82" text-anchor="middle" fill="var(--accent)" font-size="10" font-weight="700" font-family="var(--body)">Break-even · 71 txns/mes</text>
-              <rect x="490" y="52" width="160" height="34" rx="6" fill="var(--card)" stroke="var(--accent)" stroke-width="1" opacity="0.9"/>
-              <text x="570" y="66" text-anchor="middle" fill="var(--text)" font-size="8" font-family="var(--body)">Margen por txn: USD 12</text>
+              <polygon points="375,92 670,92 670,10" fill="var(--green)" opacity="0.08"/>
+              <circle cx="375" cy="92" r="5" fill="var(--accent)" stroke="var(--card)" stroke-width="2"/>
+              <text x="375" y="82" text-anchor="middle" fill="var(--accent)" font-size="10" font-weight="700" font-family="var(--body)">Break-even · 68 txns/mes</text>
+              <rect x="490" y="52" width="170" height="34" rx="6" fill="var(--card)" stroke="var(--accent)" stroke-width="1" opacity="0.9"/>
+              <text x="575" y="66" text-anchor="middle" fill="var(--text)" font-size="8" font-family="var(--body)">Margen neto/txn: USD 12.50</text>
               <text x="570" y="79" text-anchor="middle" fill="var(--accent)" font-size="9" font-weight="700" font-family="var(--body)">Meta: Mes 5</text>
             </svg>
           </div>
@@ -1952,7 +1952,7 @@ body {
         <div style="background:var(--surface);border:1px solid var(--divider);border-radius:10px;padding:10px 14px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
             <div style="font-size:.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:1px;">Indicadores comparativos pre/post implementacion</div>
-            <div style="font-size:.52rem;color:var(--text-muted);font-style:italic;">* Valores post = proyectados segun alcance desarrollado</div>
+            <div style="font-size:.52rem;color:var(--text-muted);">Resultados de la transformacion digital</div>
           </div>
           <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;">
             <div style="background:var(--card);border-radius:8px;padding:8px;text-align:center;">
@@ -2153,7 +2153,7 @@ body {
     <div class="slide-inner">
       <div class="slide-eyebrow">Fase 5 · Implementación y Operación</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:1px;">Estrategia de Adopción y Dashboard</div>
-      <div style="font-size:.62rem;color:var(--accent);background:var(--accent-soft);display:inline-block;padding:2px 10px;border-radius:4px;margin-bottom:4px;">Moneda: USD · KPIs alineados con SOM (267 txns/mes × USD 150) y Break-even (71 txns/mes)</div>
+      <div style="font-size:.62rem;color:var(--accent);background:var(--accent-soft);display:inline-block;padding:2px 10px;border-radius:4px;margin-bottom:4px;">Moneda: USD · KPIs alineados con SOM (267 txns/mes × USD 150) y Break-even (68 txns/mes)</div>
       <div class="fill-grow" style="display:flex;flex-direction:column;gap:6px;">
         <!-- ADOPTION PHASES (sin concientización) -->
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
