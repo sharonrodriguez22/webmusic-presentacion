@@ -5,17 +5,17 @@
 :root {
   --ground: #111318;
   --surface: #1a1d26;
-  --card: #22252f;
+  --card: #252830;
   --text: #e8e4dc;
   --text-mid: #b8b2a4;
-  --text-muted: #7a7568;
+  --text-muted: #8a8578;
   --accent: #daa520;
   --accent-soft: rgba(218,165,32,.12);
   --accent-glow: rgba(218,165,32,.2);
   --display: 'DM Serif Display', Georgia, serif;
   --body: 'Inter', system-ui, sans-serif;
   --slide-bg: var(--ground);
-  --divider: rgba(232,228,220,.08);
+  --divider: rgba(232,228,220,.1);
   --green: #5cb66a;
   --green-bg: rgba(92,182,106,.1);
   --blue: #60a5fa;
@@ -888,22 +888,22 @@ body {
 
 /* Slide 8 (PM): 4-col → 2-col on tablet, 1-col on mobile; 3-col months → 1-col on mobile */
 @media (max-width: 1024px) {
-  .slide[data-slide="8"] .fill-grow > div[style*="1fr 1fr 1fr 1fr"] {
+  .slide[data-slide="9"] .fill-grow > div[style*="1fr 1fr 1fr 1fr"] {
     grid-template-columns: 1fr 1fr !important;
   }
 }
 @media (max-width: 768px) {
-  .slide[data-slide="8"] .fill-grow > div[style*="1fr 1fr 1fr 1fr"] {
+  .slide[data-slide="9"] .fill-grow > div[style*="1fr 1fr 1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
-  .slide[data-slide="8"] .fill-grow > div[style*="1fr 1fr 1fr"]:not([style*="1fr 1fr 1fr 1fr"]) {
+  .slide[data-slide="9"] .fill-grow > div[style*="1fr 1fr 1fr"]:not([style*="1fr 1fr 1fr 1fr"]) {
     grid-template-columns: 1fr !important;
   }
 }
 
 /* Slide 6 (Encuesta): 2-col → 1-col on mobile */
 @media (max-width: 768px) {
-  .slide[data-slide="6"] .fill-grow > div[style*="1fr 1fr"] {
+  .slide[data-slide="5"] .fill-grow > div[style*="1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 }
@@ -925,41 +925,41 @@ body {
 
 /* Slide 14 (Dev): 4-col tech → 2-col; 6-col HU → 3-col then 2-col; 2-col changes → 1-col */
 @media (max-width: 1024px) {
-  .slide[data-slide="14"] .fill-grow > div[style*="repeat(4"] {
+  .slide[data-slide="13"] .fill-grow > div[style*="repeat(4"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .slide[data-slide="14"] div[style*="repeat(6"] {
+  .slide[data-slide="13"] div[style*="repeat(6"] {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 @media (max-width: 768px) {
-  .slide[data-slide="14"] .fill-grow > div[style*="repeat(4"] {
+  .slide[data-slide="13"] .fill-grow > div[style*="repeat(4"] {
     grid-template-columns: 1fr 1fr !important;
   }
-  .slide[data-slide="14"] div[style*="repeat(6"] {
+  .slide[data-slide="13"] div[style*="repeat(6"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .slide[data-slide="14"] div[style*="1fr 1fr"]:not([style*="repeat"]):not([style*="1fr 1fr 1fr"]) {
+  .slide[data-slide="13"] div[style*="1fr 1fr"]:not([style*="repeat"]):not([style*="1fr 1fr 1fr"]) {
     grid-template-columns: 1fr !important;
   }
 }
 
 /* Slide 5 (Adopción + Dashboard): inline grids */
 @media (max-width: 768px) {
-  .slide[data-slide="5"] .fill-grow > div[style*="1fr 1fr 1fr"]:not([style*="repeat"]) {
+  .slide[data-slide="15"] .fill-grow > div[style*="1fr 1fr 1fr"]:not([style*="repeat"]) {
     grid-template-columns: 1fr !important;
   }
-  .slide[data-slide="5"] .fill-grow > div[style*="repeat(4"] {
+  .slide[data-slide="15"] .fill-grow > div[style*="repeat(4"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .slide[data-slide="5"] .fill-grow > div[style*="1.2fr"] {
+  .slide[data-slide="15"] .fill-grow > div[style*="1.2fr"] {
     grid-template-columns: 1fr !important;
   }
 }
 
 /* Slide 7 (Finanzas): 3-col inline grid */
 @media (max-width: 768px) {
-  .slide[data-slide="7"] .fill-grow > div[style*="1fr 1fr 1fr"] {
+  .slide[data-slide="10"] .fill-grow > div[style*="1fr 1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 }
@@ -1020,7 +1020,7 @@ body {
   <!-- SLIDE: EQUIPO, MISIÓN Y CAPACITACIÓN -->
   <div class="slide" data-slide="1">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Recursos Humanos</div>
+      <div class="slide-eyebrow">Fase 1 · Descubrimiento y Negocio</div>
       <div class="slide-title" style="font-size:clamp(1.4rem,3vw,1.9rem);margin-bottom:10px;">Misión, Visión y Capacitación</div>
       <div class="fill-grow" style="display:flex;flex-direction:column;gap:14px;">
         <!-- MISIÓN, VISIÓN, VALORES + CAPTACIÓN + CAPACITACIÓN -->
@@ -1172,6 +1172,7 @@ body {
       <div class="slide-eyebrow">Impacto en el Mercado</div>
       <div class="slide-title" style="font-size:clamp(1.3rem,2.8vw,1.8rem);margin-bottom:4px;">Estimación del Mercado Objetivo</div>
       <div class="slide-subtitle" style="font-size:.82rem;margin-bottom:2px;">Dimensionamiento del mercado potencial para soluciones de e-commerce en la industria musical.</div>
+      <div style="font-size:.62rem;color:var(--accent);background:var(--accent-soft);display:inline-block;padding:2px 10px;border-radius:4px;margin-bottom:2px;">Moneda: USD · Ticket promedio: USD 150 · Margen por txn: USD 12 (8% comision) · Ver slides Presupuesto y Dashboard</div>
       <div class="fill-grow">
         <div class="tam-container">
           <!-- Concentric circles -->
@@ -1212,91 +1213,6 @@ body {
   <!-- SLIDE: ADOPCIÓN + DASHBOARD GERENCIAL -->
   <div class="slide" data-slide="5">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Adopción · Dashboard Gerencial</div>
-      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:1px;">Estrategia de Adopción y Dashboard</div>
-      <div style="font-size:.66rem;color:var(--text-muted);margin-bottom:4px;">Cómo se migra al e-commerce en 3 fases y qué ve el dueño en su panel de control</div>
-      <div class="fill-grow" style="display:flex;flex-direction:column;gap:6px;">
-        <!-- ADOPTION PHASES (sin concientización) -->
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
-          <div class="adoption-phase" style="border-top:3px solid var(--teal);padding:8px;">
-            <div class="phase-num" style="background:var(--teal);">1</div>
-            <h3 style="font-size:.76rem;">Capacitación</h3>
-            <p style="font-size:.65rem;">Talleres prácticos sobre el panel admin y registro automático de ventas. Guías paso a paso.</p>
-            <div style="margin-top:3px;font-size:.58rem;color:var(--accent);font-weight:600;">Mes 1–2</div>
-          </div>
-          <div class="adoption-phase" style="border-top:3px solid var(--purple);padding:8px;">
-            <div class="phase-num" style="background:var(--purple);">2</div>
-            <h3 style="font-size:.76rem;">Rollout gradual</h3>
-            <p style="font-size:.65rem;">Marcha blanca: e-commerce en paralelo con proceso manual. Migración del 20% del catálogo.</p>
-            <div style="margin-top:3px;font-size:.58rem;color:var(--accent);font-weight:600;">Mes 2–3</div>
-          </div>
-          <div class="adoption-phase" style="border-top:3px solid var(--green);padding:8px;">
-            <div class="phase-num" style="background:var(--green);">3</div>
-            <h3 style="font-size:.76rem;">Migración completa</h3>
-            <p style="font-size:.65rem;">Se discontinúa Excel. Todas las transacciones alimentan el dashboard gerencial en tiempo real.</p>
-            <div style="margin-top:3px;font-size:.58rem;color:var(--accent);font-weight:600;">Mes 4–6</div>
-          </div>
-        </div>
-        <!-- DASHBOARD KPIs -->
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;">
-          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:7px 6px;">
-            <div class="dash-tile-val" style="font-size:1rem;">USD 10.200</div>
-            <div class="dash-tile-lbl" style="font-size:.55rem;">Ventas del mes (68 txns)</div>
-          </div>
-          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:7px 6px;">
-            <div class="dash-tile-val" style="font-size:1rem;">186</div>
-            <div class="dash-tile-lbl" style="font-size:.55rem;">Clientes registrados</div>
-          </div>
-          <div class="dash-tile" style="background:linear-gradient(135deg,#0d7a72,#0d9488);padding:7px 6px;">
-            <div class="dash-tile-val" style="font-size:1rem;">USD 150</div>
-            <div class="dash-tile-lbl" style="font-size:.55rem;">Ticket promedio</div>
-          </div>
-          <div class="dash-tile" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);padding:7px 6px;">
-            <div class="dash-tile-val" style="font-size:1rem;">3%</div>
-            <div class="dash-tile-lbl" style="font-size:.55rem;">Meta de conversión</div>
-          </div>
-        </div>
-        <!-- CHARTS + TABLES compact -->
-        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:6px;">
-          <div style="background:var(--card);border-radius:8px;padding:8px;">
-            <div style="font-size:.62rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Ventas por categoría</div>
-            <svg viewBox="0 0 300 110" style="width:100%;display:block;">
-              <rect x="10" y="5" width="180" height="12" rx="3" fill="#60a5fa" opacity=".9"/><text x="195" y="15" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Guitarras USD 3.500</text>
-              <rect x="10" y="22" width="140" height="12" rx="3" fill="#a78bfa" opacity=".9"/><text x="155" y="32" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Teclados USD 2.580</text>
-              <rect x="10" y="39" width="110" height="12" rx="3" fill="#2dd4bf" opacity=".9"/><text x="125" y="49" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Audio USD 2.000</text>
-              <rect x="10" y="56" width="80" height="12" rx="3" fill="#e8923a" opacity=".9"/><text x="95" y="66" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Baterías USD 1.250</text>
-              <rect x="10" y="73" width="55" height="12" rx="3" fill="#e8556a" opacity=".9"/><text x="70" y="83" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Bajos USD 600</text>
-              <rect x="10" y="90" width="35" height="12" rx="3" fill="#5cb66a" opacity=".9"/><text x="50" y="100" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Accesorios USD 400</text>
-            </svg>
-          </div>
-          <div style="background:var(--card);border-radius:8px;padding:8px;">
-            <div style="font-size:.62rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Top 5 productos</div>
-            <table style="width:100%;font-size:.6rem;color:var(--text-mid);">
-              <tr><td>1.</td><td>Guitarra Yamaha C40</td><td style="text-align:right;font-weight:600;">USD 120</td></tr>
-              <tr><td>2.</td><td>Teclado Casio CT-S200</td><td style="text-align:right;font-weight:600;">USD 160</td></tr>
-              <tr><td>3.</td><td>Micrófono Shure SM58</td><td style="text-align:right;font-weight:600;">USD 100</td></tr>
-              <tr><td>4.</td><td>Bajo Squier Affinity</td><td style="text-align:right;font-weight:600;">USD 250</td></tr>
-              <tr><td>5.</td><td>Batería Pearl Export</td><td style="text-align:right;font-weight:600;">USD 480</td></tr>
-            </table>
-          </div>
-          <div style="background:var(--card);border-radius:8px;padding:8px;">
-            <div style="font-size:.62rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Pedidos recientes</div>
-            <table style="width:100%;font-size:.6rem;color:var(--text-mid);">
-              <tr><td>#001</td><td>2 items</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">USD 280</td></tr>
-              <tr><td>#002</td><td>1 item</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">USD 120</td></tr>
-              <tr><td>#003</td><td>3 items</td><td style="color:var(--orange);font-weight:600;">Pend</td><td style="text-align:right;">USD 410</td></tr>
-              <tr><td>#004</td><td>1 item</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">USD 160</td></tr>
-              <tr><td>#005</td><td>2 items</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">USD 350</td></tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: ENCUESTA — PROCESO Y DATOS -->
-  <div class="slide" data-slide="6">
-    <div class="slide-inner">
       <div class="slide-eyebrow">Investigación de Mercado</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Encuesta — Proceso de Recolección y Análisis</div>
       <div class="fill-grow" style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;">
@@ -1320,11 +1236,312 @@ body {
   </div>
 
   <!-- SLIDE: FINANZAS + BREAK-EVEN -->
+  <div class="slide" data-slide="6">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Encuesta · Conclusiones</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:2px;">Resultados de la Encuesta (23 respuestas)</div>
+      <div style="font-size:.66rem;color:var(--text-muted);margin-bottom:6px;font-style:italic;">Muestra de 23 respuestas: resultados direccionales, no representativos estadísticamente</div>
+
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:10px;">
+        <!-- ROW 1: Productos + Edad + hallazgos -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:stretch;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;">
+            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">¿Qué compran más?</div>
+            <img src="grafico-productos.jpeg" alt="Gráfico de productos más comprados" style="width:100%;border-radius:6px;background:#fff;flex:1;object-fit:contain;">
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;">
+            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Participación por edad</div>
+            <img src="grafico-participacion-edad.jpeg" alt="Gráfico de participación por edad" style="width:100%;border-radius:6px;background:#fff;flex:1;object-fit:contain;">
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;justify-content:center;gap:14px;">
+            <div style="font-size:.88rem;color:var(--text);line-height:1.6;">
+              La población encuestada es <b style="color:var(--accent);">joven</b>: el <b style="color:var(--accent);font-size:1.1rem;">68%</b> tiene entre 25 y 34 años.
+            </div>
+            <div style="width:100%;height:1px;background:var(--divider);"></div>
+            <div style="font-size:.88rem;color:var(--text);line-height:1.6;">
+              Los productos más comprados son <b style="color:var(--accent);">cuerdas</b> y <b style="color:var(--accent);">accesorios</b>, seguidos de instrumentos.
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2: Prioridades + Conclusión final -->
+        <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:10px;align-items:stretch;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;">
+            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Prioridades del comprador (promedio sobre 5)</div>
+            <img src="grafico-prioridades.jpeg" alt="Gráfico de prioridades del comprador" style="width:100%;border-radius:6px;background:#fff;flex:1;object-fit:contain;">
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:18px 20px;border-left:3px solid var(--accent);display:flex;flex-direction:column;justify-content:center;">
+            <div style="font-size:.92rem;color:var(--text);line-height:1.55;margin-bottom:12px;">El obstáculo más importante de la venta online en este rubro es la <b style="color:var(--accent);font-size:1.05rem;">incertidumbre</b>. La tienda debería:</div>
+            <div style="font-size:.85rem;color:var(--text-mid);line-height:1.7;display:flex;flex-direction:column;gap:4px;">
+              <span>📦 Seguimiento del pedido</span>
+              <span>📋 Fichas técnicas completas con fotos reales</span>
+              <span>🛡️ Comunicar claramente garantía y devoluciones</span>
+              <span>🎵 Complementar con audio o video de demostración</span>
+              <span>💬 Ofrecer chat de WhatsApp para consultas</span>
+            </div>
+            <div style="margin-top:14px;padding-top:10px;border-top:1px solid var(--divider);font-size:.85rem;color:var(--text);line-height:1.55;">
+              Para el lanzamiento: apoyarse en <b style="color:var(--accent);">cuerdas y accesorios</b> y trabajar la construcción de confianza con los <b style="color:var(--accent);">principiantes</b>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: MODELADO AS-IS / TO-BE (detallado) -->
   <div class="slide" data-slide="7">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Viabilidad de Negocio</div>
+      <div class="slide-eyebrow">Fase 2 · Ingeniería de Procesos y Requisitos</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:2px;">Modelado AS-IS vs. TO-BE — Flujo de Datos</div>
+      <div style="font-size:.64rem;color:var(--text-muted);margin-bottom:6px;">Cada paso del AS-IS se mapea a una tarea de MS Project, una User Story en Jira y un caso de prueba QA</div>
+
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:8px;">
+        <!-- Circuitos AS-IS y TO-BE detallados -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <!-- AS-IS -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-left:3px solid var(--red);">
+            <div style="font-size:.78rem;font-weight:600;color:var(--red);margin-bottom:6px;">AS-IS — Circuito actual</div>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <div style="display:flex;gap:8px;align-items:flex-start;">
+                <div style="background:var(--red);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;flex-shrink:0;">1</div>
+                <div><div style="font-size:.72rem;font-weight:600;color:var(--text);">Consulta</div><div style="font-size:.62rem;color:var(--text-muted);">Mostrador o telefono; sin catalogo digital</div></div>
+              </div>
+              <div style="margin-left:9px;width:2px;height:4px;background:var(--red);opacity:.3;"></div>
+              <div style="display:flex;gap:8px;align-items:flex-start;">
+                <div style="background:var(--red);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;flex-shrink:0;">2</div>
+                <div><div style="font-size:.72rem;font-weight:600;color:var(--text);">Stock</div><div style="font-size:.62rem;color:var(--text-muted);">Excel desactualizada, verificacion manual (~15 min)</div></div>
+              </div>
+              <div style="margin-left:9px;width:2px;height:4px;background:var(--red);opacity:.3;"></div>
+              <div style="display:flex;gap:8px;align-items:flex-start;">
+                <div style="background:var(--red);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;flex-shrink:0;">3</div>
+                <div><div style="font-size:.72rem;font-weight:600;color:var(--text);">Cobro</div><div style="font-size:.62rem;color:var(--text-muted);">Caja fisica, efectivo/debito; sin integracion</div></div>
+              </div>
+              <div style="margin-left:9px;width:2px;height:4px;background:var(--red);opacity:.3;"></div>
+              <div style="display:flex;gap:8px;align-items:flex-start;">
+                <div style="background:var(--red);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;flex-shrink:0;">4</div>
+                <div><div style="font-size:.72rem;font-weight:600;color:var(--text);">Cierre</div><div style="font-size:.62rem;color:var(--text-muted);">Asiento manual nocturno, propenso a desfasajes</div></div>
+              </div>
+            </div>
+          </div>
+          <!-- TO-BE -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-left:3px solid var(--green);">
+            <div style="font-size:.78rem;font-weight:600;color:var(--green);margin-bottom:6px;">TO-BE — Circuito propuesto</div>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <div style="display:flex;gap:8px;align-items:flex-start;">
+                <div style="background:var(--green);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;flex-shrink:0;">1</div>
+                <div><div style="font-size:.72rem;font-weight:600;color:var(--text);">Captura</div><div style="font-size:.62rem;color:var(--text-muted);">Ingreso unificado mostrador + e-commerce 24/7</div></div>
+              </div>
+              <div style="margin-left:9px;width:2px;height:4px;background:var(--green);opacity:.3;"></div>
+              <div style="display:flex;gap:8px;align-items:flex-start;">
+                <div style="background:var(--green);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;flex-shrink:0;">2</div>
+                <div><div style="font-size:.72rem;font-weight:600;color:var(--text);">Validacion</div><div style="font-size:.62rem;color:var(--text-muted);">Control automatico de stock e integridad</div></div>
+              </div>
+              <div style="margin-left:9px;width:2px;height:4px;background:var(--green);opacity:.3;"></div>
+              <div style="display:flex;gap:8px;align-items:flex-start;">
+                <div style="background:var(--teal);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;flex-shrink:0;">3</div>
+                <div><div style="font-size:.72rem;font-weight:600;color:var(--text);">Data Quality / ETL</div><div style="font-size:.62rem;color:var(--text-muted);">Depuracion y estandarizacion de datos</div></div>
+              </div>
+              <div style="margin-left:9px;width:2px;height:4px;background:var(--green);opacity:.3;"></div>
+              <div style="display:flex;gap:8px;align-items:flex-start;">
+                <div style="background:var(--green);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:.55rem;font-weight:700;flex-shrink:0;">4</div>
+                <div><div style="font-size:.72rem;font-weight:600;color:var(--text);">Centralizacion</div><div style="font-size:.62rem;color:var(--text-muted);">Sincronizacion DW, visibilidad en tiempo real</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trazabilidad -->
+        <div style="background:var(--surface);border:1px solid var(--divider);border-radius:10px;padding:10px 14px;">
+          <div style="font-size:.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Trazabilidad end-to-end</div>
+          <div style="display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;font-size:.68rem;">
+            <span style="background:var(--red-bg);border:1px solid rgba(232,85,106,.2);padding:5px 10px;border-radius:6px;color:var(--red);font-weight:600;">Problema AS-IS</span>
+            <span style="color:var(--accent);">→</span>
+            <span style="background:var(--purple-bg);border:1px solid rgba(167,139,250,.2);padding:5px 10px;border-radius:6px;color:var(--purple);font-weight:600;">Tarea MS Project</span>
+            <span style="color:var(--accent);">→</span>
+            <span style="background:var(--blue-bg);border:1px solid rgba(96,165,250,.2);padding:5px 10px;border-radius:6px;color:var(--blue);font-weight:600;">User Story Jira</span>
+            <span style="color:var(--accent);">→</span>
+            <span style="background:var(--green-bg);border:1px solid rgba(92,182,106,.2);padding:5px 10px;border-radius:6px;color:var(--green);font-weight:600;">Caso de Prueba QA</span>
+          </div>
+          <div style="font-size:.58rem;color:var(--text-muted);text-align:center;margin-top:4px;">Cada dolor detectado en el circuito actual se traduce en entregable concreto y verificable</div>
+        </div>
+
+        <!-- Metricas pre/post + Bizagi -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <!-- Metricas pre/post -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px 14px;">
+            <div style="font-size:.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Metricas pre/post</div>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.66rem;padding:3px 0;border-bottom:1px solid var(--divider);">
+                <span style="color:var(--text-mid);">Confirmacion de stock</span>
+                <div><span style="color:var(--red);font-weight:600;">15 min</span> <span style="color:var(--text-muted);">→</span> <span style="color:var(--green);font-weight:600;">0 seg (auto)</span></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.66rem;padding:3px 0;border-bottom:1px solid var(--divider);">
+                <span style="color:var(--text-mid);">Disponibilidad de venta</span>
+                <div><span style="color:var(--red);font-weight:600;">8 h/dia</span> <span style="color:var(--text-muted);">→</span> <span style="color:var(--green);font-weight:600;">24/7</span></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.66rem;padding:3px 0;border-bottom:1px solid var(--divider);">
+                <span style="color:var(--text-mid);">Cierre contable</span>
+                <div><span style="color:var(--red);font-weight:600;">Manual</span> <span style="color:var(--text-muted);">→</span> <span style="color:var(--green);font-weight:600;">Automatico</span></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.66rem;padding:3px 0;">
+                <span style="color:var(--text-mid);">Trazabilidad de datos</span>
+                <div><span style="color:var(--red);font-weight:600;">Ninguna</span> <span style="color:var(--text-muted);">→</span> <span style="color:var(--green);font-weight:600;">Completa</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Diagrama Bizagi -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px;text-align:center;display:flex;flex-direction:column;">
+            <div style="font-size:.68rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Diagrama TO-BE — Bizagi</div>
+            <img src="bizagi-tobe.jpeg" alt="Diagrama TO-BE del proceso de venta online modelado en Bizagi" style="max-width:95%;max-height:200px;border-radius:6px;object-fit:contain;margin:0 auto;background:#fff;flex:1;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: PRODUCT OWNER — BACKLOG MoSCoW (TP1) -->
+  <div class="slide" data-slide="8">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Fase 2 · Product Owner</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Backlog y Priorización MoSCoW</div>
+
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:10px;">
+        <!-- Contexto -->
+        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px 16px;border-left:3px solid var(--blue);">
+          <div style="font-size:.82rem;color:var(--text-mid);line-height:1.6;">Definió la visión del producto y priorizó el backlog con método <b style="color:var(--blue);">MoSCoW</b> según el valor de negocio. La tienda vende bien en el local pero no tiene canal online — todo se registra a mano en Excel.</div>
+        </div>
+
+        <!-- Tabla MoSCoW -->
+        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;font-size:.74rem;">
+            <thead>
+              <tr style="border-bottom:2px solid var(--divider);">
+                <th style="text-align:left;padding:6px 8px;color:var(--text-muted);font-weight:600;">User Story</th>
+                <th style="text-align:center;padding:6px 8px;color:var(--text-muted);font-weight:600;">Prioridad</th>
+                <th style="text-align:left;padding:6px 8px;color:var(--text-muted);font-weight:600;">Valor de negocio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 04 — Visualización de productos</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">El cliente necesita ver qué hay disponible</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 05 — Filtro por categoría</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Navegar por tipo de instrumento</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 06 — Búsqueda de productos</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Encontrar rápido lo que busca</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 07 — Detalle de producto</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Decidir la compra con toda la info</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 08 — Gestión de stock</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Saber si el producto está disponible</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 09 — Agregar al carrito</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Sin carrito no hay compra online</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 10 — Modificar carrito</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Editar cantidades antes de pagar</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 01 — Registro de usuario</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--blue-bg);color:var(--blue);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Should</span></td><td style="padding:6px 8px;color:var(--text-mid);">Crear cuenta para comprar</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 02 — Inicio de sesión</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--blue-bg);color:var(--blue);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Should</span></td><td style="padding:6px 8px;color:var(--text-mid);">Acceder a su cuenta</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 03 — Recuperar contraseña</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--purple-bg);color:var(--purple);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Could</span></td><td style="padding:6px 8px;color:var(--text-mid);">Recuperar acceso olvidado</td></tr>
+              <tr><td style="padding:6px 8px;color:var(--text);font-weight:500;">Pagos en cuotas · App nativa · Multi-idioma</td><td style="text-align:center;padding:6px 8px;"><span style="background:rgba(232,85,106,.1);color:var(--red);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Won't</span></td><td style="padding:6px 8px;color:var(--text-mid);">Fuera del alcance del MVP</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="font-size:.72rem;color:var(--text-muted);text-align:center;">Las filas verdes = Must Have · HU09-10 se mueven a Must porque sin carrito no existe compra online</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: SCRUM MASTER — JIRA (TP1) -->
+  <div class="slide" data-slide="9">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Fase 3 · Gobernanza y Planificación</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:4px;">Planificación y Gestión del Proyecto</div>
+
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:8px;">
+        <!-- ROW 1: 3 method cards + KPIs del proyecto -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;">
+          <!-- Tradicional -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-top:3px solid var(--purple);">
+            <div style="background:var(--purple-bg);color:var(--purple);font-size:.58rem;font-weight:700;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:6px;">Tradicional</div>
+            <h3 style="font-size:.78rem;margin:0 0 4px;color:var(--text);">Planificación</h3>
+            <p style="font-size:.65rem;margin:0;color:var(--text-mid);line-height:1.5;">Cronograma con hitos y fechas. Gestión de riesgos. MS Project con 14 tareas, 3 hitos.</p>
+          </div>
+          <!-- Ágil -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-top:3px solid var(--teal);">
+            <div style="background:var(--teal-bg);color:var(--teal);font-size:.58rem;font-weight:700;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:6px;">Ágil — Scrum</div>
+            <h3 style="font-size:.78rem;margin:0 0 4px;color:var(--text);">Ejecución</h3>
+            <p style="font-size:.65rem;margin:0;color:var(--text-mid);line-height:1.5;">Sprints de 2 semanas. Product Backlog + User Stories. Planning, Daily, Review, Retro.</p>
+          </div>
+          <!-- Trazabilidad -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-top:3px solid var(--accent);">
+            <div style="background:var(--accent-soft);color:var(--accent);font-size:.58rem;font-weight:700;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:6px;">Trazabilidad</div>
+            <h3 style="font-size:.78rem;margin:0 0 4px;color:var(--text);">Visibilidad</h3>
+            <p style="font-size:.65rem;margin:0;color:var(--text-mid);line-height:1.5;">Cada mejora se rastrea: Bizagi AS-IS → Jira → MS Project con fechas y responsables.</p>
+          </div>
+          <!-- KPIs compactos -->
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-top:3px solid var(--blue);display:flex;flex-direction:column;justify-content:center;gap:6px;">
+            <div style="text-align:center;">
+              <div style="font-size:1.2rem;font-weight:700;color:var(--blue);">14</div>
+              <div style="font-size:.56rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Tareas</div>
+            </div>
+            <div style="width:100%;height:1px;background:var(--divider);"></div>
+            <div style="text-align:center;">
+              <div style="font-size:1.2rem;font-weight:700;color:var(--accent);">3</div>
+              <div style="font-size:.56rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Hitos</div>
+            </div>
+            <div style="width:100%;height:1px;background:var(--divider);"></div>
+            <div style="text-align:center;">
+              <div style="font-size:1.2rem;font-weight:700;color:var(--green);">6</div>
+              <div style="font-size:.56rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Integrantes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2: 3 meses horizontal -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px 14px;border-left:3px solid var(--blue);">
+            <div style="font-size:.62rem;font-weight:700;color:var(--blue);margin-bottom:3px;">MES 1 · Sep</div>
+            <div style="font-size:.72rem;font-weight:600;color:var(--text);margin-bottom:2px;">Análisis y diseño</div>
+            <div style="font-size:.6rem;color:var(--text-mid);line-height:1.45;">Relevamiento, arquitectura, diseño UX/UI y modelo de BD</div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px 14px;border-left:3px solid var(--green);">
+            <div style="font-size:.62rem;font-weight:700;color:var(--green);margin-bottom:3px;">MES 2 · Oct</div>
+            <div style="font-size:.72rem;font-weight:600;color:var(--text);margin-bottom:2px;">Desarrollo fuerte</div>
+            <div style="font-size:.6rem;color:var(--text-mid);line-height:1.45;">Frontend, backend, BD, pagos, carrito y panel de admin</div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px 14px;border-left:3px solid var(--orange);">
+            <div style="font-size:.62rem;font-weight:700;color:var(--orange);margin-bottom:3px;">MES 3 · Nov–Dic</div>
+            <div style="font-size:.72rem;font-weight:600;color:var(--text);margin-bottom:2px;">Integración y QA</div>
+            <div style="font-size:.6rem;color:var(--text-mid);line-height:1.45;">Testing, corrección de defectos, ajustes finales y deploy</div>
+          </div>
+        </div>
+
+        <!-- ROW 3: Matriz de riesgos -->
+        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px 12px;">
+          <div style="font-size:.68rem;font-weight:600;color:var(--red);margin-bottom:5px;">⚠️ Matriz de Riesgos</div>
+          <table style="width:100%;border-collapse:collapse;font-size:.62rem;">
+            <thead><tr style="border-bottom:1px solid var(--divider);">
+              <th style="text-align:left;padding:3px 6px;color:var(--text-muted);font-weight:600;">Riesgo</th>
+              <th style="text-align:center;padding:3px 6px;color:var(--text-muted);font-weight:600;">Prob.</th>
+              <th style="text-align:center;padding:3px 6px;color:var(--text-muted);font-weight:600;">Impacto</th>
+              <th style="text-align:left;padding:3px 6px;color:var(--text-muted);font-weight:600;">Mitigación</th>
+            </tr></thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:3px 6px;color:var(--text);">APIs terceros (caídas/cambios)</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Media</td><td style="text-align:center;padding:3px 6px;color:var(--red);font-weight:600;">Alto</td><td style="padding:3px 6px;color:var(--text-mid);">Wrappers con fallback y cache local</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:3px 6px;color:var(--text);">Volatilidad cambiaria (USD/ARS)</td><td style="text-align:center;padding:3px 6px;color:var(--red);font-weight:600;">Alta</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Medio</td><td style="padding:3px 6px;color:var(--text-mid);">Precios en USD, ajuste periódico ARS</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:3px 6px;color:var(--text);">Logística frágil (instrumentos)</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Media</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Medio</td><td style="padding:3px 6px;color:var(--text-mid);">Embalaje reforzado + seguro de envío</td></tr>
+              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:3px 6px;color:var(--text);">Ruptura logística (demoras)</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Media</td><td style="text-align:center;padding:3px 6px;color:var(--red);font-weight:600;">Alto</td><td style="padding:3px 6px;color:var(--text-mid);">Multi-operador + opción retiro en local</td></tr>
+              <tr><td style="padding:3px 6px;color:var(--text);">Competencia plataformas (ML, etc.)</td><td style="text-align:center;padding:3px 6px;color:var(--red);font-weight:600;">Alta</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Medio</td><td style="padding:3px 6px;color:var(--text-mid);">Diferenciación: nicho + asesoría experta</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ROW 4: Gantt ancho completo -->
+        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:8px;text-align:center;flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+          <div style="font-size:.68rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Diagrama de Gantt — Sep a Dic 2026</div>
+          <img src="gantt.jpeg" alt="Diagrama de Gantt del proyecto WebMusic" style="max-width:90%;max-height:200px;border-radius:6px;object-fit:contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: BIZAGI — PROCESOS AS-IS / TO-BE (TP1) -->
+  <div class="slide" data-slide="10">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Fase 3 · Viabilidad de Negocio</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:2px;">Presupuesto y Break-even</div>
-      <div style="font-size:.68rem;color:var(--text-muted);margin-bottom:4px;">Moneda de referencia: USD · Ticket promedio: USD 150</div>
+      <div style="font-size:.62rem;color:var(--accent);background:var(--accent-soft);display:inline-block;padding:2px 10px;border-radius:4px;margin-bottom:4px;">Moneda: USD · Ticket promedio: USD 150 · BE = USD 850 / USD 12 = 71 txns/mes · Consistente con SOM (267 txns/mes) y Dashboard</div>
       <div class="fill-grow" style="display:flex;flex-direction:column;gap:6px;">
         <!-- ROW 1: BUDGET + MONETIZATION + BREAK-EVEN KPIs -->
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
@@ -1418,193 +1635,9 @@ body {
   </div>
 
   <!-- SLIDE: KEVIN — PROJECT MANAGER (consolidada) -->
-  <div class="slide" data-slide="8">
-    <div class="slide-inner">
-      <div class="slide-eyebrow">Project Manager</div>
-      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:4px;">Planificación y Gestión del Proyecto</div>
-
-      <div class="fill-grow" style="display:flex;flex-direction:column;gap:8px;">
-        <!-- ROW 1: 3 method cards + KPIs del proyecto -->
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;">
-          <!-- Tradicional -->
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-top:3px solid var(--purple);">
-            <div style="background:var(--purple-bg);color:var(--purple);font-size:.58rem;font-weight:700;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:6px;">Tradicional</div>
-            <h3 style="font-size:.78rem;margin:0 0 4px;color:var(--text);">Planificación</h3>
-            <p style="font-size:.65rem;margin:0;color:var(--text-mid);line-height:1.5;">Cronograma con hitos y fechas. Gestión de riesgos. MS Project con 14 tareas, 3 hitos.</p>
-          </div>
-          <!-- Ágil -->
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-top:3px solid var(--teal);">
-            <div style="background:var(--teal-bg);color:var(--teal);font-size:.58rem;font-weight:700;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:6px;">Ágil — Scrum</div>
-            <h3 style="font-size:.78rem;margin:0 0 4px;color:var(--text);">Ejecución</h3>
-            <p style="font-size:.65rem;margin:0;color:var(--text-mid);line-height:1.5;">Sprints de 2 semanas. Product Backlog + User Stories. Planning, Daily, Review, Retro.</p>
-          </div>
-          <!-- Trazabilidad -->
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-top:3px solid var(--accent);">
-            <div style="background:var(--accent-soft);color:var(--accent);font-size:.58rem;font-weight:700;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:6px;">Trazabilidad</div>
-            <h3 style="font-size:.78rem;margin:0 0 4px;color:var(--text);">Visibilidad</h3>
-            <p style="font-size:.65rem;margin:0;color:var(--text-mid);line-height:1.5;">Cada mejora se rastrea: Bizagi AS-IS → Jira → MS Project con fechas y responsables.</p>
-          </div>
-          <!-- KPIs compactos -->
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px 14px;border-top:3px solid var(--blue);display:flex;flex-direction:column;justify-content:center;gap:6px;">
-            <div style="text-align:center;">
-              <div style="font-size:1.2rem;font-weight:700;color:var(--blue);">14</div>
-              <div style="font-size:.56rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Tareas</div>
-            </div>
-            <div style="width:100%;height:1px;background:var(--divider);"></div>
-            <div style="text-align:center;">
-              <div style="font-size:1.2rem;font-weight:700;color:var(--accent);">3</div>
-              <div style="font-size:.56rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Hitos</div>
-            </div>
-            <div style="width:100%;height:1px;background:var(--divider);"></div>
-            <div style="text-align:center;">
-              <div style="font-size:1.2rem;font-weight:700;color:var(--green);">6</div>
-              <div style="font-size:.56rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Integrantes</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ROW 2: 3 meses horizontal -->
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px 14px;border-left:3px solid var(--blue);">
-            <div style="font-size:.62rem;font-weight:700;color:var(--blue);margin-bottom:3px;">MES 1 · Sep</div>
-            <div style="font-size:.72rem;font-weight:600;color:var(--text);margin-bottom:2px;">Análisis y diseño</div>
-            <div style="font-size:.6rem;color:var(--text-mid);line-height:1.45;">Relevamiento, arquitectura, diseño UX/UI y modelo de BD</div>
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px 14px;border-left:3px solid var(--green);">
-            <div style="font-size:.62rem;font-weight:700;color:var(--green);margin-bottom:3px;">MES 2 · Oct</div>
-            <div style="font-size:.72rem;font-weight:600;color:var(--text);margin-bottom:2px;">Desarrollo fuerte</div>
-            <div style="font-size:.6rem;color:var(--text-mid);line-height:1.45;">Frontend, backend, BD, pagos, carrito y panel de admin</div>
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px 14px;border-left:3px solid var(--orange);">
-            <div style="font-size:.62rem;font-weight:700;color:var(--orange);margin-bottom:3px;">MES 3 · Nov–Dic</div>
-            <div style="font-size:.72rem;font-weight:600;color:var(--text);margin-bottom:2px;">Integración y QA</div>
-            <div style="font-size:.6rem;color:var(--text-mid);line-height:1.45;">Testing, corrección de defectos, ajustes finales y deploy</div>
-          </div>
-        </div>
-
-        <!-- ROW 3: Matriz de riesgos -->
-        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:10px 12px;">
-          <div style="font-size:.68rem;font-weight:600;color:var(--red);margin-bottom:5px;">⚠️ Matriz de Riesgos</div>
-          <table style="width:100%;border-collapse:collapse;font-size:.62rem;">
-            <thead><tr style="border-bottom:1px solid var(--divider);">
-              <th style="text-align:left;padding:3px 6px;color:var(--text-muted);font-weight:600;">Riesgo</th>
-              <th style="text-align:center;padding:3px 6px;color:var(--text-muted);font-weight:600;">Prob.</th>
-              <th style="text-align:center;padding:3px 6px;color:var(--text-muted);font-weight:600;">Impacto</th>
-              <th style="text-align:left;padding:3px 6px;color:var(--text-muted);font-weight:600;">Mitigación</th>
-            </tr></thead>
-            <tbody>
-              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:3px 6px;color:var(--text);">APIs terceros (caídas/cambios)</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Media</td><td style="text-align:center;padding:3px 6px;color:var(--red);font-weight:600;">Alto</td><td style="padding:3px 6px;color:var(--text-mid);">Wrappers con fallback y cache local</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:3px 6px;color:var(--text);">Volatilidad cambiaria (USD/ARS)</td><td style="text-align:center;padding:3px 6px;color:var(--red);font-weight:600;">Alta</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Medio</td><td style="padding:3px 6px;color:var(--text-mid);">Precios en USD, ajuste periódico ARS</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:3px 6px;color:var(--text);">Logística frágil (instrumentos)</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Media</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Medio</td><td style="padding:3px 6px;color:var(--text-mid);">Embalaje reforzado + seguro de envío</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:3px 6px;color:var(--text);">Ruptura logística (demoras)</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Media</td><td style="text-align:center;padding:3px 6px;color:var(--red);font-weight:600;">Alto</td><td style="padding:3px 6px;color:var(--text-mid);">Multi-operador + opción retiro en local</td></tr>
-              <tr><td style="padding:3px 6px;color:var(--text);">Competencia plataformas (ML, etc.)</td><td style="text-align:center;padding:3px 6px;color:var(--red);font-weight:600;">Alta</td><td style="text-align:center;padding:3px 6px;color:var(--orange);font-weight:600;">Medio</td><td style="padding:3px 6px;color:var(--text-mid);">Diferenciación: nicho + asesoría experta</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- ROW 4: Gantt ancho completo -->
-        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:8px;text-align:center;flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;">
-          <div style="font-size:.68rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Diagrama de Gantt — Sep a Dic 2026</div>
-          <img src="gantt.jpeg" alt="Diagrama de Gantt del proyecto WebMusic" style="max-width:90%;max-height:200px;border-radius:6px;object-fit:contain;">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: BIZAGI — PROCESOS AS-IS / TO-BE (TP1) -->
-  <div class="slide" data-slide="9">
-    <div class="slide-inner">
-      <div class="slide-eyebrow">Procesos · Bizagi</div>
-      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:2px;">Modelado de Procesos — AS-IS / TO-BE</div>
-      <div style="font-size:.66rem;color:var(--text-muted);margin-bottom:6px;">Cómo funciona el negocio hoy vs. cómo funcionará con el e-commerce</div>
-
-      <div class="fill-grow" style="display:flex;flex-direction:column;gap:10px;">
-        <!-- Contexto -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px 16px;border-left:3px solid var(--red);">
-            <div style="font-size:.82rem;font-weight:600;color:var(--red);margin-bottom:8px;">🔴 AS-IS — Circuito actual</div>
-            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.72rem;color:var(--text-mid);line-height:1.7;">
-              <span style="background:var(--surface);padding:4px 10px;border-radius:6px;color:var(--text);">Consulta presencial</span>
-              <span style="color:var(--red);">→</span>
-              <span style="background:var(--surface);padding:4px 10px;border-radius:6px;color:var(--text);">Verifica stock (Excel)</span>
-              <span style="color:var(--red);">→</span>
-              <span style="background:var(--surface);padding:4px 10px;border-radius:6px;color:var(--text);">Cobro en mostrador</span>
-              <span style="color:var(--red);">→</span>
-              <span style="background:var(--surface);padding:4px 10px;border-radius:6px;color:var(--text);">Cierre manual</span>
-            </div>
-            <div style="font-size:.65rem;color:var(--text-muted);margin-top:6px;">Solo presencial · Sin catálogo digital · Sin trazabilidad</div>
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px 16px;border-left:3px solid var(--green);">
-            <div style="font-size:.82rem;font-weight:600;color:var(--green);margin-bottom:8px;">🟢 TO-BE — Circuito propuesto</div>
-            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.72rem;color:var(--text-mid);line-height:1.7;">
-              <span style="background:var(--surface);padding:4px 10px;border-radius:6px;color:var(--text);">Captura online</span>
-              <span style="color:var(--green);">→</span>
-              <span style="background:var(--surface);padding:4px 10px;border-radius:6px;color:var(--text);">Validación stock auto</span>
-              <span style="color:var(--green);">→</span>
-              <span style="background:var(--surface);padding:4px 10px;border-radius:6px;color:var(--text);">Pago digital (MP/tarjeta)</span>
-              <span style="color:var(--green);">→</span>
-              <span style="background:var(--surface);padding:4px 10px;border-radius:6px;color:var(--text);">Centralización + dashboard</span>
-            </div>
-            <div style="font-size:.65rem;color:var(--text-muted);margin-top:6px;">24/7 · Stock sincronizado · Múltiples medios de pago · Tracking</div>
-          </div>
-        </div>
-
-        <!-- Diagrama Bizagi -->
-        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;text-align:center;flex:1;display:flex;flex-direction:column;">
-          <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Diagrama TO-BE — Modelado en Bizagi</div>
-          <img src="bizagi-tobe.jpeg" alt="Diagrama TO-BE del proceso de venta online modelado en Bizagi" style="max-width:95%;max-height:300px;border-radius:6px;object-fit:contain;margin:0 auto;background:#fff;">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: PRODUCT OWNER — BACKLOG MoSCoW (TP1) -->
-  <div class="slide" data-slide="10">
-    <div class="slide-inner">
-      <div class="slide-eyebrow">Product Owner</div>
-      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Backlog y Priorización MoSCoW</div>
-
-      <div class="fill-grow" style="display:flex;flex-direction:column;gap:10px;">
-        <!-- Contexto -->
-        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px 16px;border-left:3px solid var(--blue);">
-          <div style="font-size:.82rem;color:var(--text-mid);line-height:1.6;">Definió la visión del producto y priorizó el backlog con método <b style="color:var(--blue);">MoSCoW</b> según el valor de negocio. La tienda vende bien en el local pero no tiene canal online — todo se registra a mano en Excel.</div>
-        </div>
-
-        <!-- Tabla MoSCoW -->
-        <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:14px;overflow-x:auto;">
-          <table style="width:100%;border-collapse:collapse;font-size:.74rem;">
-            <thead>
-              <tr style="border-bottom:2px solid var(--divider);">
-                <th style="text-align:left;padding:6px 8px;color:var(--text-muted);font-weight:600;">User Story</th>
-                <th style="text-align:center;padding:6px 8px;color:var(--text-muted);font-weight:600;">Prioridad</th>
-                <th style="text-align:left;padding:6px 8px;color:var(--text-muted);font-weight:600;">Valor de negocio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 04 — Visualización de productos</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">El cliente necesita ver qué hay disponible</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 05 — Filtro por categoría</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Navegar por tipo de instrumento</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 06 — Búsqueda de productos</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Encontrar rápido lo que busca</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 07 — Detalle de producto</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Decidir la compra con toda la info</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 08 — Gestión de stock</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Saber si el producto está disponible</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 09 — Agregar al carrito</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Sin carrito no hay compra online</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);background:var(--green-bg);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 10 — Modificar carrito</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Must</span></td><td style="padding:6px 8px;color:var(--text-mid);">Editar cantidades antes de pagar</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 01 — Registro de usuario</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--blue-bg);color:var(--blue);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Should</span></td><td style="padding:6px 8px;color:var(--text-mid);">Crear cuenta para comprar</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 02 — Inicio de sesión</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--blue-bg);color:var(--blue);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Should</span></td><td style="padding:6px 8px;color:var(--text-mid);">Acceder a su cuenta</td></tr>
-              <tr style="border-bottom:1px solid var(--divider);"><td style="padding:6px 8px;color:var(--text);font-weight:500;">HU 03 — Recuperar contraseña</td><td style="text-align:center;padding:6px 8px;"><span style="background:var(--purple-bg);color:var(--purple);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Could</span></td><td style="padding:6px 8px;color:var(--text-mid);">Recuperar acceso olvidado</td></tr>
-              <tr><td style="padding:6px 8px;color:var(--text);font-weight:500;">Pagos en cuotas · App nativa · Multi-idioma</td><td style="text-align:center;padding:6px 8px;"><span style="background:rgba(232,85,106,.1);color:var(--red);padding:2px 8px;border-radius:4px;font-weight:600;font-size:.68rem;">Won't</span></td><td style="padding:6px 8px;color:var(--text-mid);">Fuera del alcance del MVP</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div style="font-size:.72rem;color:var(--text-muted);text-align:center;">Las filas verdes = Must Have · HU09-10 se mueven a Must porque sin carrito no existe compra online</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: SCRUM MASTER — JIRA (TP1) -->
   <div class="slide" data-slide="11">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Scrum Master</div>
+      <div class="slide-eyebrow">Fase 4 · Scrum Master</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Tablero Jira — Sprint 1</div>
 
       <div class="fill-grow" style="display:flex;flex-direction:column;gap:10px;">
@@ -1693,7 +1726,7 @@ body {
   <!-- SLIDE: SCRUM MASTER — JIRA SPRINT 2 (TP2) -->
   <div class="slide" data-slide="12">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Scrum Master</div>
+      <div class="slide-eyebrow">Fase 4 · Scrum Master</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Tablero Jira — Sprint 2</div>
 
       <div class="fill-grow" style="display:flex;flex-direction:column;gap:8px;">
@@ -1832,60 +1865,7 @@ body {
   <!-- SLIDE: CONCLUSIONES DE LA ENCUESTA -->
   <div class="slide" data-slide="13">
     <div class="slide-inner">
-      <div class="slide-eyebrow">Encuesta · Conclusiones</div>
-      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:2px;">Resultados de la Encuesta (23 respuestas)</div>
-      <div style="font-size:.66rem;color:var(--text-muted);margin-bottom:6px;font-style:italic;">Muestra de 23 respuestas: resultados direccionales, no representativos estadísticamente</div>
-
-      <div class="fill-grow" style="display:flex;flex-direction:column;gap:10px;">
-        <!-- ROW 1: Productos + Edad + hallazgos -->
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:stretch;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;">
-            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">¿Qué compran más?</div>
-            <img src="grafico-productos.jpeg" alt="Gráfico de productos más comprados" style="width:100%;border-radius:6px;background:#fff;flex:1;object-fit:contain;">
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;">
-            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Participación por edad</div>
-            <img src="grafico-participacion-edad.jpeg" alt="Gráfico de participación por edad" style="width:100%;border-radius:6px;background:#fff;flex:1;object-fit:contain;">
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;justify-content:center;gap:14px;">
-            <div style="font-size:.88rem;color:var(--text);line-height:1.6;">
-              La población encuestada es <b style="color:var(--accent);">joven</b>: el <b style="color:var(--accent);font-size:1.1rem;">68%</b> tiene entre 25 y 34 años.
-            </div>
-            <div style="width:100%;height:1px;background:var(--divider);"></div>
-            <div style="font-size:.88rem;color:var(--text);line-height:1.6;">
-              Los productos más comprados son <b style="color:var(--accent);">cuerdas</b> y <b style="color:var(--accent);">accesorios</b>, seguidos de instrumentos.
-            </div>
-          </div>
-        </div>
-
-        <!-- ROW 2: Prioridades + Conclusión final -->
-        <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:10px;align-items:stretch;">
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:12px;text-align:center;display:flex;flex-direction:column;">
-            <div style="font-size:.75rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Prioridades del comprador (promedio sobre 5)</div>
-            <img src="grafico-prioridades.jpeg" alt="Gráfico de prioridades del comprador" style="width:100%;border-radius:6px;background:#fff;flex:1;object-fit:contain;">
-          </div>
-          <div style="background:var(--card);border:1px solid var(--divider);border-radius:10px;padding:18px 20px;border-left:3px solid var(--accent);display:flex;flex-direction:column;justify-content:center;">
-            <div style="font-size:.92rem;color:var(--text);line-height:1.55;margin-bottom:12px;">El obstáculo más importante de la venta online en este rubro es la <b style="color:var(--accent);font-size:1.05rem;">incertidumbre</b>. La tienda debería:</div>
-            <div style="font-size:.85rem;color:var(--text-mid);line-height:1.7;display:flex;flex-direction:column;gap:4px;">
-              <span>📦 Seguimiento del pedido</span>
-              <span>📋 Fichas técnicas completas con fotos reales</span>
-              <span>🛡️ Comunicar claramente garantía y devoluciones</span>
-              <span>🎵 Complementar con audio o video de demostración</span>
-              <span>💬 Ofrecer chat de WhatsApp para consultas</span>
-            </div>
-            <div style="margin-top:14px;padding-top:10px;border-top:1px solid var(--divider);font-size:.85rem;color:var(--text);line-height:1.55;">
-              Para el lanzamiento: apoyarse en <b style="color:var(--accent);">cuerdas y accesorios</b> y trabajar la construcción de confianza con los <b style="color:var(--accent);">principiantes</b>.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SLIDE: SHARON — DESARROLLADORA (consolidada) -->
-  <div class="slide" data-slide="14">
-    <div class="slide-inner">
-      <div class="slide-eyebrow">Developer</div>
+      <div class="slide-eyebrow">Fase 4 · Desarrollo</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:6px;">Desarrollo del E-commerce</div>
 
       <div class="fill-grow" style="display:flex;flex-direction:column;gap:8px;">
@@ -1977,9 +1957,9 @@ body {
   </div>
 
   <!-- SLIDE: QA TESTER (45 CP unificados) -->
-  <div class="slide" data-slide="15">
+  <div class="slide" data-slide="14">
     <div class="slide-inner">
-      <div class="slide-eyebrow">QA Tester</div>
+      <div class="slide-eyebrow">Fase 4 · Control de Calidad</div>
       <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:2px;">Testing — 45 Casos de Prueba</div>
       <div style="font-size:.66rem;color:var(--text-muted);margin-bottom:6px;">Cobertura completa: 18 HU del backlog + 4 HU post-encuesta · Escenarios positivos y negativos</div>
 
@@ -2114,6 +2094,91 @@ body {
   </div>
 
   <!-- SLIDE: CIERRE (consolidada) -->
+  <div class="slide" data-slide="15">
+    <div class="slide-inner">
+      <div class="slide-eyebrow">Fase 5 · Implementación y Operación</div>
+      <div class="slide-title" style="font-size:clamp(1.1rem,2.4vw,1.5rem);margin-bottom:1px;">Estrategia de Adopción y Dashboard</div>
+      <div style="font-size:.62rem;color:var(--accent);background:var(--accent-soft);display:inline-block;padding:2px 10px;border-radius:4px;margin-bottom:4px;">Moneda: USD · KPIs alineados con SOM (267 txns/mes × USD 150) y Break-even (71 txns/mes)</div>
+      <div class="fill-grow" style="display:flex;flex-direction:column;gap:6px;">
+        <!-- ADOPTION PHASES (sin concientización) -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
+          <div class="adoption-phase" style="border-top:3px solid var(--teal);padding:8px;">
+            <div class="phase-num" style="background:var(--teal);">1</div>
+            <h3 style="font-size:.76rem;">Capacitación</h3>
+            <p style="font-size:.65rem;">Talleres prácticos sobre el panel admin y registro automático de ventas. Guías paso a paso.</p>
+            <div style="margin-top:3px;font-size:.58rem;color:var(--accent);font-weight:600;">Mes 1–2</div>
+          </div>
+          <div class="adoption-phase" style="border-top:3px solid var(--purple);padding:8px;">
+            <div class="phase-num" style="background:var(--purple);">2</div>
+            <h3 style="font-size:.76rem;">Rollout gradual</h3>
+            <p style="font-size:.65rem;">Marcha blanca: e-commerce en paralelo con proceso manual. Migración del 20% del catálogo.</p>
+            <div style="margin-top:3px;font-size:.58rem;color:var(--accent);font-weight:600;">Mes 2–3</div>
+          </div>
+          <div class="adoption-phase" style="border-top:3px solid var(--green);padding:8px;">
+            <div class="phase-num" style="background:var(--green);">3</div>
+            <h3 style="font-size:.76rem;">Migración completa</h3>
+            <p style="font-size:.65rem;">Se discontinúa Excel. Todas las transacciones alimentan el dashboard gerencial en tiempo real.</p>
+            <div style="margin-top:3px;font-size:.58rem;color:var(--accent);font-weight:600;">Mes 4–6</div>
+          </div>
+        </div>
+        <!-- DASHBOARD KPIs -->
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;">
+          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:7px 6px;">
+            <div class="dash-tile-val" style="font-size:1rem;">USD 10.200</div>
+            <div class="dash-tile-lbl" style="font-size:.55rem;">Ventas del mes (68 txns)</div>
+          </div>
+          <div class="dash-tile" style="background:linear-gradient(135deg,#1a365d,#2a4a7f);padding:7px 6px;">
+            <div class="dash-tile-val" style="font-size:1rem;">186</div>
+            <div class="dash-tile-lbl" style="font-size:.55rem;">Clientes registrados</div>
+          </div>
+          <div class="dash-tile" style="background:linear-gradient(135deg,#0d7a72,#0d9488);padding:7px 6px;">
+            <div class="dash-tile-val" style="font-size:1rem;">USD 150</div>
+            <div class="dash-tile-lbl" style="font-size:.55rem;">Ticket promedio</div>
+          </div>
+          <div class="dash-tile" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);padding:7px 6px;">
+            <div class="dash-tile-val" style="font-size:1rem;">3%</div>
+            <div class="dash-tile-lbl" style="font-size:.55rem;">Meta de conversión</div>
+          </div>
+        </div>
+        <!-- CHARTS + TABLES compact -->
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:6px;">
+          <div style="background:var(--card);border-radius:8px;padding:8px;">
+            <div style="font-size:.62rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Ventas por categoría</div>
+            <svg viewBox="0 0 300 110" style="width:100%;display:block;">
+              <rect x="10" y="5" width="180" height="12" rx="3" fill="#60a5fa" opacity=".9"/><text x="195" y="15" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Guitarras USD 3.500</text>
+              <rect x="10" y="22" width="140" height="12" rx="3" fill="#a78bfa" opacity=".9"/><text x="155" y="32" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Teclados USD 2.580</text>
+              <rect x="10" y="39" width="110" height="12" rx="3" fill="#2dd4bf" opacity=".9"/><text x="125" y="49" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Audio USD 2.000</text>
+              <rect x="10" y="56" width="80" height="12" rx="3" fill="#e8923a" opacity=".9"/><text x="95" y="66" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Baterías USD 1.250</text>
+              <rect x="10" y="73" width="55" height="12" rx="3" fill="#e8556a" opacity=".9"/><text x="70" y="83" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Bajos USD 600</text>
+              <rect x="10" y="90" width="35" height="12" rx="3" fill="#5cb66a" opacity=".9"/><text x="50" y="100" fill="var(--text-mid)" font-size="8" font-family="Inter,sans-serif">Accesorios USD 400</text>
+            </svg>
+          </div>
+          <div style="background:var(--card);border-radius:8px;padding:8px;">
+            <div style="font-size:.62rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Top 5 productos</div>
+            <table style="width:100%;font-size:.6rem;color:var(--text-mid);">
+              <tr><td>1.</td><td>Guitarra Yamaha C40</td><td style="text-align:right;font-weight:600;">USD 120</td></tr>
+              <tr><td>2.</td><td>Teclado Casio CT-S200</td><td style="text-align:right;font-weight:600;">USD 160</td></tr>
+              <tr><td>3.</td><td>Micrófono Shure SM58</td><td style="text-align:right;font-weight:600;">USD 100</td></tr>
+              <tr><td>4.</td><td>Bajo Squier Affinity</td><td style="text-align:right;font-weight:600;">USD 250</td></tr>
+              <tr><td>5.</td><td>Batería Pearl Export</td><td style="text-align:right;font-weight:600;">USD 480</td></tr>
+            </table>
+          </div>
+          <div style="background:var(--card);border-radius:8px;padding:8px;">
+            <div style="font-size:.62rem;font-weight:600;color:var(--text-mid);margin-bottom:4px;">Pedidos recientes</div>
+            <table style="width:100%;font-size:.6rem;color:var(--text-mid);">
+              <tr><td>#001</td><td>2 items</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">USD 280</td></tr>
+              <tr><td>#002</td><td>1 item</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">USD 120</td></tr>
+              <tr><td>#003</td><td>3 items</td><td style="color:var(--orange);font-weight:600;">Pend</td><td style="text-align:right;">USD 410</td></tr>
+              <tr><td>#004</td><td>1 item</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">USD 160</td></tr>
+              <tr><td>#005</td><td>2 items</td><td style="color:var(--green);font-weight:600;">OK</td><td style="text-align:right;">USD 350</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE: ENCUESTA — PROCESO Y DATOS -->
   <div class="slide closing" data-slide="16">
     <div class="slide-inner">
       <div class="cover-logo" style="width:56px;height:56px;font-size:1.6rem;border-radius:14px;margin-bottom:12px;">♪</div>
